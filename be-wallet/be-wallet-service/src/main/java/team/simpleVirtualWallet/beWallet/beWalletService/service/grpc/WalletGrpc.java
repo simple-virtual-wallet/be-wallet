@@ -6,19 +6,19 @@ package team.simpleVirtualWallet.beWallet.beWalletService.service.grpc;
 public final class WalletGrpc {
   private WalletGrpc() {}
   public static void registerAllExtensions(
-          com.google.protobuf.ExtensionRegistryLite registry) {
+      com.google.protobuf.ExtensionRegistryLite registry) {
   }
 
   public static void registerAllExtensions(
-          com.google.protobuf.ExtensionRegistry registry) {
+      com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-            (com.google.protobuf.ExtensionRegistryLite) registry);
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
    * Protobuf enum {@code wallet.Action}
    */
   public enum Action
-          implements com.google.protobuf.ProtocolMessageEnum {
+      implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>Action_NONE = 0;</code>
      */
@@ -146,8 +146,8 @@ public final class WalletGrpc {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-                "Can't get the number of an unknown enum value.");
+        throw new IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
       }
       return value;
     }
@@ -157,7 +157,7 @@ public final class WalletGrpc {
      * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static Action valueOf(int value) {
       return forNumber(value);
     }
@@ -181,41 +181,41 @@ public final class WalletGrpc {
     }
 
     public static com.google.protobuf.Internal.EnumLiteMap<Action>
-    internalGetValueMap() {
+        internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-            Action> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<Action>() {
-              public Action findValueByNumber(int number) {
-                return Action.forNumber(number);
-              }
-            };
+        Action> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Action>() {
+            public Action findValueByNumber(int number) {
+              return Action.forNumber(number);
+            }
+          };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
-    getValueDescriptor() {
+        getValueDescriptor() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-                "Can't get the descriptor of an unrecognized enum value.");
+        throw new IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
       }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return getDescriptor();
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.getDescriptor().getEnumTypes().get(0);
+        getDescriptor() {
+      return WalletGrpc.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final Action[] VALUES = values();
 
     public static Action valueOf(
-            com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-                "EnumValueDescriptor is not for this type.");
+        throw new IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
         return UNRECOGNIZED;
@@ -236,7 +236,7 @@ public final class WalletGrpc {
    * Protobuf enum {@code wallet.Status}
    */
   public enum Status
-          implements com.google.protobuf.ProtocolMessageEnum {
+      implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>Status_NONE = 0;</code>
      */
@@ -316,8 +316,8 @@ public final class WalletGrpc {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-                "Can't get the number of an unknown enum value.");
+        throw new IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
       }
       return value;
     }
@@ -327,7 +327,7 @@ public final class WalletGrpc {
      * @return The enum associated with the given numeric wire value.
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static Status valueOf(int value) {
       return forNumber(value);
     }
@@ -348,41 +348,41 @@ public final class WalletGrpc {
     }
 
     public static com.google.protobuf.Internal.EnumLiteMap<Status>
-    internalGetValueMap() {
+        internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-            Status> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<Status>() {
-              public Status findValueByNumber(int number) {
-                return Status.forNumber(number);
-              }
-            };
+        Status> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Status>() {
+            public Status findValueByNumber(int number) {
+              return Status.forNumber(number);
+            }
+          };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
-    getValueDescriptor() {
+        getValueDescriptor() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-                "Can't get the descriptor of an unrecognized enum value.");
+        throw new IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
       }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return getDescriptor();
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.getDescriptor().getEnumTypes().get(1);
+        getDescriptor() {
+      return WalletGrpc.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final Status[] VALUES = values();
 
     public static Status valueOf(
-            com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-                "EnumValueDescriptor is not for this type.");
+        throw new IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
         return UNRECOGNIZED;
@@ -400,8 +400,8 @@ public final class WalletGrpc {
   }
 
   public interface PaginationOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.Pagination)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.Pagination)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>int32 page = 1;</code>
@@ -419,10 +419,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.Pagination}
    */
   public static final class Pagination extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.Pagination)
-          PaginationOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.Pagination)
+      PaginationOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use Pagination.newBuilder() to construct.
     private Pagination(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -430,50 +430,55 @@ public final class WalletGrpc {
     private Pagination() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new Pagination();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Pagination_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_Pagination_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Pagination_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_Pagination_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              Pagination.class, Builder.class);
     }
 
     public static final int PAGE_FIELD_NUMBER = 1;
-    private int page_ = 0;
+    private int page_;
     /**
      * <code>int32 page = 1;</code>
      * @return The page.
      */
-    @java.lang.Override
+    @Override
     public int getPage() {
       return page_;
     }
 
     public static final int PAGESIZE_FIELD_NUMBER = 2;
-    private int pageSize_ = 0;
+    private int pageSize_;
     /**
      * <code>int32 pageSize = 2;</code>
      * @return The pageSize.
      */
-    @java.lang.Override
+    @Override
     public int getPageSize() {
       return pageSize_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -483,9 +488,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (page_ != 0) {
         output.writeInt32(1, page_);
       }
@@ -495,7 +500,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -503,36 +508,36 @@ public final class WalletGrpc {
       size = 0;
       if (page_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(1, page_);
+          .computeInt32Size(1, page_);
       }
       if (pageSize_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(2, pageSize_);
+          .computeInt32Size(2, pageSize_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination)) {
+      if (!(obj instanceof Pagination)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination) obj;
+      Pagination other = (Pagination) obj;
 
       if (getPage()
-              != other.getPage()) return false;
+          != other.getPage()) return false;
       if (getPageSize()
-              != other.getPageSize()) return false;
+          != other.getPageSize()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -548,95 +553,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Pagination parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static Pagination parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Pagination parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static Pagination parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Pagination parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static Pagination parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Pagination parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination prototype) {
+    public static Builder newBuilder(Pagination prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -644,20 +647,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.Pagination}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.Pagination)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.Pagination)
+        PaginationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Pagination_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_Pagination_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Pagination_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_Pagination_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                Pagination.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.newBuilder()
@@ -666,101 +669,93 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         page_ = 0;
+
         pageSize_ = 0;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Pagination_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_Pagination_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance();
+      @Override
+      public Pagination getDefaultInstanceForType() {
+        return Pagination.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination result = buildPartial();
+      @Override
+      public Pagination build() {
+        Pagination result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public Pagination buildPartial() {
+        Pagination result = new Pagination(this);
+        result.page_ = page_;
+        result.pageSize_ = pageSize_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.page_ = page_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.pageSize_ = pageSize_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination)other);
+        if (other instanceof Pagination) {
+          return mergeFrom((Pagination)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance()) return this;
+      public Builder mergeFrom(Pagination other) {
+        if (other == Pagination.getDefaultInstance()) return this;
         if (other.getPage() != 0) {
           setPage(other.getPage());
         }
@@ -772,18 +767,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -795,12 +790,12 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 page_ = input.readInt32();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 pageSize_ = input.readInt32();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               default: {
@@ -818,14 +813,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private int page_ ;
       /**
        * <code>int32 page = 1;</code>
        * @return The page.
        */
-      @java.lang.Override
+      @Override
       public int getPage() {
         return page_;
       }
@@ -835,9 +829,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setPage(int value) {
-
+        
         page_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -846,7 +839,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearPage() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         page_ = 0;
         onChanged();
         return this;
@@ -857,7 +850,7 @@ public final class WalletGrpc {
        * <code>int32 pageSize = 2;</code>
        * @return The pageSize.
        */
-      @java.lang.Override
+      @Override
       public int getPageSize() {
         return pageSize_;
       }
@@ -867,9 +860,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setPageSize(int value) {
-
+        
         pageSize_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -878,20 +870,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearPageSize() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         pageSize_ = 0;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -900,22 +892,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.Pagination)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination DEFAULT_INSTANCE;
+    private static final Pagination DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination();
+      DEFAULT_INSTANCE = new Pagination();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getDefaultInstance() {
+    public static Pagination getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Pagination>
-            PARSER = new com.google.protobuf.AbstractParser<Pagination>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<Pagination>() {
+      @Override
       public Pagination parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -925,7 +917,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -935,21 +927,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Pagination> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getDefaultInstanceForType() {
+    @Override
+    public Pagination getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface PaginationInfoOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.PaginationInfo)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.PaginationInfo)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>int32 currentPage = 1;</code>
@@ -991,10 +983,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.PaginationInfo}
    */
   public static final class PaginationInfo extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.PaginationInfo)
-          PaginationInfoOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.PaginationInfo)
+      PaginationInfoOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use PaginationInfo.newBuilder() to construct.
     private PaginationInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -1002,94 +994,99 @@ public final class WalletGrpc {
     private PaginationInfo() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new PaginationInfo();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_PaginationInfo_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_PaginationInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              PaginationInfo.class, Builder.class);
     }
 
     public static final int CURRENTPAGE_FIELD_NUMBER = 1;
-    private int currentPage_ = 0;
+    private int currentPage_;
     /**
      * <code>int32 currentPage = 1;</code>
      * @return The currentPage.
      */
-    @java.lang.Override
+    @Override
     public int getCurrentPage() {
       return currentPage_;
     }
 
     public static final int NEXTPAGE_FIELD_NUMBER = 2;
-    private int nextPage_ = 0;
+    private int nextPage_;
     /**
      * <code>int32 nextPage = 2;</code>
      * @return The nextPage.
      */
-    @java.lang.Override
+    @Override
     public int getNextPage() {
       return nextPage_;
     }
 
     public static final int PREVIOUSPAGE_FIELD_NUMBER = 3;
-    private int previousPage_ = 0;
+    private int previousPage_;
     /**
      * <code>int32 previousPage = 3;</code>
      * @return The previousPage.
      */
-    @java.lang.Override
+    @Override
     public int getPreviousPage() {
       return previousPage_;
     }
 
     public static final int PAGESIZE_FIELD_NUMBER = 4;
-    private int pageSize_ = 0;
+    private int pageSize_;
     /**
      * <code>int32 pageSize = 4;</code>
      * @return The pageSize.
      */
-    @java.lang.Override
+    @Override
     public int getPageSize() {
       return pageSize_;
     }
 
     public static final int TOTALPAGES_FIELD_NUMBER = 5;
-    private int totalPages_ = 0;
+    private int totalPages_;
     /**
      * <code>int32 totalPages = 5;</code>
      * @return The totalPages.
      */
-    @java.lang.Override
+    @Override
     public int getTotalPages() {
       return totalPages_;
     }
 
     public static final int TOTALROWS_FIELD_NUMBER = 6;
-    private int totalRows_ = 0;
+    private int totalRows_;
     /**
      * <code>int32 totalRows = 6;</code>
      * @return The totalRows.
      */
-    @java.lang.Override
+    @Override
     public int getTotalRows() {
       return totalRows_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1099,9 +1096,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (currentPage_ != 0) {
         output.writeInt32(1, currentPage_);
       }
@@ -1123,7 +1120,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1131,60 +1128,60 @@ public final class WalletGrpc {
       size = 0;
       if (currentPage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(1, currentPage_);
+          .computeInt32Size(1, currentPage_);
       }
       if (nextPage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(2, nextPage_);
+          .computeInt32Size(2, nextPage_);
       }
       if (previousPage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(3, previousPage_);
+          .computeInt32Size(3, previousPage_);
       }
       if (pageSize_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(4, pageSize_);
+          .computeInt32Size(4, pageSize_);
       }
       if (totalPages_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(5, totalPages_);
+          .computeInt32Size(5, totalPages_);
       }
       if (totalRows_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32Size(6, totalRows_);
+          .computeInt32Size(6, totalRows_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo)) {
+      if (!(obj instanceof PaginationInfo)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo) obj;
+      PaginationInfo other = (PaginationInfo) obj;
 
       if (getCurrentPage()
-              != other.getCurrentPage()) return false;
+          != other.getCurrentPage()) return false;
       if (getNextPage()
-              != other.getNextPage()) return false;
+          != other.getNextPage()) return false;
       if (getPreviousPage()
-              != other.getPreviousPage()) return false;
+          != other.getPreviousPage()) return false;
       if (getPageSize()
-              != other.getPageSize()) return false;
+          != other.getPageSize()) return false;
       if (getTotalPages()
-              != other.getTotalPages()) return false;
+          != other.getTotalPages()) return false;
       if (getTotalRows()
-              != other.getTotalRows()) return false;
+          != other.getTotalRows()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1208,95 +1205,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static PaginationInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static PaginationInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static PaginationInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static PaginationInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static PaginationInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static PaginationInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static PaginationInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo prototype) {
+    public static Builder newBuilder(PaginationInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1304,20 +1299,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.PaginationInfo}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.PaginationInfo)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.PaginationInfo)
+        PaginationInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_PaginationInfo_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_PaginationInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                PaginationInfo.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.newBuilder()
@@ -1326,117 +1321,105 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         currentPage_ = 0;
+
         nextPage_ = 0;
+
         previousPage_ = 0;
+
         pageSize_ = 0;
+
         totalPages_ = 0;
+
         totalRows_ = 0;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_PaginationInfo_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance();
+      @Override
+      public PaginationInfo getDefaultInstanceForType() {
+        return PaginationInfo.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo result = buildPartial();
+      @Override
+      public PaginationInfo build() {
+        PaginationInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public PaginationInfo buildPartial() {
+        PaginationInfo result = new PaginationInfo(this);
+        result.currentPage_ = currentPage_;
+        result.nextPage_ = nextPage_;
+        result.previousPage_ = previousPage_;
+        result.pageSize_ = pageSize_;
+        result.totalPages_ = totalPages_;
+        result.totalRows_ = totalRows_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.currentPage_ = currentPage_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.nextPage_ = nextPage_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.previousPage_ = previousPage_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.pageSize_ = pageSize_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.totalPages_ = totalPages_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.totalRows_ = totalRows_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo)other);
+        if (other instanceof PaginationInfo) {
+          return mergeFrom((PaginationInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(PaginationInfo other) {
+        if (other == PaginationInfo.getDefaultInstance()) return this;
         if (other.getCurrentPage() != 0) {
           setCurrentPage(other.getCurrentPage());
         }
@@ -1460,18 +1443,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -1483,32 +1466,32 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 currentPage_ = input.readInt32();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 nextPage_ = input.readInt32();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               case 24: {
                 previousPage_ = input.readInt32();
-                bitField0_ |= 0x00000004;
+
                 break;
               } // case 24
               case 32: {
                 pageSize_ = input.readInt32();
-                bitField0_ |= 0x00000008;
+
                 break;
               } // case 32
               case 40: {
                 totalPages_ = input.readInt32();
-                bitField0_ |= 0x00000010;
+
                 break;
               } // case 40
               case 48: {
                 totalRows_ = input.readInt32();
-                bitField0_ |= 0x00000020;
+
                 break;
               } // case 48
               default: {
@@ -1526,14 +1509,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private int currentPage_ ;
       /**
        * <code>int32 currentPage = 1;</code>
        * @return The currentPage.
        */
-      @java.lang.Override
+      @Override
       public int getCurrentPage() {
         return currentPage_;
       }
@@ -1543,9 +1525,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrentPage(int value) {
-
+        
         currentPage_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -1554,7 +1535,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrentPage() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         currentPage_ = 0;
         onChanged();
         return this;
@@ -1565,7 +1546,7 @@ public final class WalletGrpc {
        * <code>int32 nextPage = 2;</code>
        * @return The nextPage.
        */
-      @java.lang.Override
+      @Override
       public int getNextPage() {
         return nextPage_;
       }
@@ -1575,9 +1556,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setNextPage(int value) {
-
+        
         nextPage_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -1586,7 +1566,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearNextPage() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         nextPage_ = 0;
         onChanged();
         return this;
@@ -1597,7 +1577,7 @@ public final class WalletGrpc {
        * <code>int32 previousPage = 3;</code>
        * @return The previousPage.
        */
-      @java.lang.Override
+      @Override
       public int getPreviousPage() {
         return previousPage_;
       }
@@ -1607,9 +1587,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setPreviousPage(int value) {
-
+        
         previousPage_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -1618,7 +1597,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearPreviousPage() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        
         previousPage_ = 0;
         onChanged();
         return this;
@@ -1629,7 +1608,7 @@ public final class WalletGrpc {
        * <code>int32 pageSize = 4;</code>
        * @return The pageSize.
        */
-      @java.lang.Override
+      @Override
       public int getPageSize() {
         return pageSize_;
       }
@@ -1639,9 +1618,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setPageSize(int value) {
-
+        
         pageSize_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -1650,7 +1628,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearPageSize() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        
         pageSize_ = 0;
         onChanged();
         return this;
@@ -1661,7 +1639,7 @@ public final class WalletGrpc {
        * <code>int32 totalPages = 5;</code>
        * @return The totalPages.
        */
-      @java.lang.Override
+      @Override
       public int getTotalPages() {
         return totalPages_;
       }
@@ -1671,9 +1649,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setTotalPages(int value) {
-
+        
         totalPages_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -1682,7 +1659,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearTotalPages() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        
         totalPages_ = 0;
         onChanged();
         return this;
@@ -1693,7 +1670,7 @@ public final class WalletGrpc {
        * <code>int32 totalRows = 6;</code>
        * @return The totalRows.
        */
-      @java.lang.Override
+      @Override
       public int getTotalRows() {
         return totalRows_;
       }
@@ -1703,9 +1680,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setTotalRows(int value) {
-
+        
         totalRows_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -1714,20 +1690,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearTotalRows() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        
         totalRows_ = 0;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -1736,22 +1712,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.PaginationInfo)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo DEFAULT_INSTANCE;
+    private static final PaginationInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo();
+      DEFAULT_INSTANCE = new PaginationInfo();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getDefaultInstance() {
+    public static PaginationInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<PaginationInfo>
-            PARSER = new com.google.protobuf.AbstractParser<PaginationInfo>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<PaginationInfo>() {
+      @Override
       public PaginationInfo parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -1761,7 +1737,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -1771,21 +1747,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<PaginationInfo> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getDefaultInstanceForType() {
+    @Override
+    public PaginationInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface CreateWalletReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.CreateWalletReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.CreateWalletReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 userID = 1;</code>
@@ -1797,22 +1773,22 @@ public final class WalletGrpc {
      * <code>string currency = 2;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>string currency = 2;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
   }
   /**
    * Protobuf type {@code wallet.CreateWalletReq}
    */
   public static final class CreateWalletReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.CreateWalletReq)
-          CreateWalletReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.CreateWalletReq)
+      CreateWalletReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use CreateWalletReq.newBuilder() to construct.
     private CreateWalletReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -1821,53 +1797,57 @@ public final class WalletGrpc {
       currency_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new CreateWalletReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_CreateWalletReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              CreateWalletReq.class, Builder.class);
     }
 
     public static final int USERID_FIELD_NUMBER = 1;
-    private long userID_ = 0L;
+    private long userID_;
     /**
      * <code>uint64 userID = 1;</code>
      * @return The userID.
      */
-    @java.lang.Override
+    @Override
     public long getUserID() {
       return userID_;
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>string currency = 2;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -1876,14 +1856,14 @@ public final class WalletGrpc {
      * <code>string currency = 2;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -1892,7 +1872,7 @@ public final class WalletGrpc {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1902,9 +1882,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (userID_ != 0L) {
         output.writeUInt64(1, userID_);
       }
@@ -1914,7 +1894,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1922,7 +1902,7 @@ public final class WalletGrpc {
       size = 0;
       if (userID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, userID_);
+          .computeUInt64Size(1, userID_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(currency_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, currency_);
@@ -1932,25 +1912,25 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq)) {
+      if (!(obj instanceof CreateWalletReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq) obj;
+      CreateWalletReq other = (CreateWalletReq) obj;
 
       if (getUserID()
-              != other.getUserID()) return false;
+          != other.getUserID()) return false;
       if (!getCurrency()
-              .equals(other.getCurrency())) return false;
+          .equals(other.getCurrency())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1959,7 +1939,7 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + USERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUserID());
+          getUserID());
       hash = (37 * hash) + CURRENCY_FIELD_NUMBER;
       hash = (53 * hash) + getCurrency().hashCode();
       hash = (29 * hash) + getUnknownFields().hashCode();
@@ -1967,95 +1947,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static CreateWalletReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static CreateWalletReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static CreateWalletReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq prototype) {
+    public static Builder newBuilder(CreateWalletReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2063,20 +2041,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.CreateWalletReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.CreateWalletReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.CreateWalletReq)
+        CreateWalletReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_CreateWalletReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                CreateWalletReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.newBuilder()
@@ -2085,107 +2063,98 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         userID_ = 0L;
+
         currency_ = "";
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_CreateWalletReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.getDefaultInstance();
+      @Override
+      public CreateWalletReq getDefaultInstanceForType() {
+        return CreateWalletReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq result = buildPartial();
+      @Override
+      public CreateWalletReq build() {
+        CreateWalletReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public CreateWalletReq buildPartial() {
+        CreateWalletReq result = new CreateWalletReq(this);
+        result.userID_ = userID_;
+        result.currency_ = currency_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.userID_ = userID_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.currency_ = currency_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq)other);
+        if (other instanceof CreateWalletReq) {
+          return mergeFrom((CreateWalletReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(CreateWalletReq other) {
+        if (other == CreateWalletReq.getDefaultInstance()) return this;
         if (other.getUserID() != 0L) {
           setUserID(other.getUserID());
         }
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
-          bitField0_ |= 0x00000002;
           onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
@@ -2193,18 +2162,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -2216,12 +2185,12 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 userID_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 18: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 18
               default: {
@@ -2239,14 +2208,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long userID_ ;
       /**
        * <code>uint64 userID = 1;</code>
        * @return The userID.
        */
-      @java.lang.Override
+      @Override
       public long getUserID() {
         return userID_;
       }
@@ -2256,9 +2224,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUserID(long value) {
-
+        
         userID_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -2267,27 +2234,27 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUserID() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         userID_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>string currency = 2;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -2295,12 +2262,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -2313,10 +2280,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         currency_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -2325,8 +2294,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -2336,23 +2305,25 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         currency_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -2361,22 +2332,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.CreateWalletReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq DEFAULT_INSTANCE;
+    private static final CreateWalletReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq();
+      DEFAULT_INSTANCE = new CreateWalletReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq getDefaultInstance() {
+    public static CreateWalletReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<CreateWalletReq>
-            PARSER = new com.google.protobuf.AbstractParser<CreateWalletReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<CreateWalletReq>() {
+      @Override
       public CreateWalletReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -2386,7 +2357,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -2396,21 +2367,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<CreateWalletReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletReq getDefaultInstanceForType() {
+    @Override
+    public CreateWalletReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface CreateWalletResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.CreateWalletRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.CreateWalletRes)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 walletID = 1;</code>
@@ -2422,10 +2393,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.CreateWalletRes}
    */
   public static final class CreateWalletRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.CreateWalletRes)
-          CreateWalletResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.CreateWalletRes)
+      CreateWalletResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use CreateWalletRes.newBuilder() to construct.
     private CreateWalletRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -2433,39 +2404,44 @@ public final class WalletGrpc {
     private CreateWalletRes() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new CreateWalletRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_CreateWalletRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              CreateWalletRes.class, Builder.class);
     }
 
     public static final int WALLETID_FIELD_NUMBER = 1;
-    private long walletID_ = 0L;
+    private long walletID_;
     /**
      * <code>uint64 walletID = 1;</code>
      * @return The walletID.
      */
-    @java.lang.Override
+    @Override
     public long getWalletID() {
       return walletID_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2475,16 +2451,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (walletID_ != 0L) {
         output.writeUInt64(1, walletID_);
       }
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2492,30 +2468,30 @@ public final class WalletGrpc {
       size = 0;
       if (walletID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, walletID_);
+          .computeUInt64Size(1, walletID_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes)) {
+      if (!(obj instanceof CreateWalletRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes) obj;
+      CreateWalletRes other = (CreateWalletRes) obj;
 
       if (getWalletID()
-              != other.getWalletID()) return false;
+          != other.getWalletID()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2524,101 +2500,99 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + WALLETID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getWalletID());
+          getWalletID());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static CreateWalletRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static CreateWalletRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static CreateWalletRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static CreateWalletRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static CreateWalletRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes prototype) {
+    public static Builder newBuilder(CreateWalletRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2626,20 +2600,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.CreateWalletRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.CreateWalletRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.CreateWalletRes)
+        CreateWalletResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_CreateWalletRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                CreateWalletRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.newBuilder()
@@ -2648,97 +2622,90 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         walletID_ = 0L;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_CreateWalletRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.getDefaultInstance();
+      @Override
+      public CreateWalletRes getDefaultInstanceForType() {
+        return CreateWalletRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes result = buildPartial();
+      @Override
+      public CreateWalletRes build() {
+        CreateWalletRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public CreateWalletRes buildPartial() {
+        CreateWalletRes result = new CreateWalletRes(this);
+        result.walletID_ = walletID_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.walletID_ = walletID_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes)other);
+        if (other instanceof CreateWalletRes) {
+          return mergeFrom((CreateWalletRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(CreateWalletRes other) {
+        if (other == CreateWalletRes.getDefaultInstance()) return this;
         if (other.getWalletID() != 0L) {
           setWalletID(other.getWalletID());
         }
@@ -2747,18 +2714,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -2770,7 +2737,7 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 walletID_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               default: {
@@ -2788,14 +2755,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long walletID_ ;
       /**
        * <code>uint64 walletID = 1;</code>
        * @return The walletID.
        */
-      @java.lang.Override
+      @Override
       public long getWalletID() {
         return walletID_;
       }
@@ -2805,9 +2771,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setWalletID(long value) {
-
+        
         walletID_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -2816,20 +2781,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearWalletID() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         walletID_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -2838,22 +2803,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.CreateWalletRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes DEFAULT_INSTANCE;
+    private static final CreateWalletRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes();
+      DEFAULT_INSTANCE = new CreateWalletRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes getDefaultInstance() {
+    public static CreateWalletRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<CreateWalletRes>
-            PARSER = new com.google.protobuf.AbstractParser<CreateWalletRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<CreateWalletRes>() {
+      @Override
       public CreateWalletRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -2863,7 +2828,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -2873,21 +2838,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<CreateWalletRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.CreateWalletRes getDefaultInstanceForType() {
+    @Override
+    public CreateWalletRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetWalletsReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetWalletsReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetWalletsReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -2920,24 +2885,24 @@ public final class WalletGrpc {
      * <code>optional string currency = 3;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>optional string currency = 3;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
 
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.WalletCase getWalletCase();
+    public GetWalletsReq.WalletCase getWalletCase();
   }
   /**
    * Protobuf type {@code wallet.GetWalletsReq}
    */
   public static final class GetWalletsReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetWalletsReq)
-          GetWalletsReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetWalletsReq)
+      GetWalletsReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetWalletsReq.newBuilder() to construct.
     private GetWalletsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -2946,33 +2911,37 @@ public final class WalletGrpc {
       currency_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetWalletsReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetWalletsReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetWalletsReq.class, Builder.class);
     }
 
     private int bitField0_;
     private int walletCase_ = 0;
-    @SuppressWarnings("serial")
-    private java.lang.Object wallet_;
+    private Object wallet_;
     public enum WalletCase
-            implements com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+        implements com.google.protobuf.Internal.EnumLite,
+            InternalOneOfEnum {
       ID(1),
       USERID(2),
       WALLET_NOT_SET(0);
@@ -2985,7 +2954,7 @@ public final class WalletGrpc {
        * @return The enum associated with the given number.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static WalletCase valueOf(int value) {
         return forNumber(value);
       }
@@ -3006,7 +2975,7 @@ public final class WalletGrpc {
     public WalletCase
     getWalletCase() {
       return WalletCase.forNumber(
-              walletCase_);
+          walletCase_);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -3014,7 +2983,7 @@ public final class WalletGrpc {
      * <code>uint64 id = 1;</code>
      * @return Whether the id field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasId() {
       return walletCase_ == 1;
     }
@@ -3022,10 +2991,10 @@ public final class WalletGrpc {
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       if (walletCase_ == 1) {
-        return (java.lang.Long) wallet_;
+        return (Long) wallet_;
       }
       return 0L;
     }
@@ -3035,7 +3004,7 @@ public final class WalletGrpc {
      * <code>uint64 userID = 2;</code>
      * @return Whether the userID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasUserID() {
       return walletCase_ == 2;
     }
@@ -3043,22 +3012,21 @@ public final class WalletGrpc {
      * <code>uint64 userID = 2;</code>
      * @return The userID.
      */
-    @java.lang.Override
+    @Override
     public long getUserID() {
       if (walletCase_ == 2) {
-        return (java.lang.Long) wallet_;
+        return (Long) wallet_;
       }
       return 0L;
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>optional string currency = 3;</code>
      * @return Whether the currency field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCurrency() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -3066,15 +3034,15 @@ public final class WalletGrpc {
      * <code>optional string currency = 3;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -3083,14 +3051,14 @@ public final class WalletGrpc {
      * <code>optional string currency = 3;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -3099,7 +3067,7 @@ public final class WalletGrpc {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -3109,16 +3077,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (walletCase_ == 1) {
         output.writeUInt64(
-                1, (long)((java.lang.Long) wallet_));
+            1, (long)((Long) wallet_));
       }
       if (walletCase_ == 2) {
         output.writeUInt64(
-                2, (long)((java.lang.Long) wallet_));
+            2, (long)((Long) wallet_));
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, currency_);
@@ -3126,7 +3094,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -3134,13 +3102,13 @@ public final class WalletGrpc {
       size = 0;
       if (walletCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(
-                        1, (long)((java.lang.Long) wallet_));
+          .computeUInt64Size(
+              1, (long)((Long) wallet_));
       }
       if (walletCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(
-                        2, (long)((java.lang.Long) wallet_));
+          .computeUInt64Size(
+              2, (long)((Long) wallet_));
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, currency_);
@@ -3150,30 +3118,30 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq)) {
+      if (!(obj instanceof GetWalletsReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq) obj;
+      GetWalletsReq other = (GetWalletsReq) obj;
 
       if (hasCurrency() != other.hasCurrency()) return false;
       if (hasCurrency()) {
         if (!getCurrency()
-                .equals(other.getCurrency())) return false;
+            .equals(other.getCurrency())) return false;
       }
       if (!getWalletCase().equals(other.getWalletCase())) return false;
       switch (walletCase_) {
         case 1:
           if (getId()
-                  != other.getId()) return false;
+              != other.getId()) return false;
           break;
         case 2:
           if (getUserID()
-                  != other.getUserID()) return false;
+              != other.getUserID()) return false;
           break;
         case 0:
         default:
@@ -3182,7 +3150,7 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -3197,12 +3165,12 @@ public final class WalletGrpc {
         case 1:
           hash = (37 * hash) + ID_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                  getId());
+              getId());
           break;
         case 2:
           hash = (37 * hash) + USERID_FIELD_NUMBER;
           hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                  getUserID());
+              getUserID());
           break;
         case 0:
         default:
@@ -3212,95 +3180,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetWalletsReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetWalletsReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetWalletsReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq prototype) {
+    public static Builder newBuilder(GetWalletsReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3308,20 +3274,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetWalletsReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetWalletsReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetWalletsReq)
+        GetWalletsReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetWalletsReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetWalletsReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.newBuilder()
@@ -3330,111 +3296,108 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         currency_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
         walletCase_ = 0;
         wallet_ = null;
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetWalletsReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.getDefaultInstance();
+      @Override
+      public GetWalletsReq getDefaultInstanceForType() {
+        return GetWalletsReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq result = buildPartial();
+      @Override
+      public GetWalletsReq build() {
+        GetWalletsReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        buildPartialOneofs(result);
+      @Override
+      public GetWalletsReq buildPartial() {
+        GetWalletsReq result = new GetWalletsReq(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (walletCase_ == 1) {
+          result.wallet_ = wallet_;
+        }
+        if (walletCase_ == 2) {
+          result.wallet_ = wallet_;
+        }
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.currency_ = currency_;
+        result.bitField0_ = to_bitField0_;
+        result.walletCase_ = walletCase_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq result) {
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.currency_ = currency_;
-          to_bitField0_ |= 0x00000001;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      private void buildPartialOneofs(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq result) {
-        result.walletCase_ = walletCase_;
-        result.wallet_ = this.wallet_;
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq)other);
+        if (other instanceof GetWalletsReq) {
+          return mergeFrom((GetWalletsReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetWalletsReq other) {
+        if (other == GetWalletsReq.getDefaultInstance()) return this;
         if (other.hasCurrency()) {
+          bitField0_ |= 0x00000001;
           currency_ = other.currency_;
-          bitField0_ |= 0x00000004;
           onChanged();
         }
         switch (other.getWalletCase()) {
@@ -3455,18 +3418,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -3488,7 +3451,7 @@ public final class WalletGrpc {
               } // case 16
               case 26: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000001;
                 break;
               } // case 26
               default: {
@@ -3507,11 +3470,11 @@ public final class WalletGrpc {
         return this;
       }
       private int walletCase_ = 0;
-      private java.lang.Object wallet_;
+      private Object wallet_;
       public WalletCase
-      getWalletCase() {
+          getWalletCase() {
         return WalletCase.forNumber(
-                walletCase_);
+            walletCase_);
       }
 
       public Builder clearWallet() {
@@ -3536,7 +3499,7 @@ public final class WalletGrpc {
        */
       public long getId() {
         if (walletCase_ == 1) {
-          return (java.lang.Long) wallet_;
+          return (Long) wallet_;
         }
         return 0L;
       }
@@ -3546,7 +3509,6 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
         walletCase_ = 1;
         wallet_ = value;
         onChanged();
@@ -3578,7 +3540,7 @@ public final class WalletGrpc {
        */
       public long getUserID() {
         if (walletCase_ == 2) {
-          return (java.lang.Long) wallet_;
+          return (Long) wallet_;
         }
         return 0L;
       }
@@ -3588,7 +3550,6 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUserID(long value) {
-
         walletCase_ = 2;
         wallet_ = value;
         onChanged();
@@ -3607,28 +3568,28 @@ public final class WalletGrpc {
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>optional string currency = 3;</code>
        * @return Whether the currency field is set.
        */
       public boolean hasCurrency() {
-        return ((bitField0_ & 0x00000004) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string currency = 3;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -3636,12 +3597,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -3654,10 +3615,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         currency_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -3666,8 +3629,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -3677,23 +3640,25 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000001;
         currency_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -3702,22 +3667,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetWalletsReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq DEFAULT_INSTANCE;
+    private static final GetWalletsReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq();
+      DEFAULT_INSTANCE = new GetWalletsReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq getDefaultInstance() {
+    public static GetWalletsReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetWalletsReq>
-            PARSER = new com.google.protobuf.AbstractParser<GetWalletsReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetWalletsReq>() {
+      @Override
       public GetWalletsReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -3727,7 +3692,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -3737,21 +3702,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetWalletsReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsReq getDefaultInstanceForType() {
+    @Override
+    public GetWalletsReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface WalletOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.Wallet)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.Wallet)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -3769,25 +3734,25 @@ public final class WalletGrpc {
      * <code>string amount = 3;</code>
      * @return The amount.
      */
-    java.lang.String getAmount();
+    String getAmount();
     /**
      * <code>string amount = 3;</code>
      * @return The bytes for amount.
      */
     com.google.protobuf.ByteString
-    getAmountBytes();
+        getAmountBytes();
 
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
 
     /**
      * <code>int64 createdAt = 5;</code>
@@ -3805,10 +3770,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.Wallet}
    */
   public static final class Wallet extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.Wallet)
-          WalletOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.Wallet)
+      WalletOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use Wallet.newBuilder() to construct.
     private Wallet(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -3818,64 +3783,68 @@ public final class WalletGrpc {
       currency_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new Wallet();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Wallet_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_Wallet_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Wallet_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_Wallet_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              Wallet.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     public static final int USERID_FIELD_NUMBER = 2;
-    private long userID_ = 0L;
+    private long userID_;
     /**
      * <code>uint64 userID = 2;</code>
      * @return The userID.
      */
-    @java.lang.Override
+    @Override
     public long getUserID() {
       return userID_;
     }
 
     public static final int AMOUNT_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object amount_ = "";
+    private volatile Object amount_;
     /**
      * <code>string amount = 3;</code>
      * @return The amount.
      */
-    @java.lang.Override
-    public java.lang.String getAmount() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getAmount() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         amount_ = s;
         return s;
       }
@@ -3884,14 +3853,14 @@ public final class WalletGrpc {
      * <code>string amount = 3;</code>
      * @return The bytes for amount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getAmountBytes() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getAmountBytes() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         amount_ = b;
         return b;
       } else {
@@ -3900,21 +3869,20 @@ public final class WalletGrpc {
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -3923,14 +3891,14 @@ public final class WalletGrpc {
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -3939,29 +3907,29 @@ public final class WalletGrpc {
     }
 
     public static final int CREATEDAT_FIELD_NUMBER = 5;
-    private long createdAt_ = 0L;
+    private long createdAt_;
     /**
      * <code>int64 createdAt = 5;</code>
      * @return The createdAt.
      */
-    @java.lang.Override
+    @Override
     public long getCreatedAt() {
       return createdAt_;
     }
 
     public static final int UPDATEDAT_FIELD_NUMBER = 6;
-    private long updatedAt_ = 0L;
+    private long updatedAt_;
     /**
      * <code>int64 updatedAt = 6;</code>
      * @return The updatedAt.
      */
-    @java.lang.Override
+    @Override
     public long getUpdatedAt() {
       return updatedAt_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -3971,9 +3939,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
@@ -3995,7 +3963,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -4003,11 +3971,11 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       if (userID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(2, userID_);
+          .computeUInt64Size(2, userID_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, amount_);
@@ -4017,44 +3985,44 @@ public final class WalletGrpc {
       }
       if (createdAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(5, createdAt_);
+          .computeInt64Size(5, createdAt_);
       }
       if (updatedAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(6, updatedAt_);
+          .computeInt64Size(6, updatedAt_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet)) {
+      if (!(obj instanceof Wallet)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet) obj;
+      Wallet other = (Wallet) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (getUserID()
-              != other.getUserID()) return false;
+          != other.getUserID()) return false;
       if (!getAmount()
-              .equals(other.getAmount())) return false;
+          .equals(other.getAmount())) return false;
       if (!getCurrency()
-              .equals(other.getCurrency())) return false;
+          .equals(other.getCurrency())) return false;
       if (getCreatedAt()
-              != other.getCreatedAt()) return false;
+          != other.getCreatedAt()) return false;
       if (getUpdatedAt()
-              != other.getUpdatedAt()) return false;
+          != other.getUpdatedAt()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -4063,114 +4031,112 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (37 * hash) + USERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUserID());
+          getUserID());
       hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + getAmount().hashCode();
       hash = (37 * hash) + CURRENCY_FIELD_NUMBER;
       hash = (53 * hash) + getCurrency().hashCode();
       hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getCreatedAt());
+          getCreatedAt());
       hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUpdatedAt());
+          getUpdatedAt());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static Wallet parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static Wallet parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Wallet parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static Wallet parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Wallet parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static Wallet parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static Wallet parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet prototype) {
+    public static Builder newBuilder(Wallet prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4178,20 +4144,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.Wallet}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.Wallet)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.Wallet)
+        WalletOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Wallet_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_Wallet_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Wallet_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_Wallet_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                Wallet.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.newBuilder()
@@ -4200,117 +4166,105 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         userID_ = 0L;
+
         amount_ = "";
+
         currency_ = "";
+
         createdAt_ = 0L;
+
         updatedAt_ = 0L;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_Wallet_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_Wallet_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.getDefaultInstance();
+      @Override
+      public Wallet getDefaultInstanceForType() {
+        return Wallet.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet result = buildPartial();
+      @Override
+      public Wallet build() {
+        Wallet result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public Wallet buildPartial() {
+        Wallet result = new Wallet(this);
+        result.id_ = id_;
+        result.userID_ = userID_;
+        result.amount_ = amount_;
+        result.currency_ = currency_;
+        result.createdAt_ = createdAt_;
+        result.updatedAt_ = updatedAt_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.userID_ = userID_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.amount_ = amount_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.currency_ = currency_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet)other);
+        if (other instanceof Wallet) {
+          return mergeFrom((Wallet)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.getDefaultInstance()) return this;
+      public Builder mergeFrom(Wallet other) {
+        if (other == Wallet.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -4319,12 +4273,10 @@ public final class WalletGrpc {
         }
         if (!other.getAmount().isEmpty()) {
           amount_ = other.amount_;
-          bitField0_ |= 0x00000004;
           onChanged();
         }
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
-          bitField0_ |= 0x00000008;
           onChanged();
         }
         if (other.getCreatedAt() != 0L) {
@@ -4338,18 +4290,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -4361,32 +4313,32 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 userID_ = input.readUInt64();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               case 26: {
                 amount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
+
                 break;
               } // case 26
               case 34: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
+
                 break;
               } // case 34
               case 40: {
                 createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000010;
+
                 break;
               } // case 40
               case 48: {
                 updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00000020;
+
                 break;
               } // case 48
               default: {
@@ -4404,14 +4356,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long id_ ;
       /**
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -4421,9 +4372,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -4432,7 +4382,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
@@ -4443,7 +4393,7 @@ public final class WalletGrpc {
        * <code>uint64 userID = 2;</code>
        * @return The userID.
        */
-      @java.lang.Override
+      @Override
       public long getUserID() {
         return userID_;
       }
@@ -4453,9 +4403,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUserID(long value) {
-
+        
         userID_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -4464,27 +4413,27 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUserID() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         userID_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object amount_ = "";
+      private Object amount_ = "";
       /**
        * <code>string amount = 3;</code>
        * @return The amount.
        */
-      public java.lang.String getAmount() {
-        java.lang.Object ref = amount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAmount() {
+        Object ref = amount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           amount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4492,12 +4441,12 @@ public final class WalletGrpc {
        * @return The bytes for amount.
        */
       public com.google.protobuf.ByteString
-      getAmountBytes() {
-        java.lang.Object ref = amount_;
+          getAmountBytes() {
+        Object ref = amount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           amount_ = b;
           return b;
         } else {
@@ -4510,10 +4459,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         amount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -4522,8 +4473,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAmount() {
+        
         amount_ = getDefaultInstance().getAmount();
-        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -4533,30 +4484,32 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         amount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>string currency = 4;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4564,12 +4517,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -4582,10 +4535,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -4594,8 +4549,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -4605,11 +4560,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -4619,7 +4576,7 @@ public final class WalletGrpc {
        * <code>int64 createdAt = 5;</code>
        * @return The createdAt.
        */
-      @java.lang.Override
+      @Override
       public long getCreatedAt() {
         return createdAt_;
       }
@@ -4629,9 +4586,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCreatedAt(long value) {
-
+        
         createdAt_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -4640,7 +4596,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        
         createdAt_ = 0L;
         onChanged();
         return this;
@@ -4651,7 +4607,7 @@ public final class WalletGrpc {
        * <code>int64 updatedAt = 6;</code>
        * @return The updatedAt.
        */
-      @java.lang.Override
+      @Override
       public long getUpdatedAt() {
         return updatedAt_;
       }
@@ -4661,9 +4617,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUpdatedAt(long value) {
-
+        
         updatedAt_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -4672,20 +4627,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        
         updatedAt_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -4694,22 +4649,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.Wallet)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet DEFAULT_INSTANCE;
+    private static final Wallet DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet();
+      DEFAULT_INSTANCE = new Wallet();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getDefaultInstance() {
+    public static Wallet getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Wallet>
-            PARSER = new com.google.protobuf.AbstractParser<Wallet>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<Wallet>() {
+      @Override
       public Wallet parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -4719,7 +4674,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -4729,31 +4684,31 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Wallet> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getDefaultInstanceForType() {
+    @Override
+    public Wallet getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetWalletsResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetWalletsRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetWalletsRes)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet>
-    getWalletsList();
+    java.util.List<Wallet>
+        getWalletsList();
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getWallets(int index);
+    Wallet getWallets(int index);
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
@@ -4761,22 +4716,22 @@ public final class WalletGrpc {
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder>
-    getWalletsOrBuilderList();
+    java.util.List<? extends WalletOrBuilder>
+        getWalletsOrBuilderList();
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder getWalletsOrBuilder(
-            int index);
+    WalletOrBuilder getWalletsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code wallet.GetWalletsRes}
    */
   public static final class GetWalletsRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetWalletsRes)
-          GetWalletsResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetWalletsRes)
+      GetWalletsResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetWalletsRes.newBuilder() to construct.
     private GetWalletsRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -4785,69 +4740,73 @@ public final class WalletGrpc {
       wallets_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetWalletsRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetWalletsRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetWalletsRes.class, Builder.class);
     }
 
     public static final int WALLETS_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet> wallets_;
+    private java.util.List<Wallet> wallets_;
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    @java.lang.Override
-    public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet> getWalletsList() {
+    @Override
+    public java.util.List<Wallet> getWalletsList() {
       return wallets_;
     }
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    @java.lang.Override
-    public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder>
-    getWalletsOrBuilderList() {
+    @Override
+    public java.util.List<? extends WalletOrBuilder>
+        getWalletsOrBuilderList() {
       return wallets_;
     }
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    @java.lang.Override
+    @Override
     public int getWalletsCount() {
       return wallets_.size();
     }
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getWallets(int index) {
+    @Override
+    public Wallet getWallets(int index) {
       return wallets_.get(index);
     }
     /**
      * <code>repeated .wallet.Wallet wallets = 1;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder getWalletsOrBuilder(
-            int index) {
+    @Override
+    public WalletOrBuilder getWalletsOrBuilder(
+        int index) {
       return wallets_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -4857,16 +4816,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       for (int i = 0; i < wallets_.size(); i++) {
         output.writeMessage(1, wallets_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -4874,30 +4833,30 @@ public final class WalletGrpc {
       size = 0;
       for (int i = 0; i < wallets_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(1, wallets_.get(i));
+          .computeMessageSize(1, wallets_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes)) {
+      if (!(obj instanceof GetWalletsRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes) obj;
+      GetWalletsRes other = (GetWalletsRes) obj;
 
       if (!getWalletsList()
-              .equals(other.getWalletsList())) return false;
+          .equals(other.getWalletsList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -4913,95 +4872,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetWalletsRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetWalletsRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetWalletsRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetWalletsRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetWalletsRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes prototype) {
+    public static Builder newBuilder(GetWalletsRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5009,20 +4966,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetWalletsRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetWalletsRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetWalletsRes)
+        GetWalletsResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetWalletsRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetWalletsRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.newBuilder()
@@ -5031,14 +4988,13 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         if (walletsBuilder_ == null) {
           wallets_ = java.util.Collections.emptyList();
         } else {
@@ -5049,36 +5005,30 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetWalletsRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.getDefaultInstance();
+      @Override
+      public GetWalletsRes getDefaultInstanceForType() {
+        return GetWalletsRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes result = buildPartial();
+      @Override
+      public GetWalletsRes build() {
+        GetWalletsRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes(this);
-        buildPartialRepeatedFields(result);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartialRepeatedFields(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes result) {
+      @Override
+      public GetWalletsRes buildPartial() {
+        GetWalletsRes result = new GetWalletsRes(this);
+        int from_bitField0_ = bitField0_;
         if (walletsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             wallets_ = java.util.Collections.unmodifiableList(wallets_);
@@ -5088,56 +5038,54 @@ public final class WalletGrpc {
         } else {
           result.wallets_ = walletsBuilder_.build();
         }
+        onBuilt();
+        return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes result) {
-        int from_bitField0_ = bitField0_;
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes)other);
+        if (other instanceof GetWalletsRes) {
+          return mergeFrom((GetWalletsRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetWalletsRes other) {
+        if (other == GetWalletsRes.getDefaultInstance()) return this;
         if (walletsBuilder_ == null) {
           if (!other.wallets_.isEmpty()) {
             if (wallets_.isEmpty()) {
@@ -5156,9 +5104,9 @@ public final class WalletGrpc {
               walletsBuilder_ = null;
               wallets_ = other.wallets_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              walletsBuilder_ =
-                      com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                              getWalletsFieldBuilder() : null;
+              walletsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getWalletsFieldBuilder() : null;
             } else {
               walletsBuilder_.addAllMessages(other.wallets_);
             }
@@ -5169,18 +5117,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -5191,10 +5139,10 @@ public final class WalletGrpc {
                 done = true;
                 break;
               case 10: {
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet m =
-                        input.readMessage(
-                                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.parser(),
-                                extensionRegistry);
+                Wallet m =
+                    input.readMessage(
+                        Wallet.parser(),
+                        extensionRegistry);
                 if (walletsBuilder_ == null) {
                   ensureWalletsIsMutable();
                   wallets_.add(m);
@@ -5220,22 +5168,22 @@ public final class WalletGrpc {
       }
       private int bitField0_;
 
-      private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet> wallets_ =
-              java.util.Collections.emptyList();
+      private java.util.List<Wallet> wallets_ =
+        java.util.Collections.emptyList();
       private void ensureWalletsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          wallets_ = new java.util.ArrayList<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet>(wallets_);
+          wallets_ = new java.util.ArrayList<Wallet>(wallets_);
           bitField0_ |= 0x00000001;
-        }
+         }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder> walletsBuilder_;
+          Wallet, Wallet.Builder, WalletOrBuilder> walletsBuilder_;
 
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet> getWalletsList() {
+      public java.util.List<Wallet> getWalletsList() {
         if (walletsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(wallets_);
         } else {
@@ -5255,7 +5203,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet getWallets(int index) {
+      public Wallet getWallets(int index) {
         if (walletsBuilder_ == null) {
           return wallets_.get(index);
         } else {
@@ -5266,7 +5214,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder setWallets(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet value) {
+          int index, Wallet value) {
         if (walletsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5283,7 +5231,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder setWallets(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder builderForValue) {
+          int index, Wallet.Builder builderForValue) {
         if (walletsBuilder_ == null) {
           ensureWalletsIsMutable();
           wallets_.set(index, builderForValue.build());
@@ -5296,7 +5244,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public Builder addWallets(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet value) {
+      public Builder addWallets(Wallet value) {
         if (walletsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5313,7 +5261,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder addWallets(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet value) {
+          int index, Wallet value) {
         if (walletsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5330,7 +5278,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder addWallets(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder builderForValue) {
+          Wallet.Builder builderForValue) {
         if (walletsBuilder_ == null) {
           ensureWalletsIsMutable();
           wallets_.add(builderForValue.build());
@@ -5344,7 +5292,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder addWallets(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder builderForValue) {
+          int index, Wallet.Builder builderForValue) {
         if (walletsBuilder_ == null) {
           ensureWalletsIsMutable();
           wallets_.add(index, builderForValue.build());
@@ -5358,11 +5306,11 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
       public Builder addAllWallets(
-              java.lang.Iterable<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet> values) {
+          Iterable<? extends Wallet> values) {
         if (walletsBuilder_ == null) {
           ensureWalletsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                  values, wallets_);
+              values, wallets_);
           onChanged();
         } else {
           walletsBuilder_.addAllMessages(values);
@@ -5398,15 +5346,15 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder getWalletsBuilder(
-              int index) {
+      public Wallet.Builder getWalletsBuilder(
+          int index) {
         return getWalletsFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder getWalletsOrBuilder(
-              int index) {
+      public WalletOrBuilder getWalletsOrBuilder(
+          int index) {
         if (walletsBuilder_ == null) {
           return wallets_.get(index);  } else {
           return walletsBuilder_.getMessageOrBuilder(index);
@@ -5415,8 +5363,8 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder>
-      getWalletsOrBuilderList() {
+      public java.util.List<? extends WalletOrBuilder>
+           getWalletsOrBuilderList() {
         if (walletsBuilder_ != null) {
           return walletsBuilder_.getMessageOrBuilderList();
         } else {
@@ -5426,31 +5374,31 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder addWalletsBuilder() {
+      public Wallet.Builder addWalletsBuilder() {
         return getWalletsFieldBuilder().addBuilder(
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.getDefaultInstance());
+            Wallet.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder addWalletsBuilder(
-              int index) {
+      public Wallet.Builder addWalletsBuilder(
+          int index) {
         return getWalletsFieldBuilder().addBuilder(
-                index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.getDefaultInstance());
+            index, Wallet.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.Wallet wallets = 1;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder>
-      getWalletsBuilderList() {
+      public java.util.List<Wallet.Builder>
+           getWalletsBuilderList() {
         return getWalletsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder>
-      getWalletsFieldBuilder() {
+          Wallet, Wallet.Builder, WalletOrBuilder>
+          getWalletsFieldBuilder() {
         if (walletsBuilder_ == null) {
           walletsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Wallet.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.WalletOrBuilder>(
+              Wallet, Wallet.Builder, WalletOrBuilder>(
                   wallets_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -5459,15 +5407,15 @@ public final class WalletGrpc {
         }
         return walletsBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -5476,22 +5424,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetWalletsRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes DEFAULT_INSTANCE;
+    private static final GetWalletsRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes();
+      DEFAULT_INSTANCE = new GetWalletsRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes getDefaultInstance() {
+    public static GetWalletsRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetWalletsRes>
-            PARSER = new com.google.protobuf.AbstractParser<GetWalletsRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetWalletsRes>() {
+      @Override
       public GetWalletsRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -5501,7 +5449,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -5511,21 +5459,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetWalletsRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetWalletsRes getDefaultInstanceForType() {
+    @Override
+    public GetWalletsRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface DeleteWalletReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.DeleteWalletReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.DeleteWalletReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -5537,10 +5485,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.DeleteWalletReq}
    */
   public static final class DeleteWalletReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.DeleteWalletReq)
-          DeleteWalletReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.DeleteWalletReq)
+      DeleteWalletReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use DeleteWalletReq.newBuilder() to construct.
     private DeleteWalletReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -5548,39 +5496,44 @@ public final class WalletGrpc {
     private DeleteWalletReq() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new DeleteWalletReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_DeleteWalletReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              DeleteWalletReq.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -5590,16 +5543,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -5607,30 +5560,30 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq)) {
+      if (!(obj instanceof DeleteWalletReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq) obj;
+      DeleteWalletReq other = (DeleteWalletReq) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -5639,101 +5592,99 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq prototype) {
+    public static Builder newBuilder(DeleteWalletReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5741,20 +5692,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.DeleteWalletReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.DeleteWalletReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.DeleteWalletReq)
+        DeleteWalletReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                DeleteWalletReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.newBuilder()
@@ -5763,97 +5714,90 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.getDefaultInstance();
+      @Override
+      public DeleteWalletReq getDefaultInstanceForType() {
+        return DeleteWalletReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq result = buildPartial();
+      @Override
+      public DeleteWalletReq build() {
+        DeleteWalletReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public DeleteWalletReq buildPartial() {
+        DeleteWalletReq result = new DeleteWalletReq(this);
+        result.id_ = id_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq)other);
+        if (other instanceof DeleteWalletReq) {
+          return mergeFrom((DeleteWalletReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(DeleteWalletReq other) {
+        if (other == DeleteWalletReq.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -5862,18 +5806,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -5885,7 +5829,7 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               default: {
@@ -5903,14 +5847,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long id_ ;
       /**
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -5920,9 +5863,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -5931,20 +5873,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -5953,22 +5895,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.DeleteWalletReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq DEFAULT_INSTANCE;
+    private static final DeleteWalletReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq();
+      DEFAULT_INSTANCE = new DeleteWalletReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq getDefaultInstance() {
+    public static DeleteWalletReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<DeleteWalletReq>
-            PARSER = new com.google.protobuf.AbstractParser<DeleteWalletReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<DeleteWalletReq>() {
+      @Override
       public DeleteWalletReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -5978,7 +5920,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -5988,30 +5930,30 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<DeleteWalletReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletReq getDefaultInstanceForType() {
+    @Override
+    public DeleteWalletReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface DeleteWalletResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.DeleteWalletRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.DeleteWalletRes)
+      com.google.protobuf.MessageOrBuilder {
   }
   /**
    * Protobuf type {@code wallet.DeleteWalletRes}
    */
   public static final class DeleteWalletRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.DeleteWalletRes)
-          DeleteWalletResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.DeleteWalletRes)
+      DeleteWalletResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use DeleteWalletRes.newBuilder() to construct.
     private DeleteWalletRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -6019,28 +5961,33 @@ public final class WalletGrpc {
     private DeleteWalletRes() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new DeleteWalletRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_DeleteWalletRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              DeleteWalletRes.class, Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -6050,13 +5997,13 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -6067,21 +6014,21 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes)) {
+      if (!(obj instanceof DeleteWalletRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes) obj;
+      DeleteWalletRes other = (DeleteWalletRes) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -6093,95 +6040,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static DeleteWalletRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static DeleteWalletRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes prototype) {
+    public static Builder newBuilder(DeleteWalletRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6189,20 +6134,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.DeleteWalletRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.DeleteWalletRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.DeleteWalletRes)
+        DeleteWalletResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                DeleteWalletRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.newBuilder()
@@ -6211,104 +6156,104 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_DeleteWalletRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.getDefaultInstance();
+      @Override
+      public DeleteWalletRes getDefaultInstanceForType() {
+        return DeleteWalletRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes result = buildPartial();
+      @Override
+      public DeleteWalletRes build() {
+        DeleteWalletRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes(this);
+      @Override
+      public DeleteWalletRes buildPartial() {
+        DeleteWalletRes result = new DeleteWalletRes(this);
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes)other);
+        if (other instanceof DeleteWalletRes) {
+          return mergeFrom((DeleteWalletRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(DeleteWalletRes other) {
+        if (other == DeleteWalletRes.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -6333,15 +6278,15 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -6350,22 +6295,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.DeleteWalletRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes DEFAULT_INSTANCE;
+    private static final DeleteWalletRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes();
+      DEFAULT_INSTANCE = new DeleteWalletRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes getDefaultInstance() {
+    public static DeleteWalletRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<DeleteWalletRes>
-            PARSER = new com.google.protobuf.AbstractParser<DeleteWalletRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<DeleteWalletRes>() {
+      @Override
       public DeleteWalletRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -6375,7 +6320,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -6385,21 +6330,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<DeleteWalletRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.DeleteWalletRes getDefaultInstanceForType() {
+    @Override
+    public DeleteWalletRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface TransactionReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.TransactionReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.TransactionReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 walletID = 1;</code>
@@ -6416,31 +6361,31 @@ public final class WalletGrpc {
      * <code>.wallet.Action action = 2;</code>
      * @return The action.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction();
+    Action getAction();
 
     /**
      * <code>string amount = 3;</code>
      * @return The amount.
      */
-    java.lang.String getAmount();
+    String getAmount();
     /**
      * <code>string amount = 3;</code>
      * @return The bytes for amount.
      */
     com.google.protobuf.ByteString
-    getAmountBytes();
+        getAmountBytes();
 
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
 
     /**
      * <code>uint64 committerID = 5;</code>
@@ -6457,13 +6402,13 @@ public final class WalletGrpc {
      * <code>optional string remark = 6;</code>
      * @return The remark.
      */
-    java.lang.String getRemark();
+    String getRemark();
     /**
      * <code>optional string remark = 6;</code>
      * @return The bytes for remark.
      */
     com.google.protobuf.ByteString
-    getRemarkBytes();
+        getRemarkBytes();
 
     /**
      * <code>optional string beforeAmount = 7;</code>
@@ -6474,22 +6419,22 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 7;</code>
      * @return The beforeAmount.
      */
-    java.lang.String getBeforeAmount();
+    String getBeforeAmount();
     /**
      * <code>optional string beforeAmount = 7;</code>
      * @return The bytes for beforeAmount.
      */
     com.google.protobuf.ByteString
-    getBeforeAmountBytes();
+        getBeforeAmountBytes();
   }
   /**
    * Protobuf type {@code wallet.TransactionReq}
    */
   public static final class TransactionReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.TransactionReq)
-          TransactionReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.TransactionReq)
+      TransactionReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use TransactionReq.newBuilder() to construct.
     private TransactionReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -6502,72 +6447,77 @@ public final class WalletGrpc {
       beforeAmount_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new TransactionReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_TransactionReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TransactionReq.class, Builder.class);
     }
 
     private int bitField0_;
     public static final int WALLETID_FIELD_NUMBER = 1;
-    private long walletID_ = 0L;
+    private long walletID_;
     /**
      * <code>uint64 walletID = 1;</code>
      * @return The walletID.
      */
-    @java.lang.Override
+    @Override
     public long getWalletID() {
       return walletID_;
     }
 
     public static final int ACTION_FIELD_NUMBER = 2;
-    private int action_ = 0;
+    private int action_;
     /**
      * <code>.wallet.Action action = 2;</code>
      * @return The enum numeric value on the wire for action.
      */
-    @java.lang.Override public int getActionValue() {
+    @Override public int getActionValue() {
       return action_;
     }
     /**
      * <code>.wallet.Action action = 2;</code>
      * @return The action.
      */
-    @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction() {
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.forNumber(action_);
-      return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.UNRECOGNIZED : result;
+    @Override public Action getAction() {
+      @SuppressWarnings("deprecation")
+      Action result = Action.valueOf(action_);
+      return result == null ? Action.UNRECOGNIZED : result;
     }
 
     public static final int AMOUNT_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object amount_ = "";
+    private volatile Object amount_;
     /**
      * <code>string amount = 3;</code>
      * @return The amount.
      */
-    @java.lang.Override
-    public java.lang.String getAmount() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getAmount() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         amount_ = s;
         return s;
       }
@@ -6576,14 +6526,14 @@ public final class WalletGrpc {
      * <code>string amount = 3;</code>
      * @return The bytes for amount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getAmountBytes() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getAmountBytes() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         amount_ = b;
         return b;
       } else {
@@ -6592,21 +6542,20 @@ public final class WalletGrpc {
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -6615,14 +6564,14 @@ public final class WalletGrpc {
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -6631,24 +6580,23 @@ public final class WalletGrpc {
     }
 
     public static final int COMMITTERID_FIELD_NUMBER = 5;
-    private long committerID_ = 0L;
+    private long committerID_;
     /**
      * <code>uint64 committerID = 5;</code>
      * @return The committerID.
      */
-    @java.lang.Override
+    @Override
     public long getCommitterID() {
       return committerID_;
     }
 
     public static final int REMARK_FIELD_NUMBER = 6;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object remark_ = "";
+    private volatile Object remark_;
     /**
      * <code>optional string remark = 6;</code>
      * @return Whether the remark field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRemark() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -6656,15 +6604,15 @@ public final class WalletGrpc {
      * <code>optional string remark = 6;</code>
      * @return The remark.
      */
-    @java.lang.Override
-    public java.lang.String getRemark() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getRemark() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         remark_ = s;
         return s;
       }
@@ -6673,14 +6621,14 @@ public final class WalletGrpc {
      * <code>optional string remark = 6;</code>
      * @return The bytes for remark.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getRemarkBytes() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getRemarkBytes() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         remark_ = b;
         return b;
       } else {
@@ -6689,13 +6637,12 @@ public final class WalletGrpc {
     }
 
     public static final int BEFOREAMOUNT_FIELD_NUMBER = 7;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object beforeAmount_ = "";
+    private volatile Object beforeAmount_;
     /**
      * <code>optional string beforeAmount = 7;</code>
      * @return Whether the beforeAmount field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasBeforeAmount() {
       return ((bitField0_ & 0x00000002) != 0);
     }
@@ -6703,15 +6650,15 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 7;</code>
      * @return The beforeAmount.
      */
-    @java.lang.Override
-    public java.lang.String getBeforeAmount() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getBeforeAmount() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         beforeAmount_ = s;
         return s;
       }
@@ -6720,14 +6667,14 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 7;</code>
      * @return The bytes for beforeAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getBeforeAmountBytes() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getBeforeAmountBytes() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         beforeAmount_ = b;
         return b;
       } else {
@@ -6736,7 +6683,7 @@ public final class WalletGrpc {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -6746,13 +6693,13 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (walletID_ != 0L) {
         output.writeUInt64(1, walletID_);
       }
-      if (action_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.Action_NONE.getNumber()) {
+      if (action_ != Action.Action_NONE.getNumber()) {
         output.writeEnum(2, action_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
@@ -6773,7 +6720,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -6781,11 +6728,11 @@ public final class WalletGrpc {
       size = 0;
       if (walletID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, walletID_);
+          .computeUInt64Size(1, walletID_);
       }
-      if (action_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.Action_NONE.getNumber()) {
+      if (action_ != Action.Action_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-                .computeEnumSize(2, action_);
+          .computeEnumSize(2, action_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, amount_);
@@ -6795,7 +6742,7 @@ public final class WalletGrpc {
       }
       if (committerID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(5, committerID_);
+          .computeUInt64Size(5, committerID_);
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, remark_);
@@ -6808,40 +6755,40 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq)) {
+      if (!(obj instanceof TransactionReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq) obj;
+      TransactionReq other = (TransactionReq) obj;
 
       if (getWalletID()
-              != other.getWalletID()) return false;
+          != other.getWalletID()) return false;
       if (action_ != other.action_) return false;
       if (!getAmount()
-              .equals(other.getAmount())) return false;
+          .equals(other.getAmount())) return false;
       if (!getCurrency()
-              .equals(other.getCurrency())) return false;
+          .equals(other.getCurrency())) return false;
       if (getCommitterID()
-              != other.getCommitterID()) return false;
+          != other.getCommitterID()) return false;
       if (hasRemark() != other.hasRemark()) return false;
       if (hasRemark()) {
         if (!getRemark()
-                .equals(other.getRemark())) return false;
+            .equals(other.getRemark())) return false;
       }
       if (hasBeforeAmount() != other.hasBeforeAmount()) return false;
       if (hasBeforeAmount()) {
         if (!getBeforeAmount()
-                .equals(other.getBeforeAmount())) return false;
+            .equals(other.getBeforeAmount())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -6850,7 +6797,7 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + WALLETID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getWalletID());
+          getWalletID());
       hash = (37 * hash) + ACTION_FIELD_NUMBER;
       hash = (53 * hash) + action_;
       hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
@@ -6859,7 +6806,7 @@ public final class WalletGrpc {
       hash = (53 * hash) + getCurrency().hashCode();
       hash = (37 * hash) + COMMITTERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getCommitterID());
+          getCommitterID());
       if (hasRemark()) {
         hash = (37 * hash) + REMARK_FIELD_NUMBER;
         hash = (53 * hash) + getRemark().hashCode();
@@ -6873,95 +6820,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static TransactionReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq prototype) {
+    public static Builder newBuilder(TransactionReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6969,20 +6914,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.TransactionReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.TransactionReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.TransactionReq)
+        TransactionReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_TransactionReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TransactionReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.newBuilder()
@@ -6991,125 +6936,117 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         walletID_ = 0L;
+
         action_ = 0;
+
         amount_ = "";
+
         currency_ = "";
+
         committerID_ = 0L;
+
         remark_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
         beforeAmount_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_TransactionReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.getDefaultInstance();
+      @Override
+      public TransactionReq getDefaultInstanceForType() {
+        return TransactionReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq result = buildPartial();
+      @Override
+      public TransactionReq build() {
+        TransactionReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public TransactionReq buildPartial() {
+        TransactionReq result = new TransactionReq(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.walletID_ = walletID_;
+        result.action_ = action_;
+        result.amount_ = amount_;
+        result.currency_ = currency_;
+        result.committerID_ = committerID_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.remark_ = remark_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.beforeAmount_ = beforeAmount_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.walletID_ = walletID_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.action_ = action_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.amount_ = amount_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.currency_ = currency_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.committerID_ = committerID_;
-        }
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.remark_ = remark_;
-          to_bitField0_ |= 0x00000001;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.beforeAmount_ = beforeAmount_;
-          to_bitField0_ |= 0x00000002;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq)other);
+        if (other instanceof TransactionReq) {
+          return mergeFrom((TransactionReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(TransactionReq other) {
+        if (other == TransactionReq.getDefaultInstance()) return this;
         if (other.getWalletID() != 0L) {
           setWalletID(other.getWalletID());
         }
@@ -7118,25 +7055,23 @@ public final class WalletGrpc {
         }
         if (!other.getAmount().isEmpty()) {
           amount_ = other.amount_;
-          bitField0_ |= 0x00000004;
           onChanged();
         }
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
-          bitField0_ |= 0x00000008;
           onChanged();
         }
         if (other.getCommitterID() != 0L) {
           setCommitterID(other.getCommitterID());
         }
         if (other.hasRemark()) {
+          bitField0_ |= 0x00000001;
           remark_ = other.remark_;
-          bitField0_ |= 0x00000020;
           onChanged();
         }
         if (other.hasBeforeAmount()) {
+          bitField0_ |= 0x00000002;
           beforeAmount_ = other.beforeAmount_;
-          bitField0_ |= 0x00000040;
           onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
@@ -7144,18 +7079,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -7167,37 +7102,37 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 walletID_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 action_ = input.readEnum();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               case 26: {
                 amount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
+
                 break;
               } // case 26
               case 34: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
+
                 break;
               } // case 34
               case 40: {
                 committerID_ = input.readUInt64();
-                bitField0_ |= 0x00000010;
+
                 break;
               } // case 40
               case 50: {
                 remark_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000001;
                 break;
               } // case 50
               case 58: {
                 beforeAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000002;
                 break;
               } // case 58
               default: {
@@ -7222,7 +7157,7 @@ public final class WalletGrpc {
        * <code>uint64 walletID = 1;</code>
        * @return The walletID.
        */
-      @java.lang.Override
+      @Override
       public long getWalletID() {
         return walletID_;
       }
@@ -7232,9 +7167,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setWalletID(long value) {
-
+        
         walletID_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -7243,7 +7177,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearWalletID() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         walletID_ = 0L;
         onChanged();
         return this;
@@ -7254,7 +7188,7 @@ public final class WalletGrpc {
        * <code>.wallet.Action action = 2;</code>
        * @return The enum numeric value on the wire for action.
        */
-      @java.lang.Override public int getActionValue() {
+      @Override public int getActionValue() {
         return action_;
       }
       /**
@@ -7263,8 +7197,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setActionValue(int value) {
+        
         action_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -7272,21 +7206,22 @@ public final class WalletGrpc {
        * <code>.wallet.Action action = 2;</code>
        * @return The action.
        */
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.forNumber(action_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.UNRECOGNIZED : result;
+      @Override
+      public Action getAction() {
+        @SuppressWarnings("deprecation")
+        Action result = Action.valueOf(action_);
+        return result == null ? Action.UNRECOGNIZED : result;
       }
       /**
        * <code>.wallet.Action action = 2;</code>
        * @param value The action to set.
        * @return This builder for chaining.
        */
-      public Builder setAction(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action value) {
+      public Builder setAction(Action value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bitField0_ |= 0x00000002;
+        
         action_ = value.getNumber();
         onChanged();
         return this;
@@ -7296,27 +7231,27 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAction() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         action_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object amount_ = "";
+      private Object amount_ = "";
       /**
        * <code>string amount = 3;</code>
        * @return The amount.
        */
-      public java.lang.String getAmount() {
-        java.lang.Object ref = amount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAmount() {
+        Object ref = amount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           amount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7324,12 +7259,12 @@ public final class WalletGrpc {
        * @return The bytes for amount.
        */
       public com.google.protobuf.ByteString
-      getAmountBytes() {
-        java.lang.Object ref = amount_;
+          getAmountBytes() {
+        Object ref = amount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           amount_ = b;
           return b;
         } else {
@@ -7342,10 +7277,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         amount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -7354,8 +7291,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAmount() {
+        
         amount_ = getDefaultInstance().getAmount();
-        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -7365,30 +7302,32 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         amount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>string currency = 4;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7396,12 +7335,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -7414,10 +7353,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -7426,8 +7367,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -7437,11 +7378,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -7451,7 +7394,7 @@ public final class WalletGrpc {
        * <code>uint64 committerID = 5;</code>
        * @return The committerID.
        */
-      @java.lang.Override
+      @Override
       public long getCommitterID() {
         return committerID_;
       }
@@ -7461,9 +7404,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCommitterID(long value) {
-
+        
         committerID_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -7472,34 +7414,34 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCommitterID() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        
         committerID_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object remark_ = "";
+      private Object remark_ = "";
       /**
        * <code>optional string remark = 6;</code>
        * @return Whether the remark field is set.
        */
       public boolean hasRemark() {
-        return ((bitField0_ & 0x00000020) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string remark = 6;</code>
        * @return The remark.
        */
-      public java.lang.String getRemark() {
-        java.lang.Object ref = remark_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRemark() {
+        Object ref = remark_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           remark_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7507,12 +7449,12 @@ public final class WalletGrpc {
        * @return The bytes for remark.
        */
       public com.google.protobuf.ByteString
-      getRemarkBytes() {
-        java.lang.Object ref = remark_;
+          getRemarkBytes() {
+        Object ref = remark_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           remark_ = b;
           return b;
         } else {
@@ -7525,10 +7467,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemark(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         remark_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -7537,8 +7481,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRemark() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         remark_ = getDefaultInstance().getRemark();
-        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
         return this;
       }
@@ -7548,37 +7492,39 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemarkBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000001;
         remark_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
 
-      private java.lang.Object beforeAmount_ = "";
+      private Object beforeAmount_ = "";
       /**
        * <code>optional string beforeAmount = 7;</code>
        * @return Whether the beforeAmount field is set.
        */
       public boolean hasBeforeAmount() {
-        return ((bitField0_ & 0x00000040) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string beforeAmount = 7;</code>
        * @return The beforeAmount.
        */
-      public java.lang.String getBeforeAmount() {
-        java.lang.Object ref = beforeAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getBeforeAmount() {
+        Object ref = beforeAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           beforeAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -7586,12 +7532,12 @@ public final class WalletGrpc {
        * @return The bytes for beforeAmount.
        */
       public com.google.protobuf.ByteString
-      getBeforeAmountBytes() {
-        java.lang.Object ref = beforeAmount_;
+          getBeforeAmountBytes() {
+        Object ref = beforeAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           beforeAmount_ = b;
           return b;
         } else {
@@ -7604,10 +7550,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         beforeAmount_ = value;
-        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -7616,8 +7564,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearBeforeAmount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
         beforeAmount_ = getDefaultInstance().getBeforeAmount();
-        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
@@ -7627,23 +7575,25 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000002;
         beforeAmount_ = value;
-        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -7652,22 +7602,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.TransactionReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq DEFAULT_INSTANCE;
+    private static final TransactionReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq();
+      DEFAULT_INSTANCE = new TransactionReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq getDefaultInstance() {
+    public static TransactionReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<TransactionReq>
-            PARSER = new com.google.protobuf.AbstractParser<TransactionReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<TransactionReq>() {
+      @Override
       public TransactionReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -7677,7 +7627,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -7687,21 +7637,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TransactionReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionReq getDefaultInstanceForType() {
+    @Override
+    public TransactionReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface TransactionResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.TransactionRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.TransactionRes)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -7713,37 +7663,37 @@ public final class WalletGrpc {
      * <code>string beforeAmount = 2;</code>
      * @return The beforeAmount.
      */
-    java.lang.String getBeforeAmount();
+    String getBeforeAmount();
     /**
      * <code>string beforeAmount = 2;</code>
      * @return The bytes for beforeAmount.
      */
     com.google.protobuf.ByteString
-    getBeforeAmountBytes();
+        getBeforeAmountBytes();
 
     /**
      * <code>string afterAmount = 3;</code>
      * @return The afterAmount.
      */
-    java.lang.String getAfterAmount();
+    String getAfterAmount();
     /**
      * <code>string afterAmount = 3;</code>
      * @return The bytes for afterAmount.
      */
     com.google.protobuf.ByteString
-    getAfterAmountBytes();
+        getAfterAmountBytes();
 
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
 
     /**
      * <code>.wallet.Status status = 5;</code>
@@ -7754,7 +7704,7 @@ public final class WalletGrpc {
      * <code>.wallet.Status status = 5;</code>
      * @return The status.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus();
+    Status getStatus();
 
     /**
      * <code>int64 createdAt = 6;</code>
@@ -7772,10 +7722,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.TransactionRes}
    */
   public static final class TransactionRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.TransactionRes)
-          TransactionResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.TransactionRes)
+      TransactionResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use TransactionRes.newBuilder() to construct.
     private TransactionRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -7787,53 +7737,57 @@ public final class WalletGrpc {
       status_ = 0;
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new TransactionRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_TransactionRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TransactionRes.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     public static final int BEFOREAMOUNT_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object beforeAmount_ = "";
+    private volatile Object beforeAmount_;
     /**
      * <code>string beforeAmount = 2;</code>
      * @return The beforeAmount.
      */
-    @java.lang.Override
-    public java.lang.String getBeforeAmount() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getBeforeAmount() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         beforeAmount_ = s;
         return s;
       }
@@ -7842,14 +7796,14 @@ public final class WalletGrpc {
      * <code>string beforeAmount = 2;</code>
      * @return The bytes for beforeAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getBeforeAmountBytes() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getBeforeAmountBytes() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         beforeAmount_ = b;
         return b;
       } else {
@@ -7858,21 +7812,20 @@ public final class WalletGrpc {
     }
 
     public static final int AFTERAMOUNT_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object afterAmount_ = "";
+    private volatile Object afterAmount_;
     /**
      * <code>string afterAmount = 3;</code>
      * @return The afterAmount.
      */
-    @java.lang.Override
-    public java.lang.String getAfterAmount() {
-      java.lang.Object ref = afterAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getAfterAmount() {
+      Object ref = afterAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         afterAmount_ = s;
         return s;
       }
@@ -7881,14 +7834,14 @@ public final class WalletGrpc {
      * <code>string afterAmount = 3;</code>
      * @return The bytes for afterAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getAfterAmountBytes() {
-      java.lang.Object ref = afterAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getAfterAmountBytes() {
+      Object ref = afterAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         afterAmount_ = b;
         return b;
       } else {
@@ -7897,21 +7850,20 @@ public final class WalletGrpc {
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>string currency = 4;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -7920,14 +7872,14 @@ public final class WalletGrpc {
      * <code>string currency = 4;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -7936,47 +7888,48 @@ public final class WalletGrpc {
     }
 
     public static final int STATUS_FIELD_NUMBER = 5;
-    private int status_ = 0;
+    private int status_;
     /**
      * <code>.wallet.Status status = 5;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    @Override public int getStatusValue() {
       return status_;
     }
     /**
      * <code>.wallet.Status status = 5;</code>
      * @return The status.
      */
-    @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus() {
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.forNumber(status_);
-      return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.UNRECOGNIZED : result;
+    @Override public Status getStatus() {
+      @SuppressWarnings("deprecation")
+      Status result = Status.valueOf(status_);
+      return result == null ? Status.UNRECOGNIZED : result;
     }
 
     public static final int CREATEDAT_FIELD_NUMBER = 6;
-    private long createdAt_ = 0L;
+    private long createdAt_;
     /**
      * <code>int64 createdAt = 6;</code>
      * @return The createdAt.
      */
-    @java.lang.Override
+    @Override
     public long getCreatedAt() {
       return createdAt_;
     }
 
     public static final int UPDATEDAT_FIELD_NUMBER = 7;
-    private long updatedAt_ = 0L;
+    private long updatedAt_;
     /**
      * <code>int64 updatedAt = 7;</code>
      * @return The updatedAt.
      */
-    @java.lang.Override
+    @Override
     public long getUpdatedAt() {
       return updatedAt_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -7986,9 +7939,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
@@ -8001,7 +7954,7 @@ public final class WalletGrpc {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(currency_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, currency_);
       }
-      if (status_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.Status_NONE.getNumber()) {
+      if (status_ != Status.Status_NONE.getNumber()) {
         output.writeEnum(5, status_);
       }
       if (createdAt_ != 0L) {
@@ -8013,7 +7966,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -8021,7 +7974,7 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(beforeAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, beforeAmount_);
@@ -8032,51 +7985,51 @@ public final class WalletGrpc {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(currency_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, currency_);
       }
-      if (status_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.Status_NONE.getNumber()) {
+      if (status_ != Status.Status_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-                .computeEnumSize(5, status_);
+          .computeEnumSize(5, status_);
       }
       if (createdAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(6, createdAt_);
+          .computeInt64Size(6, createdAt_);
       }
       if (updatedAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(7, updatedAt_);
+          .computeInt64Size(7, updatedAt_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes)) {
+      if (!(obj instanceof TransactionRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes) obj;
+      TransactionRes other = (TransactionRes) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (!getBeforeAmount()
-              .equals(other.getBeforeAmount())) return false;
+          .equals(other.getBeforeAmount())) return false;
       if (!getAfterAmount()
-              .equals(other.getAfterAmount())) return false;
+          .equals(other.getAfterAmount())) return false;
       if (!getCurrency()
-              .equals(other.getCurrency())) return false;
+          .equals(other.getCurrency())) return false;
       if (status_ != other.status_) return false;
       if (getCreatedAt()
-              != other.getCreatedAt()) return false;
+          != other.getCreatedAt()) return false;
       if (getUpdatedAt()
-              != other.getUpdatedAt()) return false;
+          != other.getUpdatedAt()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -8085,7 +8038,7 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (37 * hash) + BEFOREAMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + getBeforeAmount().hashCode();
       hash = (37 * hash) + AFTERAMOUNT_FIELD_NUMBER;
@@ -8096,104 +8049,102 @@ public final class WalletGrpc {
       hash = (53 * hash) + status_;
       hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getCreatedAt());
+          getCreatedAt());
       hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUpdatedAt());
+          getUpdatedAt());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static TransactionRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes prototype) {
+    public static Builder newBuilder(TransactionRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8201,20 +8152,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.TransactionRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.TransactionRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.TransactionRes)
+        TransactionResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_TransactionRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TransactionRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.newBuilder()
@@ -8223,137 +8174,121 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         beforeAmount_ = "";
+
         afterAmount_ = "";
+
         currency_ = "";
+
         status_ = 0;
+
         createdAt_ = 0L;
+
         updatedAt_ = 0L;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_TransactionRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.getDefaultInstance();
+      @Override
+      public TransactionRes getDefaultInstanceForType() {
+        return TransactionRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes result = buildPartial();
+      @Override
+      public TransactionRes build() {
+        TransactionRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public TransactionRes buildPartial() {
+        TransactionRes result = new TransactionRes(this);
+        result.id_ = id_;
+        result.beforeAmount_ = beforeAmount_;
+        result.afterAmount_ = afterAmount_;
+        result.currency_ = currency_;
+        result.status_ = status_;
+        result.createdAt_ = createdAt_;
+        result.updatedAt_ = updatedAt_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.beforeAmount_ = beforeAmount_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.afterAmount_ = afterAmount_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.currency_ = currency_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.status_ = status_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes)other);
+        if (other instanceof TransactionRes) {
+          return mergeFrom((TransactionRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(TransactionRes other) {
+        if (other == TransactionRes.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
         if (!other.getBeforeAmount().isEmpty()) {
           beforeAmount_ = other.beforeAmount_;
-          bitField0_ |= 0x00000002;
           onChanged();
         }
         if (!other.getAfterAmount().isEmpty()) {
           afterAmount_ = other.afterAmount_;
-          bitField0_ |= 0x00000004;
           onChanged();
         }
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
-          bitField0_ |= 0x00000008;
           onChanged();
         }
         if (other.status_ != 0) {
@@ -8370,18 +8305,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -8393,37 +8328,37 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 18: {
                 beforeAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 18
               case 26: {
                 afterAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
+
                 break;
               } // case 26
               case 34: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
+
                 break;
               } // case 34
               case 40: {
                 status_ = input.readEnum();
-                bitField0_ |= 0x00000010;
+
                 break;
               } // case 40
               case 48: {
                 createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000020;
+
                 break;
               } // case 48
               case 56: {
                 updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00000040;
+
                 break;
               } // case 56
               default: {
@@ -8441,14 +8376,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long id_ ;
       /**
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -8458,9 +8392,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -8469,27 +8402,27 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object beforeAmount_ = "";
+      private Object beforeAmount_ = "";
       /**
        * <code>string beforeAmount = 2;</code>
        * @return The beforeAmount.
        */
-      public java.lang.String getBeforeAmount() {
-        java.lang.Object ref = beforeAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getBeforeAmount() {
+        Object ref = beforeAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           beforeAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8497,12 +8430,12 @@ public final class WalletGrpc {
        * @return The bytes for beforeAmount.
        */
       public com.google.protobuf.ByteString
-      getBeforeAmountBytes() {
-        java.lang.Object ref = beforeAmount_;
+          getBeforeAmountBytes() {
+        Object ref = beforeAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           beforeAmount_ = b;
           return b;
         } else {
@@ -8515,10 +8448,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         beforeAmount_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -8527,8 +8462,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearBeforeAmount() {
+        
         beforeAmount_ = getDefaultInstance().getBeforeAmount();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -8538,30 +8473,32 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         beforeAmount_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
 
-      private java.lang.Object afterAmount_ = "";
+      private Object afterAmount_ = "";
       /**
        * <code>string afterAmount = 3;</code>
        * @return The afterAmount.
        */
-      public java.lang.String getAfterAmount() {
-        java.lang.Object ref = afterAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAfterAmount() {
+        Object ref = afterAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           afterAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8569,12 +8506,12 @@ public final class WalletGrpc {
        * @return The bytes for afterAmount.
        */
       public com.google.protobuf.ByteString
-      getAfterAmountBytes() {
-        java.lang.Object ref = afterAmount_;
+          getAfterAmountBytes() {
+        Object ref = afterAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           afterAmount_ = b;
           return b;
         } else {
@@ -8587,10 +8524,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAfterAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         afterAmount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -8599,8 +8538,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAfterAmount() {
+        
         afterAmount_ = getDefaultInstance().getAfterAmount();
-        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -8610,30 +8549,32 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAfterAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         afterAmount_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>string currency = 4;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -8641,12 +8582,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -8659,10 +8600,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -8671,8 +8614,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -8682,11 +8625,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         currency_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -8696,7 +8641,7 @@ public final class WalletGrpc {
        * <code>.wallet.Status status = 5;</code>
        * @return The enum numeric value on the wire for status.
        */
-      @java.lang.Override public int getStatusValue() {
+      @Override public int getStatusValue() {
         return status_;
       }
       /**
@@ -8705,8 +8650,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setStatusValue(int value) {
+        
         status_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -8714,21 +8659,22 @@ public final class WalletGrpc {
        * <code>.wallet.Status status = 5;</code>
        * @return The status.
        */
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.forNumber(status_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.UNRECOGNIZED : result;
+      @Override
+      public Status getStatus() {
+        @SuppressWarnings("deprecation")
+        Status result = Status.valueOf(status_);
+        return result == null ? Status.UNRECOGNIZED : result;
       }
       /**
        * <code>.wallet.Status status = 5;</code>
        * @param value The status to set.
        * @return This builder for chaining.
        */
-      public Builder setStatus(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status value) {
+      public Builder setStatus(Status value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bitField0_ |= 0x00000010;
+        
         status_ = value.getNumber();
         onChanged();
         return this;
@@ -8738,7 +8684,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearStatus() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        
         status_ = 0;
         onChanged();
         return this;
@@ -8749,7 +8695,7 @@ public final class WalletGrpc {
        * <code>int64 createdAt = 6;</code>
        * @return The createdAt.
        */
-      @java.lang.Override
+      @Override
       public long getCreatedAt() {
         return createdAt_;
       }
@@ -8759,9 +8705,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCreatedAt(long value) {
-
+        
         createdAt_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -8770,7 +8715,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        
         createdAt_ = 0L;
         onChanged();
         return this;
@@ -8781,7 +8726,7 @@ public final class WalletGrpc {
        * <code>int64 updatedAt = 7;</code>
        * @return The updatedAt.
        */
-      @java.lang.Override
+      @Override
       public long getUpdatedAt() {
         return updatedAt_;
       }
@@ -8791,9 +8736,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUpdatedAt(long value) {
-
+        
         updatedAt_ = value;
-        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -8802,20 +8746,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000040);
+        
         updatedAt_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -8824,22 +8768,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.TransactionRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes DEFAULT_INSTANCE;
+    private static final TransactionRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes();
+      DEFAULT_INSTANCE = new TransactionRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes getDefaultInstance() {
+    public static TransactionRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<TransactionRes>
-            PARSER = new com.google.protobuf.AbstractParser<TransactionRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<TransactionRes>() {
+      @Override
       public TransactionRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -8849,7 +8793,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -8859,21 +8803,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TransactionRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRes getDefaultInstanceForType() {
+    @Override
+    public TransactionRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface RollbackTransactionReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.RollbackTransactionReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.RollbackTransactionReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -8896,22 +8840,22 @@ public final class WalletGrpc {
      * <code>optional string remark = 3;</code>
      * @return The remark.
      */
-    java.lang.String getRemark();
+    String getRemark();
     /**
      * <code>optional string remark = 3;</code>
      * @return The bytes for remark.
      */
     com.google.protobuf.ByteString
-    getRemarkBytes();
+        getRemarkBytes();
   }
   /**
    * Protobuf type {@code wallet.RollbackTransactionReq}
    */
   public static final class RollbackTransactionReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.RollbackTransactionReq)
-          RollbackTransactionReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.RollbackTransactionReq)
+      RollbackTransactionReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use RollbackTransactionReq.newBuilder() to construct.
     private RollbackTransactionReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -8920,57 +8864,61 @@ public final class WalletGrpc {
       remark_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new RollbackTransactionReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_RollbackTransactionReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              RollbackTransactionReq.class, Builder.class);
     }
 
     private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     public static final int ROLLBACKERID_FIELD_NUMBER = 2;
-    private long rollbackerID_ = 0L;
+    private long rollbackerID_;
     /**
      * <code>uint64 rollbackerID = 2;</code>
      * @return The rollbackerID.
      */
-    @java.lang.Override
+    @Override
     public long getRollbackerID() {
       return rollbackerID_;
     }
 
     public static final int REMARK_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object remark_ = "";
+    private volatile Object remark_;
     /**
      * <code>optional string remark = 3;</code>
      * @return Whether the remark field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRemark() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -8978,15 +8926,15 @@ public final class WalletGrpc {
      * <code>optional string remark = 3;</code>
      * @return The remark.
      */
-    @java.lang.Override
-    public java.lang.String getRemark() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getRemark() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         remark_ = s;
         return s;
       }
@@ -8995,14 +8943,14 @@ public final class WalletGrpc {
      * <code>optional string remark = 3;</code>
      * @return The bytes for remark.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getRemarkBytes() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getRemarkBytes() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         remark_ = b;
         return b;
       } else {
@@ -9011,7 +8959,7 @@ public final class WalletGrpc {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -9021,9 +8969,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
@@ -9036,7 +8984,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -9044,11 +8992,11 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       if (rollbackerID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(2, rollbackerID_);
+          .computeUInt64Size(2, rollbackerID_);
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, remark_);
@@ -9058,30 +9006,30 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq)) {
+      if (!(obj instanceof RollbackTransactionReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq) obj;
+      RollbackTransactionReq other = (RollbackTransactionReq) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (getRollbackerID()
-              != other.getRollbackerID()) return false;
+          != other.getRollbackerID()) return false;
       if (hasRemark() != other.hasRemark()) return false;
       if (hasRemark()) {
         if (!getRemark()
-                .equals(other.getRemark())) return false;
+            .equals(other.getRemark())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -9090,10 +9038,10 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (37 * hash) + ROLLBACKERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getRollbackerID());
+          getRollbackerID());
       if (hasRemark()) {
         hash = (37 * hash) + REMARK_FIELD_NUMBER;
         hash = (53 * hash) + getRemark().hashCode();
@@ -9103,95 +9051,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq prototype) {
+    public static Builder newBuilder(RollbackTransactionReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -9199,20 +9145,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.RollbackTransactionReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.RollbackTransactionReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.RollbackTransactionReq)
+        RollbackTransactionReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                RollbackTransactionReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.newBuilder()
@@ -9221,108 +9167,102 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         rollbackerID_ = 0L;
+
         remark_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.getDefaultInstance();
+      @Override
+      public RollbackTransactionReq getDefaultInstanceForType() {
+        return RollbackTransactionReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq result = buildPartial();
+      @Override
+      public RollbackTransactionReq build() {
+        RollbackTransactionReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public RollbackTransactionReq buildPartial() {
+        RollbackTransactionReq result = new RollbackTransactionReq(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.id_ = id_;
+        result.rollbackerID_ = rollbackerID_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.remark_ = remark_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.rollbackerID_ = rollbackerID_;
-        }
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.remark_ = remark_;
-          to_bitField0_ |= 0x00000001;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq)other);
+        if (other instanceof RollbackTransactionReq) {
+          return mergeFrom((RollbackTransactionReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(RollbackTransactionReq other) {
+        if (other == RollbackTransactionReq.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -9330,8 +9270,8 @@ public final class WalletGrpc {
           setRollbackerID(other.getRollbackerID());
         }
         if (other.hasRemark()) {
+          bitField0_ |= 0x00000001;
           remark_ = other.remark_;
-          bitField0_ |= 0x00000004;
           onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
@@ -9339,18 +9279,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -9362,17 +9302,17 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 rollbackerID_ = input.readUInt64();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               case 26: {
                 remark_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000001;
                 break;
               } // case 26
               default: {
@@ -9397,7 +9337,7 @@ public final class WalletGrpc {
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -9407,9 +9347,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -9418,7 +9357,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
@@ -9429,7 +9368,7 @@ public final class WalletGrpc {
        * <code>uint64 rollbackerID = 2;</code>
        * @return The rollbackerID.
        */
-      @java.lang.Override
+      @Override
       public long getRollbackerID() {
         return rollbackerID_;
       }
@@ -9439,9 +9378,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackerID(long value) {
-
+        
         rollbackerID_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -9450,34 +9388,34 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRollbackerID() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         rollbackerID_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object remark_ = "";
+      private Object remark_ = "";
       /**
        * <code>optional string remark = 3;</code>
        * @return Whether the remark field is set.
        */
       public boolean hasRemark() {
-        return ((bitField0_ & 0x00000004) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string remark = 3;</code>
        * @return The remark.
        */
-      public java.lang.String getRemark() {
-        java.lang.Object ref = remark_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRemark() {
+        Object ref = remark_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           remark_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -9485,12 +9423,12 @@ public final class WalletGrpc {
        * @return The bytes for remark.
        */
       public com.google.protobuf.ByteString
-      getRemarkBytes() {
-        java.lang.Object ref = remark_;
+          getRemarkBytes() {
+        Object ref = remark_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           remark_ = b;
           return b;
         } else {
@@ -9503,10 +9441,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemark(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         remark_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -9515,8 +9455,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRemark() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         remark_ = getDefaultInstance().getRemark();
-        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -9526,23 +9466,25 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemarkBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000001;
         remark_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -9551,22 +9493,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.RollbackTransactionReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq DEFAULT_INSTANCE;
+    private static final RollbackTransactionReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq();
+      DEFAULT_INSTANCE = new RollbackTransactionReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq getDefaultInstance() {
+    public static RollbackTransactionReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<RollbackTransactionReq>
-            PARSER = new com.google.protobuf.AbstractParser<RollbackTransactionReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<RollbackTransactionReq>() {
+      @Override
       public RollbackTransactionReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -9576,7 +9518,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -9586,30 +9528,30 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<RollbackTransactionReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionReq getDefaultInstanceForType() {
+    @Override
+    public RollbackTransactionReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface RollbackTransactionResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.RollbackTransactionRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.RollbackTransactionRes)
+      com.google.protobuf.MessageOrBuilder {
   }
   /**
    * Protobuf type {@code wallet.RollbackTransactionRes}
    */
   public static final class RollbackTransactionRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.RollbackTransactionRes)
-          RollbackTransactionResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.RollbackTransactionRes)
+      RollbackTransactionResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use RollbackTransactionRes.newBuilder() to construct.
     private RollbackTransactionRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -9617,28 +9559,33 @@ public final class WalletGrpc {
     private RollbackTransactionRes() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new RollbackTransactionRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_RollbackTransactionRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              RollbackTransactionRes.class, Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -9648,13 +9595,13 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -9665,21 +9612,21 @@ public final class WalletGrpc {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes)) {
+      if (!(obj instanceof RollbackTransactionRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes) obj;
+      RollbackTransactionRes other = (RollbackTransactionRes) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -9691,95 +9638,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static RollbackTransactionRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static RollbackTransactionRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes prototype) {
+    public static Builder newBuilder(RollbackTransactionRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -9787,20 +9732,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.RollbackTransactionRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.RollbackTransactionRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.RollbackTransactionRes)
+        RollbackTransactionResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                RollbackTransactionRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.newBuilder()
@@ -9809,104 +9754,104 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_RollbackTransactionRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.getDefaultInstance();
+      @Override
+      public RollbackTransactionRes getDefaultInstanceForType() {
+        return RollbackTransactionRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes result = buildPartial();
+      @Override
+      public RollbackTransactionRes build() {
+        RollbackTransactionRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes(this);
+      @Override
+      public RollbackTransactionRes buildPartial() {
+        RollbackTransactionRes result = new RollbackTransactionRes(this);
         onBuilt();
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes)other);
+        if (other instanceof RollbackTransactionRes) {
+          return mergeFrom((RollbackTransactionRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(RollbackTransactionRes other) {
+        if (other == RollbackTransactionRes.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -9931,15 +9876,15 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -9948,22 +9893,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.RollbackTransactionRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes DEFAULT_INSTANCE;
+    private static final RollbackTransactionRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes();
+      DEFAULT_INSTANCE = new RollbackTransactionRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes getDefaultInstance() {
+    public static RollbackTransactionRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<RollbackTransactionRes>
-            PARSER = new com.google.protobuf.AbstractParser<RollbackTransactionRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<RollbackTransactionRes>() {
+      @Override
       public RollbackTransactionRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -9973,7 +9918,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -9983,21 +9928,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<RollbackTransactionRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.RollbackTransactionRes getDefaultInstanceForType() {
+    @Override
+    public RollbackTransactionRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetTransactionRecordReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -10009,10 +9954,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.GetTransactionRecordReq}
    */
   public static final class GetTransactionRecordReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordReq)
-          GetTransactionRecordReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordReq)
+      GetTransactionRecordReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetTransactionRecordReq.newBuilder() to construct.
     private GetTransactionRecordReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -10020,39 +9965,44 @@ public final class WalletGrpc {
     private GetTransactionRecordReq() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetTransactionRecordReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetTransactionRecordReq.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -10062,16 +10012,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -10079,30 +10029,30 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq)) {
+      if (!(obj instanceof GetTransactionRecordReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq) obj;
+      GetTransactionRecordReq other = (GetTransactionRecordReq) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -10111,101 +10061,99 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq prototype) {
+    public static Builder newBuilder(GetTransactionRecordReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -10213,20 +10161,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetTransactionRecordReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordReq)
+        GetTransactionRecordReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetTransactionRecordReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.newBuilder()
@@ -10235,97 +10183,90 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.getDefaultInstance();
+      @Override
+      public GetTransactionRecordReq getDefaultInstanceForType() {
+        return GetTransactionRecordReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq result = buildPartial();
+      @Override
+      public GetTransactionRecordReq build() {
+        GetTransactionRecordReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public GetTransactionRecordReq buildPartial() {
+        GetTransactionRecordReq result = new GetTransactionRecordReq(this);
+        result.id_ = id_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq)other);
+        if (other instanceof GetTransactionRecordReq) {
+          return mergeFrom((GetTransactionRecordReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetTransactionRecordReq other) {
+        if (other == GetTransactionRecordReq.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -10334,18 +10275,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -10357,7 +10298,7 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               default: {
@@ -10375,14 +10316,13 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
       private long id_ ;
       /**
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -10392,9 +10332,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -10403,20 +10342,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -10425,22 +10364,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetTransactionRecordReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq DEFAULT_INSTANCE;
+    private static final GetTransactionRecordReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq();
+      DEFAULT_INSTANCE = new GetTransactionRecordReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq getDefaultInstance() {
+    public static GetTransactionRecordReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetTransactionRecordReq>
-            PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordReq>() {
+      @Override
       public GetTransactionRecordReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -10450,7 +10389,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -10460,21 +10399,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetTransactionRecordReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordReq getDefaultInstanceForType() {
+    @Override
+    public GetTransactionRecordReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface TransactionRecordOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.TransactionRecord)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.TransactionRecord)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>uint64 id = 1;</code>
@@ -10503,19 +10442,19 @@ public final class WalletGrpc {
      * <code>.wallet.Action action = 4;</code>
      * @return The action.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction();
+    Action getAction();
 
     /**
      * <code>string amount = 5;</code>
      * @return The amount.
      */
-    java.lang.String getAmount();
+    String getAmount();
     /**
      * <code>string amount = 5;</code>
      * @return The bytes for amount.
      */
     com.google.protobuf.ByteString
-    getAmountBytes();
+        getAmountBytes();
 
     /**
      * <code>optional string beforeAmount = 6;</code>
@@ -10526,13 +10465,13 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 6;</code>
      * @return The beforeAmount.
      */
-    java.lang.String getBeforeAmount();
+    String getBeforeAmount();
     /**
      * <code>optional string beforeAmount = 6;</code>
      * @return The bytes for beforeAmount.
      */
     com.google.protobuf.ByteString
-    getBeforeAmountBytes();
+        getBeforeAmountBytes();
 
     /**
      * <code>optional string afterAmount = 7;</code>
@@ -10543,25 +10482,25 @@ public final class WalletGrpc {
      * <code>optional string afterAmount = 7;</code>
      * @return The afterAmount.
      */
-    java.lang.String getAfterAmount();
+    String getAfterAmount();
     /**
      * <code>optional string afterAmount = 7;</code>
      * @return The bytes for afterAmount.
      */
     com.google.protobuf.ByteString
-    getAfterAmountBytes();
+        getAfterAmountBytes();
 
     /**
      * <code>string currency = 8;</code>
      * @return The currency.
      */
-    java.lang.String getCurrency();
+    String getCurrency();
     /**
      * <code>string currency = 8;</code>
      * @return The bytes for currency.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes();
+        getCurrencyBytes();
 
     /**
      * <code>uint64 committerID = 9;</code>
@@ -10578,7 +10517,7 @@ public final class WalletGrpc {
      * <code>.wallet.Status status = 10;</code>
      * @return The status.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus();
+    Status getStatus();
 
     /**
      * <code>optional string remark = 11;</code>
@@ -10589,13 +10528,13 @@ public final class WalletGrpc {
      * <code>optional string remark = 11;</code>
      * @return The remark.
      */
-    java.lang.String getRemark();
+    String getRemark();
     /**
      * <code>optional string remark = 11;</code>
      * @return The bytes for remark.
      */
     com.google.protobuf.ByteString
-    getRemarkBytes();
+        getRemarkBytes();
 
     /**
      * <code>int64 createdAt = 12;</code>
@@ -10618,13 +10557,13 @@ public final class WalletGrpc {
      * <code>optional string rollbackBeforeAmount = 14;</code>
      * @return The rollbackBeforeAmount.
      */
-    java.lang.String getRollbackBeforeAmount();
+    String getRollbackBeforeAmount();
     /**
      * <code>optional string rollbackBeforeAmount = 14;</code>
      * @return The bytes for rollbackBeforeAmount.
      */
     com.google.protobuf.ByteString
-    getRollbackBeforeAmountBytes();
+        getRollbackBeforeAmountBytes();
 
     /**
      * <code>optional string rollbackAfterAmount = 15;</code>
@@ -10635,13 +10574,13 @@ public final class WalletGrpc {
      * <code>optional string rollbackAfterAmount = 15;</code>
      * @return The rollbackAfterAmount.
      */
-    java.lang.String getRollbackAfterAmount();
+    String getRollbackAfterAmount();
     /**
      * <code>optional string rollbackAfterAmount = 15;</code>
      * @return The bytes for rollbackAfterAmount.
      */
     com.google.protobuf.ByteString
-    getRollbackAfterAmountBytes();
+        getRollbackAfterAmountBytes();
 
     /**
      * <code>optional uint64 rollbackerID = 16;</code>
@@ -10658,10 +10597,10 @@ public final class WalletGrpc {
    * Protobuf type {@code wallet.TransactionRecord}
    */
   public static final class TransactionRecord extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.TransactionRecord)
-          TransactionRecordOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.TransactionRecord)
+      TransactionRecordOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use TransactionRecord.newBuilder() to construct.
     private TransactionRecord(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -10678,94 +10617,99 @@ public final class WalletGrpc {
       rollbackAfterAmount_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new TransactionRecord();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRecord_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_TransactionRecord_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              TransactionRecord.class, Builder.class);
     }
 
     private int bitField0_;
     public static final int ID_FIELD_NUMBER = 1;
-    private long id_ = 0L;
+    private long id_;
     /**
      * <code>uint64 id = 1;</code>
      * @return The id.
      */
-    @java.lang.Override
+    @Override
     public long getId() {
       return id_;
     }
 
     public static final int USERID_FIELD_NUMBER = 2;
-    private long userID_ = 0L;
+    private long userID_;
     /**
      * <code>uint64 userID = 2;</code>
      * @return The userID.
      */
-    @java.lang.Override
+    @Override
     public long getUserID() {
       return userID_;
     }
 
     public static final int WALLETID_FIELD_NUMBER = 3;
-    private long walletID_ = 0L;
+    private long walletID_;
     /**
      * <code>uint64 walletID = 3;</code>
      * @return The walletID.
      */
-    @java.lang.Override
+    @Override
     public long getWalletID() {
       return walletID_;
     }
 
     public static final int ACTION_FIELD_NUMBER = 4;
-    private int action_ = 0;
+    private int action_;
     /**
      * <code>.wallet.Action action = 4;</code>
      * @return The enum numeric value on the wire for action.
      */
-    @java.lang.Override public int getActionValue() {
+    @Override public int getActionValue() {
       return action_;
     }
     /**
      * <code>.wallet.Action action = 4;</code>
      * @return The action.
      */
-    @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction() {
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.forNumber(action_);
-      return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.UNRECOGNIZED : result;
+    @Override public Action getAction() {
+      @SuppressWarnings("deprecation")
+      Action result = Action.valueOf(action_);
+      return result == null ? Action.UNRECOGNIZED : result;
     }
 
     public static final int AMOUNT_FIELD_NUMBER = 5;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object amount_ = "";
+    private volatile Object amount_;
     /**
      * <code>string amount = 5;</code>
      * @return The amount.
      */
-    @java.lang.Override
-    public java.lang.String getAmount() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getAmount() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         amount_ = s;
         return s;
       }
@@ -10774,14 +10718,14 @@ public final class WalletGrpc {
      * <code>string amount = 5;</code>
      * @return The bytes for amount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getAmountBytes() {
-      java.lang.Object ref = amount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getAmountBytes() {
+      Object ref = amount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         amount_ = b;
         return b;
       } else {
@@ -10790,13 +10734,12 @@ public final class WalletGrpc {
     }
 
     public static final int BEFOREAMOUNT_FIELD_NUMBER = 6;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object beforeAmount_ = "";
+    private volatile Object beforeAmount_;
     /**
      * <code>optional string beforeAmount = 6;</code>
      * @return Whether the beforeAmount field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasBeforeAmount() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -10804,15 +10747,15 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 6;</code>
      * @return The beforeAmount.
      */
-    @java.lang.Override
-    public java.lang.String getBeforeAmount() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getBeforeAmount() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         beforeAmount_ = s;
         return s;
       }
@@ -10821,14 +10764,14 @@ public final class WalletGrpc {
      * <code>optional string beforeAmount = 6;</code>
      * @return The bytes for beforeAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getBeforeAmountBytes() {
-      java.lang.Object ref = beforeAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getBeforeAmountBytes() {
+      Object ref = beforeAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         beforeAmount_ = b;
         return b;
       } else {
@@ -10837,13 +10780,12 @@ public final class WalletGrpc {
     }
 
     public static final int AFTERAMOUNT_FIELD_NUMBER = 7;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object afterAmount_ = "";
+    private volatile Object afterAmount_;
     /**
      * <code>optional string afterAmount = 7;</code>
      * @return Whether the afterAmount field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasAfterAmount() {
       return ((bitField0_ & 0x00000002) != 0);
     }
@@ -10851,15 +10793,15 @@ public final class WalletGrpc {
      * <code>optional string afterAmount = 7;</code>
      * @return The afterAmount.
      */
-    @java.lang.Override
-    public java.lang.String getAfterAmount() {
-      java.lang.Object ref = afterAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getAfterAmount() {
+      Object ref = afterAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         afterAmount_ = s;
         return s;
       }
@@ -10868,14 +10810,14 @@ public final class WalletGrpc {
      * <code>optional string afterAmount = 7;</code>
      * @return The bytes for afterAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getAfterAmountBytes() {
-      java.lang.Object ref = afterAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getAfterAmountBytes() {
+      Object ref = afterAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         afterAmount_ = b;
         return b;
       } else {
@@ -10884,21 +10826,20 @@ public final class WalletGrpc {
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 8;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object currency_ = "";
+    private volatile Object currency_;
     /**
      * <code>string currency = 8;</code>
      * @return The currency.
      */
-    @java.lang.Override
-    public java.lang.String getCurrency() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getCurrency() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         currency_ = s;
         return s;
       }
@@ -10907,14 +10848,14 @@ public final class WalletGrpc {
      * <code>string currency = 8;</code>
      * @return The bytes for currency.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getCurrencyBytes() {
-      java.lang.Object ref = currency_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getCurrencyBytes() {
+      Object ref = currency_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         currency_ = b;
         return b;
       } else {
@@ -10923,42 +10864,42 @@ public final class WalletGrpc {
     }
 
     public static final int COMMITTERID_FIELD_NUMBER = 9;
-    private long committerID_ = 0L;
+    private long committerID_;
     /**
      * <code>uint64 committerID = 9;</code>
      * @return The committerID.
      */
-    @java.lang.Override
+    @Override
     public long getCommitterID() {
       return committerID_;
     }
 
     public static final int STATUS_FIELD_NUMBER = 10;
-    private int status_ = 0;
+    private int status_;
     /**
      * <code>.wallet.Status status = 10;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    @Override public int getStatusValue() {
       return status_;
     }
     /**
      * <code>.wallet.Status status = 10;</code>
      * @return The status.
      */
-    @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus() {
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.forNumber(status_);
-      return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.UNRECOGNIZED : result;
+    @Override public Status getStatus() {
+      @SuppressWarnings("deprecation")
+      Status result = Status.valueOf(status_);
+      return result == null ? Status.UNRECOGNIZED : result;
     }
 
     public static final int REMARK_FIELD_NUMBER = 11;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object remark_ = "";
+    private volatile Object remark_;
     /**
      * <code>optional string remark = 11;</code>
      * @return Whether the remark field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRemark() {
       return ((bitField0_ & 0x00000004) != 0);
     }
@@ -10966,15 +10907,15 @@ public final class WalletGrpc {
      * <code>optional string remark = 11;</code>
      * @return The remark.
      */
-    @java.lang.Override
-    public java.lang.String getRemark() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getRemark() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         remark_ = s;
         return s;
       }
@@ -10983,14 +10924,14 @@ public final class WalletGrpc {
      * <code>optional string remark = 11;</code>
      * @return The bytes for remark.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getRemarkBytes() {
-      java.lang.Object ref = remark_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getRemarkBytes() {
+      Object ref = remark_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         remark_ = b;
         return b;
       } else {
@@ -10999,35 +10940,34 @@ public final class WalletGrpc {
     }
 
     public static final int CREATEDAT_FIELD_NUMBER = 12;
-    private long createdAt_ = 0L;
+    private long createdAt_;
     /**
      * <code>int64 createdAt = 12;</code>
      * @return The createdAt.
      */
-    @java.lang.Override
+    @Override
     public long getCreatedAt() {
       return createdAt_;
     }
 
     public static final int UPDATEDAT_FIELD_NUMBER = 13;
-    private long updatedAt_ = 0L;
+    private long updatedAt_;
     /**
      * <code>int64 updatedAt = 13;</code>
      * @return The updatedAt.
      */
-    @java.lang.Override
+    @Override
     public long getUpdatedAt() {
       return updatedAt_;
     }
 
     public static final int ROLLBACKBEFOREAMOUNT_FIELD_NUMBER = 14;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object rollbackBeforeAmount_ = "";
+    private volatile Object rollbackBeforeAmount_;
     /**
      * <code>optional string rollbackBeforeAmount = 14;</code>
      * @return Whether the rollbackBeforeAmount field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRollbackBeforeAmount() {
       return ((bitField0_ & 0x00000008) != 0);
     }
@@ -11035,15 +10975,15 @@ public final class WalletGrpc {
      * <code>optional string rollbackBeforeAmount = 14;</code>
      * @return The rollbackBeforeAmount.
      */
-    @java.lang.Override
-    public java.lang.String getRollbackBeforeAmount() {
-      java.lang.Object ref = rollbackBeforeAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getRollbackBeforeAmount() {
+      Object ref = rollbackBeforeAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         rollbackBeforeAmount_ = s;
         return s;
       }
@@ -11052,14 +10992,14 @@ public final class WalletGrpc {
      * <code>optional string rollbackBeforeAmount = 14;</code>
      * @return The bytes for rollbackBeforeAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getRollbackBeforeAmountBytes() {
-      java.lang.Object ref = rollbackBeforeAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getRollbackBeforeAmountBytes() {
+      Object ref = rollbackBeforeAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         rollbackBeforeAmount_ = b;
         return b;
       } else {
@@ -11068,13 +11008,12 @@ public final class WalletGrpc {
     }
 
     public static final int ROLLBACKAFTERAMOUNT_FIELD_NUMBER = 15;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object rollbackAfterAmount_ = "";
+    private volatile Object rollbackAfterAmount_;
     /**
      * <code>optional string rollbackAfterAmount = 15;</code>
      * @return Whether the rollbackAfterAmount field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRollbackAfterAmount() {
       return ((bitField0_ & 0x00000010) != 0);
     }
@@ -11082,15 +11021,15 @@ public final class WalletGrpc {
      * <code>optional string rollbackAfterAmount = 15;</code>
      * @return The rollbackAfterAmount.
      */
-    @java.lang.Override
-    public java.lang.String getRollbackAfterAmount() {
-      java.lang.Object ref = rollbackAfterAmount_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    @Override
+    public String getRollbackAfterAmount() {
+      Object ref = rollbackAfterAmount_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
         rollbackAfterAmount_ = s;
         return s;
       }
@@ -11099,14 +11038,14 @@ public final class WalletGrpc {
      * <code>optional string rollbackAfterAmount = 15;</code>
      * @return The bytes for rollbackAfterAmount.
      */
-    @java.lang.Override
+    @Override
     public com.google.protobuf.ByteString
-    getRollbackAfterAmountBytes() {
-      java.lang.Object ref = rollbackAfterAmount_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        getRollbackAfterAmountBytes() {
+      Object ref = rollbackAfterAmount_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
         rollbackAfterAmount_ = b;
         return b;
       } else {
@@ -11115,12 +11054,12 @@ public final class WalletGrpc {
     }
 
     public static final int ROLLBACKERID_FIELD_NUMBER = 16;
-    private long rollbackerID_ = 0L;
+    private long rollbackerID_;
     /**
      * <code>optional uint64 rollbackerID = 16;</code>
      * @return Whether the rollbackerID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRollbackerID() {
       return ((bitField0_ & 0x00000020) != 0);
     }
@@ -11128,13 +11067,13 @@ public final class WalletGrpc {
      * <code>optional uint64 rollbackerID = 16;</code>
      * @return The rollbackerID.
      */
-    @java.lang.Override
+    @Override
     public long getRollbackerID() {
       return rollbackerID_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -11144,9 +11083,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (id_ != 0L) {
         output.writeUInt64(1, id_);
       }
@@ -11156,7 +11095,7 @@ public final class WalletGrpc {
       if (walletID_ != 0L) {
         output.writeUInt64(3, walletID_);
       }
-      if (action_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.Action_NONE.getNumber()) {
+      if (action_ != Action.Action_NONE.getNumber()) {
         output.writeEnum(4, action_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
@@ -11174,7 +11113,7 @@ public final class WalletGrpc {
       if (committerID_ != 0L) {
         output.writeUInt64(9, committerID_);
       }
-      if (status_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.Status_NONE.getNumber()) {
+      if (status_ != Status.Status_NONE.getNumber()) {
         output.writeEnum(10, status_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
@@ -11198,7 +11137,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -11206,19 +11145,19 @@ public final class WalletGrpc {
       size = 0;
       if (id_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, id_);
+          .computeUInt64Size(1, id_);
       }
       if (userID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(2, userID_);
+          .computeUInt64Size(2, userID_);
       }
       if (walletID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(3, walletID_);
+          .computeUInt64Size(3, walletID_);
       }
-      if (action_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.Action_NONE.getNumber()) {
+      if (action_ != Action.Action_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-                .computeEnumSize(4, action_);
+          .computeEnumSize(4, action_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, amount_);
@@ -11234,22 +11173,22 @@ public final class WalletGrpc {
       }
       if (committerID_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(9, committerID_);
+          .computeUInt64Size(9, committerID_);
       }
-      if (status_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.Status_NONE.getNumber()) {
+      if (status_ != Status.Status_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-                .computeEnumSize(10, status_);
+          .computeEnumSize(10, status_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, remark_);
       }
       if (createdAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(12, createdAt_);
+          .computeInt64Size(12, createdAt_);
       }
       if (updatedAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(13, updatedAt_);
+          .computeInt64Size(13, updatedAt_);
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, rollbackBeforeAmount_);
@@ -11259,76 +11198,76 @@ public final class WalletGrpc {
       }
       if (((bitField0_ & 0x00000020) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(16, rollbackerID_);
+          .computeUInt64Size(16, rollbackerID_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord)) {
+      if (!(obj instanceof TransactionRecord)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord) obj;
+      TransactionRecord other = (TransactionRecord) obj;
 
       if (getId()
-              != other.getId()) return false;
+          != other.getId()) return false;
       if (getUserID()
-              != other.getUserID()) return false;
+          != other.getUserID()) return false;
       if (getWalletID()
-              != other.getWalletID()) return false;
+          != other.getWalletID()) return false;
       if (action_ != other.action_) return false;
       if (!getAmount()
-              .equals(other.getAmount())) return false;
+          .equals(other.getAmount())) return false;
       if (hasBeforeAmount() != other.hasBeforeAmount()) return false;
       if (hasBeforeAmount()) {
         if (!getBeforeAmount()
-                .equals(other.getBeforeAmount())) return false;
+            .equals(other.getBeforeAmount())) return false;
       }
       if (hasAfterAmount() != other.hasAfterAmount()) return false;
       if (hasAfterAmount()) {
         if (!getAfterAmount()
-                .equals(other.getAfterAmount())) return false;
+            .equals(other.getAfterAmount())) return false;
       }
       if (!getCurrency()
-              .equals(other.getCurrency())) return false;
+          .equals(other.getCurrency())) return false;
       if (getCommitterID()
-              != other.getCommitterID()) return false;
+          != other.getCommitterID()) return false;
       if (status_ != other.status_) return false;
       if (hasRemark() != other.hasRemark()) return false;
       if (hasRemark()) {
         if (!getRemark()
-                .equals(other.getRemark())) return false;
+            .equals(other.getRemark())) return false;
       }
       if (getCreatedAt()
-              != other.getCreatedAt()) return false;
+          != other.getCreatedAt()) return false;
       if (getUpdatedAt()
-              != other.getUpdatedAt()) return false;
+          != other.getUpdatedAt()) return false;
       if (hasRollbackBeforeAmount() != other.hasRollbackBeforeAmount()) return false;
       if (hasRollbackBeforeAmount()) {
         if (!getRollbackBeforeAmount()
-                .equals(other.getRollbackBeforeAmount())) return false;
+            .equals(other.getRollbackBeforeAmount())) return false;
       }
       if (hasRollbackAfterAmount() != other.hasRollbackAfterAmount()) return false;
       if (hasRollbackAfterAmount()) {
         if (!getRollbackAfterAmount()
-                .equals(other.getRollbackAfterAmount())) return false;
+            .equals(other.getRollbackAfterAmount())) return false;
       }
       if (hasRollbackerID() != other.hasRollbackerID()) return false;
       if (hasRollbackerID()) {
         if (getRollbackerID()
-                != other.getRollbackerID()) return false;
+            != other.getRollbackerID()) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -11337,13 +11276,13 @@ public final class WalletGrpc {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getId());
+          getId());
       hash = (37 * hash) + USERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUserID());
+          getUserID());
       hash = (37 * hash) + WALLETID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getWalletID());
+          getWalletID());
       hash = (37 * hash) + ACTION_FIELD_NUMBER;
       hash = (53 * hash) + action_;
       hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
@@ -11360,7 +11299,7 @@ public final class WalletGrpc {
       hash = (53 * hash) + getCurrency().hashCode();
       hash = (37 * hash) + COMMITTERID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getCommitterID());
+          getCommitterID());
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       if (hasRemark()) {
@@ -11369,10 +11308,10 @@ public final class WalletGrpc {
       }
       hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getCreatedAt());
+          getCreatedAt());
       hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-              getUpdatedAt());
+          getUpdatedAt());
       if (hasRollbackBeforeAmount()) {
         hash = (37 * hash) + ROLLBACKBEFOREAMOUNT_FIELD_NUMBER;
         hash = (53 * hash) + getRollbackBeforeAmount().hashCode();
@@ -11384,102 +11323,100 @@ public final class WalletGrpc {
       if (hasRollbackerID()) {
         hash = (37 * hash) + ROLLBACKERID_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getRollbackerID());
+            getRollbackerID());
       }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static TransactionRecord parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionRecord parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRecord parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static TransactionRecord parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRecord parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static TransactionRecord parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static TransactionRecord parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord prototype) {
+    public static Builder newBuilder(TransactionRecord prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -11487,20 +11424,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.TransactionRecord}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.TransactionRecord)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.TransactionRecord)
+        TransactionRecordOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRecord_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_TransactionRecord_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                TransactionRecord.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.newBuilder()
@@ -11509,165 +11446,156 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         id_ = 0L;
+
         userID_ = 0L;
+
         walletID_ = 0L;
+
         action_ = 0;
+
         amount_ = "";
+
         beforeAmount_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
         afterAmount_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
         currency_ = "";
+
         committerID_ = 0L;
+
         status_ = 0;
+
         remark_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
         createdAt_ = 0L;
+
         updatedAt_ = 0L;
+
         rollbackBeforeAmount_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
         rollbackAfterAmount_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
         rollbackerID_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_TransactionRecord_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance();
+      @Override
+      public TransactionRecord getDefaultInstanceForType() {
+        return TransactionRecord.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord result = buildPartial();
+      @Override
+      public TransactionRecord build() {
+        TransactionRecord result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public TransactionRecord buildPartial() {
+        TransactionRecord result = new TransactionRecord(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        result.id_ = id_;
+        result.userID_ = userID_;
+        result.walletID_ = walletID_;
+        result.action_ = action_;
+        result.amount_ = amount_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.beforeAmount_ = beforeAmount_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.afterAmount_ = afterAmount_;
+        result.currency_ = currency_;
+        result.committerID_ = committerID_;
+        result.status_ = status_;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.remark_ = remark_;
+        result.createdAt_ = createdAt_;
+        result.updatedAt_ = updatedAt_;
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.rollbackBeforeAmount_ = rollbackBeforeAmount_;
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.rollbackAfterAmount_ = rollbackAfterAmount_;
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.rollbackerID_ = rollbackerID_;
+          to_bitField0_ |= 0x00000020;
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.userID_ = userID_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.walletID_ = walletID_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.action_ = action_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.amount_ = amount_;
-        }
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.beforeAmount_ = beforeAmount_;
-          to_bitField0_ |= 0x00000001;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.afterAmount_ = afterAmount_;
-          to_bitField0_ |= 0x00000002;
-        }
-        if (((from_bitField0_ & 0x00000080) != 0)) {
-          result.currency_ = currency_;
-        }
-        if (((from_bitField0_ & 0x00000100) != 0)) {
-          result.committerID_ = committerID_;
-        }
-        if (((from_bitField0_ & 0x00000200) != 0)) {
-          result.status_ = status_;
-        }
-        if (((from_bitField0_ & 0x00000400) != 0)) {
-          result.remark_ = remark_;
-          to_bitField0_ |= 0x00000004;
-        }
-        if (((from_bitField0_ & 0x00000800) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00001000) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-        if (((from_bitField0_ & 0x00002000) != 0)) {
-          result.rollbackBeforeAmount_ = rollbackBeforeAmount_;
-          to_bitField0_ |= 0x00000008;
-        }
-        if (((from_bitField0_ & 0x00004000) != 0)) {
-          result.rollbackAfterAmount_ = rollbackAfterAmount_;
-          to_bitField0_ |= 0x00000010;
-        }
-        if (((from_bitField0_ & 0x00008000) != 0)) {
-          result.rollbackerID_ = rollbackerID_;
-          to_bitField0_ |= 0x00000020;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord)other);
+        if (other instanceof TransactionRecord) {
+          return mergeFrom((TransactionRecord)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance()) return this;
+      public Builder mergeFrom(TransactionRecord other) {
+        if (other == TransactionRecord.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -11682,22 +11610,20 @@ public final class WalletGrpc {
         }
         if (!other.getAmount().isEmpty()) {
           amount_ = other.amount_;
-          bitField0_ |= 0x00000010;
           onChanged();
         }
         if (other.hasBeforeAmount()) {
+          bitField0_ |= 0x00000001;
           beforeAmount_ = other.beforeAmount_;
-          bitField0_ |= 0x00000020;
           onChanged();
         }
         if (other.hasAfterAmount()) {
+          bitField0_ |= 0x00000002;
           afterAmount_ = other.afterAmount_;
-          bitField0_ |= 0x00000040;
           onChanged();
         }
         if (!other.getCurrency().isEmpty()) {
           currency_ = other.currency_;
-          bitField0_ |= 0x00000080;
           onChanged();
         }
         if (other.getCommitterID() != 0L) {
@@ -11707,8 +11633,8 @@ public final class WalletGrpc {
           setStatusValue(other.getStatusValue());
         }
         if (other.hasRemark()) {
+          bitField0_ |= 0x00000004;
           remark_ = other.remark_;
-          bitField0_ |= 0x00000400;
           onChanged();
         }
         if (other.getCreatedAt() != 0L) {
@@ -11718,13 +11644,13 @@ public final class WalletGrpc {
           setUpdatedAt(other.getUpdatedAt());
         }
         if (other.hasRollbackBeforeAmount()) {
+          bitField0_ |= 0x00000008;
           rollbackBeforeAmount_ = other.rollbackBeforeAmount_;
-          bitField0_ |= 0x00002000;
           onChanged();
         }
         if (other.hasRollbackAfterAmount()) {
+          bitField0_ |= 0x00000010;
           rollbackAfterAmount_ = other.rollbackAfterAmount_;
-          bitField0_ |= 0x00004000;
           onChanged();
         }
         if (other.hasRollbackerID()) {
@@ -11735,18 +11661,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -11758,82 +11684,82 @@ public final class WalletGrpc {
                 break;
               case 8: {
                 id_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
+
                 break;
               } // case 8
               case 16: {
                 userID_ = input.readUInt64();
-                bitField0_ |= 0x00000002;
+
                 break;
               } // case 16
               case 24: {
                 walletID_ = input.readUInt64();
-                bitField0_ |= 0x00000004;
+
                 break;
               } // case 24
               case 32: {
                 action_ = input.readEnum();
-                bitField0_ |= 0x00000008;
+
                 break;
               } // case 32
               case 42: {
                 amount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000010;
+
                 break;
               } // case 42
               case 50: {
                 beforeAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000001;
                 break;
               } // case 50
               case 58: {
                 afterAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000002;
                 break;
               } // case 58
               case 66: {
                 currency_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000080;
+
                 break;
               } // case 66
               case 72: {
                 committerID_ = input.readUInt64();
-                bitField0_ |= 0x00000100;
+
                 break;
               } // case 72
               case 80: {
                 status_ = input.readEnum();
-                bitField0_ |= 0x00000200;
+
                 break;
               } // case 80
               case 90: {
                 remark_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000400;
+                bitField0_ |= 0x00000004;
                 break;
               } // case 90
               case 96: {
                 createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000800;
+
                 break;
               } // case 96
               case 104: {
                 updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00001000;
+
                 break;
               } // case 104
               case 114: {
                 rollbackBeforeAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00002000;
+                bitField0_ |= 0x00000008;
                 break;
               } // case 114
               case 122: {
                 rollbackAfterAmount_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00004000;
+                bitField0_ |= 0x00000010;
                 break;
               } // case 122
               case 128: {
                 rollbackerID_ = input.readUInt64();
-                bitField0_ |= 0x00008000;
+                bitField0_ |= 0x00000020;
                 break;
               } // case 128
               default: {
@@ -11858,7 +11784,7 @@ public final class WalletGrpc {
        * <code>uint64 id = 1;</code>
        * @return The id.
        */
-      @java.lang.Override
+      @Override
       public long getId() {
         return id_;
       }
@@ -11868,9 +11794,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setId(long value) {
-
+        
         id_ = value;
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -11879,7 +11804,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         id_ = 0L;
         onChanged();
         return this;
@@ -11890,7 +11815,7 @@ public final class WalletGrpc {
        * <code>uint64 userID = 2;</code>
        * @return The userID.
        */
-      @java.lang.Override
+      @Override
       public long getUserID() {
         return userID_;
       }
@@ -11900,9 +11825,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUserID(long value) {
-
+        
         userID_ = value;
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -11911,7 +11835,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUserID() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         userID_ = 0L;
         onChanged();
         return this;
@@ -11922,7 +11846,7 @@ public final class WalletGrpc {
        * <code>uint64 walletID = 3;</code>
        * @return The walletID.
        */
-      @java.lang.Override
+      @Override
       public long getWalletID() {
         return walletID_;
       }
@@ -11932,9 +11856,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setWalletID(long value) {
-
+        
         walletID_ = value;
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -11943,7 +11866,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearWalletID() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        
         walletID_ = 0L;
         onChanged();
         return this;
@@ -11954,7 +11877,7 @@ public final class WalletGrpc {
        * <code>.wallet.Action action = 4;</code>
        * @return The enum numeric value on the wire for action.
        */
-      @java.lang.Override public int getActionValue() {
+      @Override public int getActionValue() {
         return action_;
       }
       /**
@@ -11963,8 +11886,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setActionValue(int value) {
+        
         action_ = value;
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -11972,21 +11895,22 @@ public final class WalletGrpc {
        * <code>.wallet.Action action = 4;</code>
        * @return The action.
        */
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.forNumber(action_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.UNRECOGNIZED : result;
+      @Override
+      public Action getAction() {
+        @SuppressWarnings("deprecation")
+        Action result = Action.valueOf(action_);
+        return result == null ? Action.UNRECOGNIZED : result;
       }
       /**
        * <code>.wallet.Action action = 4;</code>
        * @param value The action to set.
        * @return This builder for chaining.
        */
-      public Builder setAction(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action value) {
+      public Builder setAction(Action value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bitField0_ |= 0x00000008;
+        
         action_ = value.getNumber();
         onChanged();
         return this;
@@ -11996,27 +11920,27 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAction() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        
         action_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object amount_ = "";
+      private Object amount_ = "";
       /**
        * <code>string amount = 5;</code>
        * @return The amount.
        */
-      public java.lang.String getAmount() {
-        java.lang.Object ref = amount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAmount() {
+        Object ref = amount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           amount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12024,12 +11948,12 @@ public final class WalletGrpc {
        * @return The bytes for amount.
        */
       public com.google.protobuf.ByteString
-      getAmountBytes() {
-        java.lang.Object ref = amount_;
+          getAmountBytes() {
+        Object ref = amount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           amount_ = b;
           return b;
         } else {
@@ -12042,10 +11966,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         amount_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -12054,8 +11980,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAmount() {
+        
         amount_ = getDefaultInstance().getAmount();
-        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
@@ -12065,37 +11991,39 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         amount_ = value;
-        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
 
-      private java.lang.Object beforeAmount_ = "";
+      private Object beforeAmount_ = "";
       /**
        * <code>optional string beforeAmount = 6;</code>
        * @return Whether the beforeAmount field is set.
        */
       public boolean hasBeforeAmount() {
-        return ((bitField0_ & 0x00000020) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string beforeAmount = 6;</code>
        * @return The beforeAmount.
        */
-      public java.lang.String getBeforeAmount() {
-        java.lang.Object ref = beforeAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getBeforeAmount() {
+        Object ref = beforeAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           beforeAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12103,12 +12031,12 @@ public final class WalletGrpc {
        * @return The bytes for beforeAmount.
        */
       public com.google.protobuf.ByteString
-      getBeforeAmountBytes() {
-        java.lang.Object ref = beforeAmount_;
+          getBeforeAmountBytes() {
+        Object ref = beforeAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           beforeAmount_ = b;
           return b;
         } else {
@@ -12121,10 +12049,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
         beforeAmount_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -12133,8 +12063,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearBeforeAmount() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         beforeAmount_ = getDefaultInstance().getBeforeAmount();
-        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
         return this;
       }
@@ -12144,37 +12074,39 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setBeforeAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000001;
         beforeAmount_ = value;
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
 
-      private java.lang.Object afterAmount_ = "";
+      private Object afterAmount_ = "";
       /**
        * <code>optional string afterAmount = 7;</code>
        * @return Whether the afterAmount field is set.
        */
       public boolean hasAfterAmount() {
-        return ((bitField0_ & 0x00000040) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string afterAmount = 7;</code>
        * @return The afterAmount.
        */
-      public java.lang.String getAfterAmount() {
-        java.lang.Object ref = afterAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getAfterAmount() {
+        Object ref = afterAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           afterAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12182,12 +12114,12 @@ public final class WalletGrpc {
        * @return The bytes for afterAmount.
        */
       public com.google.protobuf.ByteString
-      getAfterAmountBytes() {
-        java.lang.Object ref = afterAmount_;
+          getAfterAmountBytes() {
+        Object ref = afterAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           afterAmount_ = b;
           return b;
         } else {
@@ -12200,10 +12132,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAfterAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         afterAmount_ = value;
-        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -12212,8 +12146,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearAfterAmount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
         afterAmount_ = getDefaultInstance().getAfterAmount();
-        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
@@ -12223,30 +12157,32 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAfterAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000002;
         afterAmount_ = value;
-        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
 
-      private java.lang.Object currency_ = "";
+      private Object currency_ = "";
       /**
        * <code>string currency = 8;</code>
        * @return The currency.
        */
-      public java.lang.String getCurrency() {
-        java.lang.Object ref = currency_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCurrency() {
+        Object ref = currency_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           currency_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12254,12 +12190,12 @@ public final class WalletGrpc {
        * @return The bytes for currency.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes() {
-        java.lang.Object ref = currency_;
+          getCurrencyBytes() {
+        Object ref = currency_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           currency_ = b;
           return b;
         } else {
@@ -12272,10 +12208,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
         currency_ = value;
-        bitField0_ |= 0x00000080;
         onChanged();
         return this;
       }
@@ -12284,8 +12222,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
+        
         currency_ = getDefaultInstance().getCurrency();
-        bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
@@ -12295,11 +12233,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         currency_ = value;
-        bitField0_ |= 0x00000080;
         onChanged();
         return this;
       }
@@ -12309,7 +12249,7 @@ public final class WalletGrpc {
        * <code>uint64 committerID = 9;</code>
        * @return The committerID.
        */
-      @java.lang.Override
+      @Override
       public long getCommitterID() {
         return committerID_;
       }
@@ -12319,9 +12259,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCommitterID(long value) {
-
+        
         committerID_ = value;
-        bitField0_ |= 0x00000100;
         onChanged();
         return this;
       }
@@ -12330,7 +12269,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCommitterID() {
-        bitField0_ = (bitField0_ & ~0x00000100);
+        
         committerID_ = 0L;
         onChanged();
         return this;
@@ -12341,7 +12280,7 @@ public final class WalletGrpc {
        * <code>.wallet.Status status = 10;</code>
        * @return The enum numeric value on the wire for status.
        */
-      @java.lang.Override public int getStatusValue() {
+      @Override public int getStatusValue() {
         return status_;
       }
       /**
@@ -12350,8 +12289,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setStatusValue(int value) {
+        
         status_ = value;
-        bitField0_ |= 0x00000200;
         onChanged();
         return this;
       }
@@ -12359,21 +12298,22 @@ public final class WalletGrpc {
        * <code>.wallet.Status status = 10;</code>
        * @return The status.
        */
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.forNumber(status_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.UNRECOGNIZED : result;
+      @Override
+      public Status getStatus() {
+        @SuppressWarnings("deprecation")
+        Status result = Status.valueOf(status_);
+        return result == null ? Status.UNRECOGNIZED : result;
       }
       /**
        * <code>.wallet.Status status = 10;</code>
        * @param value The status to set.
        * @return This builder for chaining.
        */
-      public Builder setStatus(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status value) {
+      public Builder setStatus(Status value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bitField0_ |= 0x00000200;
+        
         status_ = value.getNumber();
         onChanged();
         return this;
@@ -12383,34 +12323,34 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearStatus() {
-        bitField0_ = (bitField0_ & ~0x00000200);
+        
         status_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object remark_ = "";
+      private Object remark_ = "";
       /**
        * <code>optional string remark = 11;</code>
        * @return Whether the remark field is set.
        */
       public boolean hasRemark() {
-        return ((bitField0_ & 0x00000400) != 0);
+        return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional string remark = 11;</code>
        * @return The remark.
        */
-      public java.lang.String getRemark() {
-        java.lang.Object ref = remark_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRemark() {
+        Object ref = remark_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           remark_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12418,12 +12358,12 @@ public final class WalletGrpc {
        * @return The bytes for remark.
        */
       public com.google.protobuf.ByteString
-      getRemarkBytes() {
-        java.lang.Object ref = remark_;
+          getRemarkBytes() {
+        Object ref = remark_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           remark_ = b;
           return b;
         } else {
@@ -12436,10 +12376,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemark(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         remark_ = value;
-        bitField0_ |= 0x00000400;
         onChanged();
         return this;
       }
@@ -12448,8 +12390,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRemark() {
+        bitField0_ = (bitField0_ & ~0x00000004);
         remark_ = getDefaultInstance().getRemark();
-        bitField0_ = (bitField0_ & ~0x00000400);
         onChanged();
         return this;
       }
@@ -12459,11 +12401,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRemarkBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000004;
         remark_ = value;
-        bitField0_ |= 0x00000400;
         onChanged();
         return this;
       }
@@ -12473,7 +12417,7 @@ public final class WalletGrpc {
        * <code>int64 createdAt = 12;</code>
        * @return The createdAt.
        */
-      @java.lang.Override
+      @Override
       public long getCreatedAt() {
         return createdAt_;
       }
@@ -12483,9 +12427,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCreatedAt(long value) {
-
+        
         createdAt_ = value;
-        bitField0_ |= 0x00000800;
         onChanged();
         return this;
       }
@@ -12494,7 +12437,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000800);
+        
         createdAt_ = 0L;
         onChanged();
         return this;
@@ -12505,7 +12448,7 @@ public final class WalletGrpc {
        * <code>int64 updatedAt = 13;</code>
        * @return The updatedAt.
        */
-      @java.lang.Override
+      @Override
       public long getUpdatedAt() {
         return updatedAt_;
       }
@@ -12515,9 +12458,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUpdatedAt(long value) {
-
+        
         updatedAt_ = value;
-        bitField0_ |= 0x00001000;
         onChanged();
         return this;
       }
@@ -12526,34 +12468,34 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00001000);
+        
         updatedAt_ = 0L;
         onChanged();
         return this;
       }
 
-      private java.lang.Object rollbackBeforeAmount_ = "";
+      private Object rollbackBeforeAmount_ = "";
       /**
        * <code>optional string rollbackBeforeAmount = 14;</code>
        * @return Whether the rollbackBeforeAmount field is set.
        */
       public boolean hasRollbackBeforeAmount() {
-        return ((bitField0_ & 0x00002000) != 0);
+        return ((bitField0_ & 0x00000008) != 0);
       }
       /**
        * <code>optional string rollbackBeforeAmount = 14;</code>
        * @return The rollbackBeforeAmount.
        */
-      public java.lang.String getRollbackBeforeAmount() {
-        java.lang.Object ref = rollbackBeforeAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRollbackBeforeAmount() {
+        Object ref = rollbackBeforeAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           rollbackBeforeAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12561,12 +12503,12 @@ public final class WalletGrpc {
        * @return The bytes for rollbackBeforeAmount.
        */
       public com.google.protobuf.ByteString
-      getRollbackBeforeAmountBytes() {
-        java.lang.Object ref = rollbackBeforeAmount_;
+          getRollbackBeforeAmountBytes() {
+        Object ref = rollbackBeforeAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           rollbackBeforeAmount_ = b;
           return b;
         } else {
@@ -12579,10 +12521,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackBeforeAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
         rollbackBeforeAmount_ = value;
-        bitField0_ |= 0x00002000;
         onChanged();
         return this;
       }
@@ -12591,8 +12535,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRollbackBeforeAmount() {
+        bitField0_ = (bitField0_ & ~0x00000008);
         rollbackBeforeAmount_ = getDefaultInstance().getRollbackBeforeAmount();
-        bitField0_ = (bitField0_ & ~0x00002000);
         onChanged();
         return this;
       }
@@ -12602,37 +12546,39 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackBeforeAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000008;
         rollbackBeforeAmount_ = value;
-        bitField0_ |= 0x00002000;
         onChanged();
         return this;
       }
 
-      private java.lang.Object rollbackAfterAmount_ = "";
+      private Object rollbackAfterAmount_ = "";
       /**
        * <code>optional string rollbackAfterAmount = 15;</code>
        * @return Whether the rollbackAfterAmount field is set.
        */
       public boolean hasRollbackAfterAmount() {
-        return ((bitField0_ & 0x00004000) != 0);
+        return ((bitField0_ & 0x00000010) != 0);
       }
       /**
        * <code>optional string rollbackAfterAmount = 15;</code>
        * @return The rollbackAfterAmount.
        */
-      public java.lang.String getRollbackAfterAmount() {
-        java.lang.Object ref = rollbackAfterAmount_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRollbackAfterAmount() {
+        Object ref = rollbackAfterAmount_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
-                  (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
           rollbackAfterAmount_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -12640,12 +12586,12 @@ public final class WalletGrpc {
        * @return The bytes for rollbackAfterAmount.
        */
       public com.google.protobuf.ByteString
-      getRollbackAfterAmountBytes() {
-        java.lang.Object ref = rollbackAfterAmount_;
+          getRollbackAfterAmountBytes() {
+        Object ref = rollbackAfterAmount_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-                  com.google.protobuf.ByteString.copyFromUtf8(
-                          (java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
           rollbackAfterAmount_ = b;
           return b;
         } else {
@@ -12658,10 +12604,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackAfterAmount(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
         rollbackAfterAmount_ = value;
-        bitField0_ |= 0x00004000;
         onChanged();
         return this;
       }
@@ -12670,8 +12618,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRollbackAfterAmount() {
+        bitField0_ = (bitField0_ & ~0x00000010);
         rollbackAfterAmount_ = getDefaultInstance().getRollbackAfterAmount();
-        bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
         return this;
       }
@@ -12681,11 +12629,13 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackAfterAmountBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        bitField0_ |= 0x00000010;
         rollbackAfterAmount_ = value;
-        bitField0_ |= 0x00004000;
         onChanged();
         return this;
       }
@@ -12695,15 +12645,15 @@ public final class WalletGrpc {
        * <code>optional uint64 rollbackerID = 16;</code>
        * @return Whether the rollbackerID field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasRollbackerID() {
-        return ((bitField0_ & 0x00008000) != 0);
+        return ((bitField0_ & 0x00000020) != 0);
       }
       /**
        * <code>optional uint64 rollbackerID = 16;</code>
        * @return The rollbackerID.
        */
-      @java.lang.Override
+      @Override
       public long getRollbackerID() {
         return rollbackerID_;
       }
@@ -12713,9 +12663,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackerID(long value) {
-
+        bitField0_ |= 0x00000020;
         rollbackerID_ = value;
-        bitField0_ |= 0x00008000;
         onChanged();
         return this;
       }
@@ -12724,20 +12673,20 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearRollbackerID() {
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00000020);
         rollbackerID_ = 0L;
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -12746,22 +12695,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.TransactionRecord)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord DEFAULT_INSTANCE;
+    private static final TransactionRecord DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord();
+      DEFAULT_INSTANCE = new TransactionRecord();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getDefaultInstance() {
+    public static TransactionRecord getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<TransactionRecord>
-            PARSER = new com.google.protobuf.AbstractParser<TransactionRecord>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<TransactionRecord>() {
+      @Override
       public TransactionRecord parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -12771,7 +12720,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -12781,21 +12730,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<TransactionRecord> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getDefaultInstanceForType() {
+    @Override
+    public TransactionRecord getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetTransactionRecordResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordRes)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>.wallet.TransactionRecord record = 1;</code>
@@ -12806,20 +12755,20 @@ public final class WalletGrpc {
      * <code>.wallet.TransactionRecord record = 1;</code>
      * @return The record.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecord();
+    TransactionRecord getRecord();
     /**
      * <code>.wallet.TransactionRecord record = 1;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordOrBuilder();
+    TransactionRecordOrBuilder getRecordOrBuilder();
   }
   /**
    * Protobuf type {@code wallet.GetTransactionRecordRes}
    */
   public static final class GetTransactionRecordRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordRes)
-          GetTransactionRecordResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordRes)
+      GetTransactionRecordResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetTransactionRecordRes.newBuilder() to construct.
     private GetTransactionRecordRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -12827,33 +12776,38 @@ public final class WalletGrpc {
     private GetTransactionRecordRes() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetTransactionRecordRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetTransactionRecordRes.class, Builder.class);
     }
 
     public static final int RECORD_FIELD_NUMBER = 1;
-    private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord record_;
+    private TransactionRecord record_;
     /**
      * <code>.wallet.TransactionRecord record = 1;</code>
      * @return Whether the record field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRecord() {
       return record_ != null;
     }
@@ -12861,20 +12815,20 @@ public final class WalletGrpc {
      * <code>.wallet.TransactionRecord record = 1;</code>
      * @return The record.
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecord() {
-      return record_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance() : record_;
+    @Override
+    public TransactionRecord getRecord() {
+      return record_ == null ? TransactionRecord.getDefaultInstance() : record_;
     }
     /**
      * <code>.wallet.TransactionRecord record = 1;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordOrBuilder() {
-      return record_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance() : record_;
+    @Override
+    public TransactionRecordOrBuilder getRecordOrBuilder() {
+      return getRecord();
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -12884,16 +12838,16 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (record_ != null) {
         output.writeMessage(1, getRecord());
       }
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -12901,33 +12855,33 @@ public final class WalletGrpc {
       size = 0;
       if (record_ != null) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(1, getRecord());
+          .computeMessageSize(1, getRecord());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes)) {
+      if (!(obj instanceof GetTransactionRecordRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes) obj;
+      GetTransactionRecordRes other = (GetTransactionRecordRes) obj;
 
       if (hasRecord() != other.hasRecord()) return false;
       if (hasRecord()) {
         if (!getRecord()
-                .equals(other.getRecord())) return false;
+            .equals(other.getRecord())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -12943,95 +12897,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes prototype) {
+    public static Builder newBuilder(GetTransactionRecordRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -13039,20 +12991,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetTransactionRecordRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordRes)
+        GetTransactionRecordResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetTransactionRecordRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.newBuilder()
@@ -13061,103 +13013,98 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
-        record_ = null;
-        if (recordBuilder_ != null) {
-          recordBuilder_.dispose();
+        if (recordBuilder_ == null) {
+          record_ = null;
+        } else {
+          record_ = null;
           recordBuilder_ = null;
         }
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.getDefaultInstance();
+      @Override
+      public GetTransactionRecordRes getDefaultInstanceForType() {
+        return GetTransactionRecordRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes result = buildPartial();
+      @Override
+      public GetTransactionRecordRes build() {
+        GetTransactionRecordRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
+      @Override
+      public GetTransactionRecordRes buildPartial() {
+        GetTransactionRecordRes result = new GetTransactionRecordRes(this);
+        if (recordBuilder_ == null) {
+          result.record_ = record_;
+        } else {
+          result.record_ = recordBuilder_.build();
+        }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.record_ = recordBuilder_ == null
-                  ? record_
-                  : recordBuilder_.build();
-        }
-      }
-
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes)other);
+        if (other instanceof GetTransactionRecordRes) {
+          return mergeFrom((GetTransactionRecordRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetTransactionRecordRes other) {
+        if (other == GetTransactionRecordRes.getDefaultInstance()) return this;
         if (other.hasRecord()) {
           mergeRecord(other.getRecord());
         }
@@ -13166,18 +13113,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -13189,9 +13136,9 @@ public final class WalletGrpc {
                 break;
               case 10: {
                 input.readMessage(
-                        getRecordFieldBuilder().getBuilder(),
-                        extensionRegistry);
-                bitField0_ |= 0x00000001;
+                    getRecordFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
                 break;
               } // case 10
               default: {
@@ -13209,25 +13156,24 @@ public final class WalletGrpc {
         } // finally
         return this;
       }
-      private int bitField0_;
 
-      private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord record_;
+      private TransactionRecord record_;
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder> recordBuilder_;
+          TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder> recordBuilder_;
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        * @return Whether the record field is set.
        */
       public boolean hasRecord() {
-        return ((bitField0_ & 0x00000001) != 0);
+        return recordBuilder_ != null || record_ != null;
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        * @return The record.
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecord() {
+      public TransactionRecord getRecord() {
         if (recordBuilder_ == null) {
-          return record_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance() : record_;
+          return record_ == null ? TransactionRecord.getDefaultInstance() : record_;
         } else {
           return recordBuilder_.getMessage();
         }
@@ -13235,93 +13181,93 @@ public final class WalletGrpc {
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
-      public Builder setRecord(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord value) {
+      public Builder setRecord(TransactionRecord value) {
         if (recordBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           record_ = value;
+          onChanged();
         } else {
           recordBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000001;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
       public Builder setRecord(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder builderForValue) {
+          TransactionRecord.Builder builderForValue) {
         if (recordBuilder_ == null) {
           record_ = builderForValue.build();
+          onChanged();
         } else {
           recordBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
-      public Builder mergeRecord(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord value) {
+      public Builder mergeRecord(TransactionRecord value) {
         if (recordBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
-                  record_ != null &&
-                  record_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance()) {
-            getRecordBuilder().mergeFrom(value);
+          if (record_ != null) {
+            record_ =
+              TransactionRecord.newBuilder(record_).mergeFrom(value).buildPartial();
           } else {
             record_ = value;
           }
+          onChanged();
         } else {
           recordBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000001;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
       public Builder clearRecord() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        record_ = null;
-        if (recordBuilder_ != null) {
-          recordBuilder_.dispose();
+        if (recordBuilder_ == null) {
+          record_ = null;
+          onChanged();
+        } else {
+          record_ = null;
           recordBuilder_ = null;
         }
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder getRecordBuilder() {
-        bitField0_ |= 0x00000001;
+      public TransactionRecord.Builder getRecordBuilder() {
+        
         onChanged();
         return getRecordFieldBuilder().getBuilder();
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordOrBuilder() {
+      public TransactionRecordOrBuilder getRecordOrBuilder() {
         if (recordBuilder_ != null) {
           return recordBuilder_.getMessageOrBuilder();
         } else {
           return record_ == null ?
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance() : record_;
+              TransactionRecord.getDefaultInstance() : record_;
         }
       }
       /**
        * <code>.wallet.TransactionRecord record = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>
-      getRecordFieldBuilder() {
+          TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder>
+          getRecordFieldBuilder() {
         if (recordBuilder_ == null) {
           recordBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>(
+              TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder>(
                   getRecord(),
                   getParentForChildren(),
                   isClean());
@@ -13329,15 +13275,15 @@ public final class WalletGrpc {
         }
         return recordBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -13346,22 +13292,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetTransactionRecordRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes DEFAULT_INSTANCE;
+    private static final GetTransactionRecordRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes();
+      DEFAULT_INSTANCE = new GetTransactionRecordRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes getDefaultInstance() {
+    public static GetTransactionRecordRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetTransactionRecordRes>
-            PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordRes>() {
+      @Override
       public GetTransactionRecordRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -13371,7 +13317,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -13381,21 +13327,21 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetTransactionRecordRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordRes getDefaultInstanceForType() {
+    @Override
+    public GetTransactionRecordRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetTransactionRecordsReqOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsReq)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsReq)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>optional uint64 userID = 1;</code>
@@ -13434,8 +13380,8 @@ public final class WalletGrpc {
      * <code>repeated string currency = 4;</code>
      * @return A list containing the currency.
      */
-    java.util.List<java.lang.String>
-    getCurrencyList();
+    java.util.List<String>
+        getCurrencyList();
     /**
      * <code>repeated string currency = 4;</code>
      * @return The count of currency.
@@ -13446,20 +13392,20 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The currency at the given index.
      */
-    java.lang.String getCurrency(int index);
+    String getCurrency(int index);
     /**
      * <code>repeated string currency = 4;</code>
      * @param index The index of the value to return.
      * @return The bytes of the currency at the given index.
      */
     com.google.protobuf.ByteString
-    getCurrencyBytes(int index);
+        getCurrencyBytes(int index);
 
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return A list containing the status.
      */
-    java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status> getStatusList();
+    java.util.List<Status> getStatusList();
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return The count of status.
@@ -13470,12 +13416,12 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The status at the given index.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus(int index);
+    Status getStatus(int index);
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return A list containing the enum numeric values on the wire for status.
      */
-    java.util.List<java.lang.Integer>
+    java.util.List<Integer>
     getStatusValueList();
     /**
      * <code>repeated .wallet.Status status = 5;</code>
@@ -13488,7 +13434,7 @@ public final class WalletGrpc {
      * <code>repeated .wallet.Action action = 6;</code>
      * @return A list containing the action.
      */
-    java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action> getActionList();
+    java.util.List<Action> getActionList();
     /**
      * <code>repeated .wallet.Action action = 6;</code>
      * @return The count of action.
@@ -13499,12 +13445,12 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The action at the given index.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction(int index);
+    Action getAction(int index);
     /**
      * <code>repeated .wallet.Action action = 6;</code>
      * @return A list containing the enum numeric values on the wire for action.
      */
-    java.util.List<java.lang.Integer>
+    java.util.List<Integer>
     getActionValueList();
     /**
      * <code>repeated .wallet.Action action = 6;</code>
@@ -13538,12 +13484,12 @@ public final class WalletGrpc {
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order>
-    getOrderList();
+    java.util.List<GetTransactionRecordsReq.Order>
+        getOrderList();
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getOrder(int index);
+    GetTransactionRecordsReq.Order getOrder(int index);
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
@@ -13551,13 +13497,13 @@ public final class WalletGrpc {
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder>
-    getOrderOrBuilderList();
+    java.util.List<? extends GetTransactionRecordsReq.OrderOrBuilder>
+        getOrderOrBuilderList();
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder getOrderOrBuilder(
-            int index);
+    GetTransactionRecordsReq.OrderOrBuilder getOrderOrBuilder(
+        int index);
 
     /**
      * <code>.wallet.Pagination pagination = 10;</code>
@@ -13568,57 +13514,61 @@ public final class WalletGrpc {
      * <code>.wallet.Pagination pagination = 10;</code>
      * @return The pagination.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getPagination();
+    Pagination getPagination();
     /**
      * <code>.wallet.Pagination pagination = 10;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder getPaginationOrBuilder();
+    PaginationOrBuilder getPaginationOrBuilder();
   }
   /**
    * Protobuf type {@code wallet.GetTransactionRecordsReq}
    */
   public static final class GetTransactionRecordsReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsReq)
-          GetTransactionRecordsReqOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsReq)
+      GetTransactionRecordsReqOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetTransactionRecordsReq.newBuilder() to construct.
     private GetTransactionRecordsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
     private GetTransactionRecordsReq() {
-      currency_ =
-              com.google.protobuf.LazyStringArrayList.emptyList();
+      currency_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       status_ = java.util.Collections.emptyList();
       action_ = java.util.Collections.emptyList();
       order_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetTransactionRecordsReq();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetTransactionRecordsReq.class, Builder.class);
     }
 
     /**
      * Protobuf enum {@code wallet.GetTransactionRecordsReq.OrderBy}
      */
     public enum OrderBy
-            implements com.google.protobuf.ProtocolMessageEnum {
+        implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>OrderBy_None = 0;</code>
        */
@@ -13666,8 +13616,8 @@ public final class WalletGrpc {
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-                  "Can't get the number of an unknown enum value.");
+          throw new IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
         }
         return value;
       }
@@ -13677,7 +13627,7 @@ public final class WalletGrpc {
        * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static OrderBy valueOf(int value) {
         return forNumber(value);
       }
@@ -13698,41 +13648,41 @@ public final class WalletGrpc {
       }
 
       public static com.google.protobuf.Internal.EnumLiteMap<OrderBy>
-      internalGetValueMap() {
+          internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-              OrderBy> internalValueMap =
-              new com.google.protobuf.Internal.EnumLiteMap<OrderBy>() {
-                public OrderBy findValueByNumber(int number) {
-                  return OrderBy.forNumber(number);
-                }
-              };
+          OrderBy> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<OrderBy>() {
+              public OrderBy findValueByNumber(int number) {
+                return OrderBy.forNumber(number);
+              }
+            };
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
+          getValueDescriptor() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-                  "Can't get the descriptor of an unrecognized enum value.");
+          throw new IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
         }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
+          getDescriptorForType() {
         return getDescriptor();
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.getDescriptor().getEnumTypes().get(0);
+          getDescriptor() {
+        return GetTransactionRecordsReq.getDescriptor().getEnumTypes().get(0);
       }
 
       private static final OrderBy[] VALUES = values();
 
       public static OrderBy valueOf(
-              com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-                  "EnumValueDescriptor is not for this type.");
+          throw new IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
         }
         if (desc.getIndex() == -1) {
           return UNRECOGNIZED;
@@ -13753,7 +13703,7 @@ public final class WalletGrpc {
      * Protobuf enum {@code wallet.GetTransactionRecordsReq.OrderDirection}
      */
     public enum OrderDirection
-            implements com.google.protobuf.ProtocolMessageEnum {
+        implements com.google.protobuf.ProtocolMessageEnum {
       /**
        * <code>OrderDirection_None = 0;</code>
        */
@@ -13785,8 +13735,8 @@ public final class WalletGrpc {
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-                  "Can't get the number of an unknown enum value.");
+          throw new IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
         }
         return value;
       }
@@ -13796,7 +13746,7 @@ public final class WalletGrpc {
        * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @java.lang.Deprecated
+      @Deprecated
       public static OrderDirection valueOf(int value) {
         return forNumber(value);
       }
@@ -13815,41 +13765,41 @@ public final class WalletGrpc {
       }
 
       public static com.google.protobuf.Internal.EnumLiteMap<OrderDirection>
-      internalGetValueMap() {
+          internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-              OrderDirection> internalValueMap =
-              new com.google.protobuf.Internal.EnumLiteMap<OrderDirection>() {
-                public OrderDirection findValueByNumber(int number) {
-                  return OrderDirection.forNumber(number);
-                }
-              };
+          OrderDirection> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<OrderDirection>() {
+              public OrderDirection findValueByNumber(int number) {
+                return OrderDirection.forNumber(number);
+              }
+            };
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
+          getValueDescriptor() {
         if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-                  "Can't get the descriptor of an unrecognized enum value.");
+          throw new IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
         }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
+          getDescriptorForType() {
         return getDescriptor();
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.getDescriptor().getEnumTypes().get(1);
+          getDescriptor() {
+        return GetTransactionRecordsReq.getDescriptor().getEnumTypes().get(1);
       }
 
       private static final OrderDirection[] VALUES = values();
 
       public static OrderDirection valueOf(
-              com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-                  "EnumValueDescriptor is not for this type.");
+          throw new IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
         }
         if (desc.getIndex() == -1) {
           return UNRECOGNIZED;
@@ -13867,8 +13817,8 @@ public final class WalletGrpc {
     }
 
     public interface OrderOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsReq.Order)
-            com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsReq.Order)
+        com.google.protobuf.MessageOrBuilder {
 
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
@@ -13879,7 +13829,7 @@ public final class WalletGrpc {
        * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
        * @return The orderBy.
        */
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy getOrderBy();
+      OrderBy getOrderBy();
 
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
@@ -13890,16 +13840,16 @@ public final class WalletGrpc {
        * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
        * @return The orderDirection.
        */
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection getOrderDirection();
+      OrderDirection getOrderDirection();
     }
     /**
      * Protobuf type {@code wallet.GetTransactionRecordsReq.Order}
      */
     public static final class Order extends
-            com.google.protobuf.GeneratedMessageV3 implements
-            // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsReq.Order)
-            OrderOrBuilder {
-      private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsReq.Order)
+        OrderOrBuilder {
+    private static final long serialVersionUID = 0L;
       // Use Order.newBuilder() to construct.
       private Order(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -13909,64 +13859,71 @@ public final class WalletGrpc {
         orderDirection_ = 0;
       }
 
-      @java.lang.Override
+      @Override
       @SuppressWarnings({"unused"})
-      protected java.lang.Object newInstance(
-              UnusedPrivateParameter unused) {
+      protected Object newInstance(
+          UnusedPrivateParameter unused) {
         return new Order();
       }
 
+      @Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return this.unknownFields;
+      }
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                Order.class, Builder.class);
       }
 
       public static final int ORDERBY_FIELD_NUMBER = 1;
-      private int orderBy_ = 0;
+      private int orderBy_;
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
        * @return The enum numeric value on the wire for orderBy.
        */
-      @java.lang.Override public int getOrderByValue() {
+      @Override public int getOrderByValue() {
         return orderBy_;
       }
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
        * @return The orderBy.
        */
-      @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy getOrderBy() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.forNumber(orderBy_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.UNRECOGNIZED : result;
+      @Override public OrderBy getOrderBy() {
+        @SuppressWarnings("deprecation")
+        OrderBy result = OrderBy.valueOf(orderBy_);
+        return result == null ? OrderBy.UNRECOGNIZED : result;
       }
 
       public static final int ORDERDIRECTION_FIELD_NUMBER = 2;
-      private int orderDirection_ = 0;
+      private int orderDirection_;
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
        * @return The enum numeric value on the wire for orderDirection.
        */
-      @java.lang.Override public int getOrderDirectionValue() {
+      @Override public int getOrderDirectionValue() {
         return orderDirection_;
       }
       /**
        * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
        * @return The orderDirection.
        */
-      @java.lang.Override public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection getOrderDirection() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.forNumber(orderDirection_);
-        return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.UNRECOGNIZED : result;
+      @Override public OrderDirection getOrderDirection() {
+        @SuppressWarnings("deprecation")
+        OrderDirection result = OrderDirection.valueOf(orderDirection_);
+        return result == null ? OrderDirection.UNRECOGNIZED : result;
       }
 
       private byte memoizedIsInitialized = -1;
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized == 1) return true;
@@ -13976,46 +13933,46 @@ public final class WalletGrpc {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
-              throws java.io.IOException {
-        if (orderBy_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.OrderBy_None.getNumber()) {
+                          throws java.io.IOException {
+        if (orderBy_ != OrderBy.OrderBy_None.getNumber()) {
           output.writeEnum(1, orderBy_);
         }
-        if (orderDirection_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.OrderDirection_None.getNumber()) {
+        if (orderDirection_ != OrderDirection.OrderDirection_None.getNumber()) {
           output.writeEnum(2, orderDirection_);
         }
         getUnknownFields().writeTo(output);
       }
 
-      @java.lang.Override
+      @Override
       public int getSerializedSize() {
         int size = memoizedSize;
         if (size != -1) return size;
 
         size = 0;
-        if (orderBy_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.OrderBy_None.getNumber()) {
+        if (orderBy_ != OrderBy.OrderBy_None.getNumber()) {
           size += com.google.protobuf.CodedOutputStream
-                  .computeEnumSize(1, orderBy_);
+            .computeEnumSize(1, orderBy_);
         }
-        if (orderDirection_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.OrderDirection_None.getNumber()) {
+        if (orderDirection_ != OrderDirection.OrderDirection_None.getNumber()) {
           size += com.google.protobuf.CodedOutputStream
-                  .computeEnumSize(2, orderDirection_);
+            .computeEnumSize(2, orderDirection_);
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
 
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
+      @Override
+      public boolean equals(final Object obj) {
         if (obj == this) {
-          return true;
+         return true;
         }
-        if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order)) {
+        if (!(obj instanceof Order)) {
           return super.equals(obj);
         }
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order) obj;
+        Order other = (Order) obj;
 
         if (orderBy_ != other.orderBy_) return false;
         if (orderDirection_ != other.orderDirection_) return false;
@@ -14023,7 +13980,7 @@ public final class WalletGrpc {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -14039,95 +13996,93 @@ public final class WalletGrpc {
         return hash;
       }
 
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              java.nio.ByteBuffer data)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              java.nio.ByteBuffer data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              com.google.protobuf.ByteString data)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              com.google.protobuf.ByteString data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(byte[] data)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              byte[] data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+      public static Order parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(java.io.InputStream input)
-              throws java.io.IOException {
+      public static Order parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              java.io.InputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+      public static Order parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
       }
-
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseDelimitedFrom(java.io.InputStream input)
-              throws java.io.IOException {
+      public static Order parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
       }
-
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseDelimitedFrom(
-              java.io.InputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+      public static Order parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              com.google.protobuf.CodedInputStream input)
-              throws java.io.IOException {
+      public static Order parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
       }
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order parseFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+      public static Order parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
-                .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
-      @java.lang.Override
+      @Override
       public Builder newBuilderForType() { return newBuilder(); }
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order prototype) {
+      public static Builder newBuilder(Order prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
-      @java.lang.Override
+      @Override
       public Builder toBuilder() {
         return this == DEFAULT_INSTANCE
-                ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @java.lang.Override
+      @Override
       protected Builder newBuilderForType(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -14135,20 +14090,20 @@ public final class WalletGrpc {
        * Protobuf type {@code wallet.GetTransactionRecordsReq.Order}
        */
       public static final class Builder extends
-              com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-              // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsReq.Order)
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsReq.Order)
+          OrderOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-          return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
+            getDescriptor() {
+          return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
         }
 
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-          return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable
-                  .ensureFieldAccessorsInitialized(
-                          team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder.class);
+        @Override
+        protected FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  Order.class, Builder.class);
         }
 
         // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.newBuilder()
@@ -14157,101 +14112,93 @@ public final class WalletGrpc {
         }
 
         private Builder(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            BuilderParent parent) {
           super(parent);
 
         }
-        @java.lang.Override
+        @Override
         public Builder clear() {
           super.clear();
-          bitField0_ = 0;
           orderBy_ = 0;
+
           orderDirection_ = 0;
+
           return this;
         }
 
-        @java.lang.Override
+        @Override
         public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-          return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
+            getDescriptorForType() {
+          return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
         }
 
-        @java.lang.Override
-        public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getDefaultInstanceForType() {
-          return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.getDefaultInstance();
+        @Override
+        public Order getDefaultInstanceForType() {
+          return Order.getDefaultInstance();
         }
 
-        @java.lang.Override
-        public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order build() {
-          team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order result = buildPartial();
+        @Override
+        public Order build() {
+          Order result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        @java.lang.Override
-        public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order buildPartial() {
-          team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order(this);
-          if (bitField0_ != 0) { buildPartial0(result); }
+        @Override
+        public Order buildPartial() {
+          Order result = new Order(this);
+          result.orderBy_ = orderBy_;
+          result.orderDirection_ = orderDirection_;
           onBuilt();
           return result;
         }
 
-        private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order result) {
-          int from_bitField0_ = bitField0_;
-          if (((from_bitField0_ & 0x00000001) != 0)) {
-            result.orderBy_ = orderBy_;
-          }
-          if (((from_bitField0_ & 0x00000002) != 0)) {
-            result.orderDirection_ = orderDirection_;
-          }
-        }
-
-        @java.lang.Override
+        @Override
         public Builder clone() {
           return super.clone();
         }
-        @java.lang.Override
+        @Override
         public Builder setField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
           return super.setField(field, value);
         }
-        @java.lang.Override
+        @Override
         public Builder clearField(
-                com.google.protobuf.Descriptors.FieldDescriptor field) {
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
           return super.clearField(field);
         }
-        @java.lang.Override
+        @Override
         public Builder clearOneof(
-                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
           return super.clearOneof(oneof);
         }
-        @java.lang.Override
+        @Override
         public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, Object value) {
           return super.setRepeatedField(field, index, value);
         }
-        @java.lang.Override
+        @Override
         public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
           return super.addRepeatedField(field, value);
         }
-        @java.lang.Override
+        @Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order) {
-            return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order)other);
+          if (other instanceof Order) {
+            return mergeFrom((Order)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order other) {
-          if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.getDefaultInstance()) return this;
+        public Builder mergeFrom(Order other) {
+          if (other == Order.getDefaultInstance()) return this;
           if (other.orderBy_ != 0) {
             setOrderByValue(other.getOrderByValue());
           }
@@ -14263,18 +14210,18 @@ public final class WalletGrpc {
           return this;
         }
 
-        @java.lang.Override
+        @Override
         public final boolean isInitialized() {
           return true;
         }
 
-        @java.lang.Override
+        @Override
         public Builder mergeFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
           if (extensionRegistry == null) {
-            throw new java.lang.NullPointerException();
+            throw new NullPointerException();
           }
           try {
             boolean done = false;
@@ -14286,12 +14233,12 @@ public final class WalletGrpc {
                   break;
                 case 8: {
                   orderBy_ = input.readEnum();
-                  bitField0_ |= 0x00000001;
+
                   break;
                 } // case 8
                 case 16: {
                   orderDirection_ = input.readEnum();
-                  bitField0_ |= 0x00000002;
+
                   break;
                 } // case 16
                 default: {
@@ -14309,14 +14256,13 @@ public final class WalletGrpc {
           } // finally
           return this;
         }
-        private int bitField0_;
 
         private int orderBy_ = 0;
         /**
          * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
          * @return The enum numeric value on the wire for orderBy.
          */
-        @java.lang.Override public int getOrderByValue() {
+        @Override public int getOrderByValue() {
           return orderBy_;
         }
         /**
@@ -14325,8 +14271,8 @@ public final class WalletGrpc {
          * @return This builder for chaining.
          */
         public Builder setOrderByValue(int value) {
+          
           orderBy_ = value;
-          bitField0_ |= 0x00000001;
           onChanged();
           return this;
         }
@@ -14334,21 +14280,22 @@ public final class WalletGrpc {
          * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
          * @return The orderBy.
          */
-        @java.lang.Override
-        public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy getOrderBy() {
-          team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.forNumber(orderBy_);
-          return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy.UNRECOGNIZED : result;
+        @Override
+        public OrderBy getOrderBy() {
+          @SuppressWarnings("deprecation")
+          OrderBy result = OrderBy.valueOf(orderBy_);
+          return result == null ? OrderBy.UNRECOGNIZED : result;
         }
         /**
          * <code>.wallet.GetTransactionRecordsReq.OrderBy orderBy = 1;</code>
          * @param value The orderBy to set.
          * @return This builder for chaining.
          */
-        public Builder setOrderBy(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderBy value) {
+        public Builder setOrderBy(OrderBy value) {
           if (value == null) {
             throw new NullPointerException();
           }
-          bitField0_ |= 0x00000001;
+          
           orderBy_ = value.getNumber();
           onChanged();
           return this;
@@ -14358,7 +14305,7 @@ public final class WalletGrpc {
          * @return This builder for chaining.
          */
         public Builder clearOrderBy() {
-          bitField0_ = (bitField0_ & ~0x00000001);
+          
           orderBy_ = 0;
           onChanged();
           return this;
@@ -14369,7 +14316,7 @@ public final class WalletGrpc {
          * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
          * @return The enum numeric value on the wire for orderDirection.
          */
-        @java.lang.Override public int getOrderDirectionValue() {
+        @Override public int getOrderDirectionValue() {
           return orderDirection_;
         }
         /**
@@ -14378,8 +14325,8 @@ public final class WalletGrpc {
          * @return This builder for chaining.
          */
         public Builder setOrderDirectionValue(int value) {
+          
           orderDirection_ = value;
-          bitField0_ |= 0x00000002;
           onChanged();
           return this;
         }
@@ -14387,21 +14334,22 @@ public final class WalletGrpc {
          * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
          * @return The orderDirection.
          */
-        @java.lang.Override
-        public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection getOrderDirection() {
-          team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.forNumber(orderDirection_);
-          return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection.UNRECOGNIZED : result;
+        @Override
+        public OrderDirection getOrderDirection() {
+          @SuppressWarnings("deprecation")
+          OrderDirection result = OrderDirection.valueOf(orderDirection_);
+          return result == null ? OrderDirection.UNRECOGNIZED : result;
         }
         /**
          * <code>.wallet.GetTransactionRecordsReq.OrderDirection orderDirection = 2;</code>
          * @param value The orderDirection to set.
          * @return This builder for chaining.
          */
-        public Builder setOrderDirection(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderDirection value) {
+        public Builder setOrderDirection(OrderDirection value) {
           if (value == null) {
             throw new NullPointerException();
           }
-          bitField0_ |= 0x00000002;
+          
           orderDirection_ = value.getNumber();
           onChanged();
           return this;
@@ -14411,20 +14359,20 @@ public final class WalletGrpc {
          * @return This builder for chaining.
          */
         public Builder clearOrderDirection() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          
           orderDirection_ = 0;
           onChanged();
           return this;
         }
-        @java.lang.Override
+        @Override
         public final Builder setUnknownFields(
-                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.setUnknownFields(unknownFields);
         }
 
-        @java.lang.Override
+        @Override
         public final Builder mergeUnknownFields(
-                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.mergeUnknownFields(unknownFields);
         }
 
@@ -14433,22 +14381,22 @@ public final class WalletGrpc {
       }
 
       // @@protoc_insertion_point(class_scope:wallet.GetTransactionRecordsReq.Order)
-      private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order DEFAULT_INSTANCE;
+      private static final Order DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order();
+        DEFAULT_INSTANCE = new Order();
       }
 
-      public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getDefaultInstance() {
+      public static Order getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
       private static final com.google.protobuf.Parser<Order>
-              PARSER = new com.google.protobuf.AbstractParser<Order>() {
-        @java.lang.Override
+          PARSER = new com.google.protobuf.AbstractParser<Order>() {
+        @Override
         public Order parsePartialFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
           Builder builder = newBuilder();
           try {
             builder.mergeFrom(input, extensionRegistry);
@@ -14458,7 +14406,7 @@ public final class WalletGrpc {
             throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
           } catch (java.io.IOException e) {
             throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                    .setUnfinishedMessage(builder.buildPartial());
+                .setUnfinishedMessage(builder.buildPartial());
           }
           return builder.buildPartial();
         }
@@ -14468,13 +14416,13 @@ public final class WalletGrpc {
         return PARSER;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Parser<Order> getParserForType() {
         return PARSER;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getDefaultInstanceForType() {
+      @Override
+      public Order getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -14482,12 +14430,12 @@ public final class WalletGrpc {
 
     private int bitField0_;
     public static final int USERID_FIELD_NUMBER = 1;
-    private long userID_ = 0L;
+    private long userID_;
     /**
      * <code>optional uint64 userID = 1;</code>
      * @return Whether the userID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasUserID() {
       return ((bitField0_ & 0x00000001) != 0);
     }
@@ -14495,18 +14443,18 @@ public final class WalletGrpc {
      * <code>optional uint64 userID = 1;</code>
      * @return The userID.
      */
-    @java.lang.Override
+    @Override
     public long getUserID() {
       return userID_;
     }
 
     public static final int COMMITTERID_FIELD_NUMBER = 2;
-    private long committerID_ = 0L;
+    private long committerID_;
     /**
      * <code>optional uint64 committerID = 2;</code>
      * @return Whether the committerID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCommitterID() {
       return ((bitField0_ & 0x00000002) != 0);
     }
@@ -14514,18 +14462,18 @@ public final class WalletGrpc {
      * <code>optional uint64 committerID = 2;</code>
      * @return The committerID.
      */
-    @java.lang.Override
+    @Override
     public long getCommitterID() {
       return committerID_;
     }
 
     public static final int ROLLBACKERID_FIELD_NUMBER = 3;
-    private long rollbackerID_ = 0L;
+    private long rollbackerID_;
     /**
      * <code>optional uint64 rollbackerID = 3;</code>
      * @return Whether the rollbackerID field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasRollbackerID() {
       return ((bitField0_ & 0x00000004) != 0);
     }
@@ -14533,21 +14481,19 @@ public final class WalletGrpc {
      * <code>optional uint64 rollbackerID = 3;</code>
      * @return The rollbackerID.
      */
-    @java.lang.Override
+    @Override
     public long getRollbackerID() {
       return rollbackerID_;
     }
 
     public static final int CURRENCY_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private com.google.protobuf.LazyStringArrayList currency_ =
-            com.google.protobuf.LazyStringArrayList.emptyList();
+    private com.google.protobuf.LazyStringList currency_;
     /**
      * <code>repeated string currency = 4;</code>
      * @return A list containing the currency.
      */
     public com.google.protobuf.ProtocolStringList
-    getCurrencyList() {
+        getCurrencyList() {
       return currency_;
     }
     /**
@@ -14562,7 +14508,7 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The currency at the given index.
      */
-    public java.lang.String getCurrency(int index) {
+    public String getCurrency(int index) {
       return currency_.get(index);
     }
     /**
@@ -14571,36 +14517,36 @@ public final class WalletGrpc {
      * @return The bytes of the currency at the given index.
      */
     public com.google.protobuf.ByteString
-    getCurrencyBytes(int index) {
+        getCurrencyBytes(int index) {
       return currency_.getByteString(index);
     }
 
     public static final int STATUS_FIELD_NUMBER = 5;
-    @SuppressWarnings("serial")
-    private java.util.List<java.lang.Integer> status_;
+    private java.util.List<Integer> status_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
-            java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status> status_converter_ =
+        Integer, Status> status_converter_ =
             new com.google.protobuf.Internal.ListAdapter.Converter<
-                    java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status>() {
-              public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status convert(java.lang.Integer from) {
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.forNumber(from);
-                return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status.UNRECOGNIZED : result;
+                Integer, Status>() {
+              public Status convert(Integer from) {
+                @SuppressWarnings("deprecation")
+                Status result = Status.valueOf(from);
+                return result == null ? Status.UNRECOGNIZED : result;
               }
             };
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return A list containing the status.
      */
-    @java.lang.Override
-    public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status> getStatusList() {
+    @Override
+    public java.util.List<Status> getStatusList() {
       return new com.google.protobuf.Internal.ListAdapter<
-              java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status>(status_, status_converter_);
+          Integer, Status>(status_, status_converter_);
     }
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return The count of status.
      */
-    @java.lang.Override
+    @Override
     public int getStatusCount() {
       return status_.size();
     }
@@ -14609,16 +14555,16 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The status at the given index.
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus(int index) {
+    @Override
+    public Status getStatus(int index) {
       return status_converter_.convert(status_.get(index));
     }
     /**
      * <code>repeated .wallet.Status status = 5;</code>
      * @return A list containing the enum numeric values on the wire for status.
      */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
+    @Override
+    public java.util.List<Integer>
     getStatusValueList() {
       return status_;
     }
@@ -14627,38 +14573,38 @@ public final class WalletGrpc {
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of status at the given index.
      */
-    @java.lang.Override
+    @Override
     public int getStatusValue(int index) {
       return status_.get(index);
     }
     private int statusMemoizedSerializedSize;
 
     public static final int ACTION_FIELD_NUMBER = 6;
-    @SuppressWarnings("serial")
-    private java.util.List<java.lang.Integer> action_;
+    private java.util.List<Integer> action_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
-            java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action> action_converter_ =
+        Integer, Action> action_converter_ =
             new com.google.protobuf.Internal.ListAdapter.Converter<
-                    java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action>() {
-              public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action convert(java.lang.Integer from) {
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action result = team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.forNumber(from);
-                return result == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action.UNRECOGNIZED : result;
+                Integer, Action>() {
+              public Action convert(Integer from) {
+                @SuppressWarnings("deprecation")
+                Action result = Action.valueOf(from);
+                return result == null ? Action.UNRECOGNIZED : result;
               }
             };
     /**
      * <code>repeated .wallet.Action action = 6;</code>
      * @return A list containing the action.
      */
-    @java.lang.Override
-    public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action> getActionList() {
+    @Override
+    public java.util.List<Action> getActionList() {
       return new com.google.protobuf.Internal.ListAdapter<
-              java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action>(action_, action_converter_);
+          Integer, Action>(action_, action_converter_);
     }
     /**
      * <code>repeated .wallet.Action action = 6;</code>
      * @return The count of action.
      */
-    @java.lang.Override
+    @Override
     public int getActionCount() {
       return action_.size();
     }
@@ -14667,16 +14613,16 @@ public final class WalletGrpc {
      * @param index The index of the element to return.
      * @return The action at the given index.
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction(int index) {
+    @Override
+    public Action getAction(int index) {
       return action_converter_.convert(action_.get(index));
     }
     /**
      * <code>repeated .wallet.Action action = 6;</code>
      * @return A list containing the enum numeric values on the wire for action.
      */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
+    @Override
+    public java.util.List<Integer>
     getActionValueList() {
       return action_;
     }
@@ -14685,19 +14631,19 @@ public final class WalletGrpc {
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of action at the given index.
      */
-    @java.lang.Override
+    @Override
     public int getActionValue(int index) {
       return action_.get(index);
     }
     private int actionMemoizedSerializedSize;
 
     public static final int CREATEDFROM_FIELD_NUMBER = 7;
-    private long createdFrom_ = 0L;
+    private long createdFrom_;
     /**
      * <code>optional int64 createdFrom = 7;</code>
      * @return Whether the createdFrom field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCreatedFrom() {
       return ((bitField0_ & 0x00000008) != 0);
     }
@@ -14705,18 +14651,18 @@ public final class WalletGrpc {
      * <code>optional int64 createdFrom = 7;</code>
      * @return The createdFrom.
      */
-    @java.lang.Override
+    @Override
     public long getCreatedFrom() {
       return createdFrom_;
     }
 
     public static final int CREATEDTO_FIELD_NUMBER = 8;
-    private long createdTo_ = 0L;
+    private long createdTo_;
     /**
      * <code>optional int64 createdTo = 8;</code>
      * @return Whether the createdTo field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasCreatedTo() {
       return ((bitField0_ & 0x00000010) != 0);
     }
@@ -14724,59 +14670,58 @@ public final class WalletGrpc {
      * <code>optional int64 createdTo = 8;</code>
      * @return The createdTo.
      */
-    @java.lang.Override
+    @Override
     public long getCreatedTo() {
       return createdTo_;
     }
 
     public static final int ORDER_FIELD_NUMBER = 9;
-    @SuppressWarnings("serial")
-    private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order> order_;
+    private java.util.List<Order> order_;
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    @java.lang.Override
-    public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order> getOrderList() {
+    @Override
+    public java.util.List<Order> getOrderList() {
       return order_;
     }
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    @java.lang.Override
-    public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder>
-    getOrderOrBuilderList() {
+    @Override
+    public java.util.List<? extends OrderOrBuilder>
+        getOrderOrBuilderList() {
       return order_;
     }
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    @java.lang.Override
+    @Override
     public int getOrderCount() {
       return order_.size();
     }
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getOrder(int index) {
+    @Override
+    public Order getOrder(int index) {
       return order_.get(index);
     }
     /**
      * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder getOrderOrBuilder(
-            int index) {
+    @Override
+    public OrderOrBuilder getOrderOrBuilder(
+        int index) {
       return order_.get(index);
     }
 
     public static final int PAGINATION_FIELD_NUMBER = 10;
-    private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination pagination_;
+    private Pagination pagination_;
     /**
      * <code>.wallet.Pagination pagination = 10;</code>
      * @return Whether the pagination field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -14784,20 +14729,20 @@ public final class WalletGrpc {
      * <code>.wallet.Pagination pagination = 10;</code>
      * @return The pagination.
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getPagination() {
-      return pagination_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance() : pagination_;
+    @Override
+    public Pagination getPagination() {
+      return pagination_ == null ? Pagination.getDefaultInstance() : pagination_;
     }
     /**
      * <code>.wallet.Pagination pagination = 10;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder getPaginationOrBuilder() {
-      return pagination_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance() : pagination_;
+    @Override
+    public PaginationOrBuilder getPaginationOrBuilder() {
+      return getPagination();
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -14807,9 +14752,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) != 0)) {
         output.writeUInt64(1, userID_);
@@ -14852,7 +14797,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -14860,15 +14805,15 @@ public final class WalletGrpc {
       size = 0;
       if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, userID_);
+          .computeUInt64Size(1, userID_);
       }
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(2, committerID_);
+          .computeUInt64Size(2, committerID_);
       }
       if (((bitField0_ & 0x00000004) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(3, rollbackerID_);
+          .computeUInt64Size(3, rollbackerID_);
       }
       {
         int dataSize = 0;
@@ -14882,98 +14827,98 @@ public final class WalletGrpc {
         int dataSize = 0;
         for (int i = 0; i < status_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-                  .computeEnumSizeNoTag(status_.get(i));
+            .computeEnumSizeNoTag(status_.get(i));
         }
         size += dataSize;
         if (!getStatusList().isEmpty()) {  size += 1;
           size += com.google.protobuf.CodedOutputStream
-                  .computeUInt32SizeNoTag(dataSize);
+            .computeUInt32SizeNoTag(dataSize);
         }statusMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
         for (int i = 0; i < action_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-                  .computeEnumSizeNoTag(action_.get(i));
+            .computeEnumSizeNoTag(action_.get(i));
         }
         size += dataSize;
         if (!getActionList().isEmpty()) {  size += 1;
           size += com.google.protobuf.CodedOutputStream
-                  .computeUInt32SizeNoTag(dataSize);
+            .computeUInt32SizeNoTag(dataSize);
         }actionMemoizedSerializedSize = dataSize;
       }
       if (((bitField0_ & 0x00000008) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(7, createdFrom_);
+          .computeInt64Size(7, createdFrom_);
       }
       if (((bitField0_ & 0x00000010) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeInt64Size(8, createdTo_);
+          .computeInt64Size(8, createdTo_);
       }
       for (int i = 0; i < order_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(9, order_.get(i));
+          .computeMessageSize(9, order_.get(i));
       }
       if (pagination_ != null) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(10, getPagination());
+          .computeMessageSize(10, getPagination());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq)) {
+      if (!(obj instanceof GetTransactionRecordsReq)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq) obj;
+      GetTransactionRecordsReq other = (GetTransactionRecordsReq) obj;
 
       if (hasUserID() != other.hasUserID()) return false;
       if (hasUserID()) {
         if (getUserID()
-                != other.getUserID()) return false;
+            != other.getUserID()) return false;
       }
       if (hasCommitterID() != other.hasCommitterID()) return false;
       if (hasCommitterID()) {
         if (getCommitterID()
-                != other.getCommitterID()) return false;
+            != other.getCommitterID()) return false;
       }
       if (hasRollbackerID() != other.hasRollbackerID()) return false;
       if (hasRollbackerID()) {
         if (getRollbackerID()
-                != other.getRollbackerID()) return false;
+            != other.getRollbackerID()) return false;
       }
       if (!getCurrencyList()
-              .equals(other.getCurrencyList())) return false;
+          .equals(other.getCurrencyList())) return false;
       if (!status_.equals(other.status_)) return false;
       if (!action_.equals(other.action_)) return false;
       if (hasCreatedFrom() != other.hasCreatedFrom()) return false;
       if (hasCreatedFrom()) {
         if (getCreatedFrom()
-                != other.getCreatedFrom()) return false;
+            != other.getCreatedFrom()) return false;
       }
       if (hasCreatedTo() != other.hasCreatedTo()) return false;
       if (hasCreatedTo()) {
         if (getCreatedTo()
-                != other.getCreatedTo()) return false;
+            != other.getCreatedTo()) return false;
       }
       if (!getOrderList()
-              .equals(other.getOrderList())) return false;
+          .equals(other.getOrderList())) return false;
       if (hasPagination() != other.hasPagination()) return false;
       if (hasPagination()) {
         if (!getPagination()
-                .equals(other.getPagination())) return false;
+            .equals(other.getPagination())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -14983,17 +14928,17 @@ public final class WalletGrpc {
       if (hasUserID()) {
         hash = (37 * hash) + USERID_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getUserID());
+            getUserID());
       }
       if (hasCommitterID()) {
         hash = (37 * hash) + COMMITTERID_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getCommitterID());
+            getCommitterID());
       }
       if (hasRollbackerID()) {
         hash = (37 * hash) + ROLLBACKERID_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getRollbackerID());
+            getRollbackerID());
       }
       if (getCurrencyCount() > 0) {
         hash = (37 * hash) + CURRENCY_FIELD_NUMBER;
@@ -15010,12 +14955,12 @@ public final class WalletGrpc {
       if (hasCreatedFrom()) {
         hash = (37 * hash) + CREATEDFROM_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getCreatedFrom());
+            getCreatedFrom());
       }
       if (hasCreatedTo()) {
         hash = (37 * hash) + CREATEDTO_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getCreatedTo());
+            getCreatedTo());
       }
       if (getOrderCount() > 0) {
         hash = (37 * hash) + ORDER_FIELD_NUMBER;
@@ -15030,95 +14975,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq prototype) {
+    public static Builder newBuilder(GetTransactionRecordsReq prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -15126,20 +15069,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetTransactionRecordsReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsReq)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsReq)
+        GetTransactionRecordsReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetTransactionRecordsReq.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.newBuilder()
@@ -15148,25 +15091,29 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         userID_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
         committerID_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
         rollbackerID_ = 0L;
-        currency_ =
-                com.google.protobuf.LazyStringArrayList.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        currency_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
         status_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000010);
         action_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000020);
         createdFrom_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000040);
         createdTo_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000080);
         if (orderBuilder_ == null) {
           order_ = java.util.Collections.emptyList();
         } else {
@@ -15174,66 +15121,38 @@ public final class WalletGrpc {
           orderBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000100);
-        pagination_ = null;
-        if (paginationBuilder_ != null) {
-          paginationBuilder_.dispose();
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+        } else {
+          pagination_ = null;
           paginationBuilder_ = null;
         }
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsReq_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.getDefaultInstance();
+      @Override
+      public GetTransactionRecordsReq getDefaultInstanceForType() {
+        return GetTransactionRecordsReq.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq result = buildPartial();
+      @Override
+      public GetTransactionRecordsReq build() {
+        GetTransactionRecordsReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq(this);
-        buildPartialRepeatedFields(result);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartialRepeatedFields(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq result) {
-        if (((bitField0_ & 0x00000010) != 0)) {
-          status_ = java.util.Collections.unmodifiableList(status_);
-          bitField0_ = (bitField0_ & ~0x00000010);
-        }
-        result.status_ = status_;
-        if (((bitField0_ & 0x00000020) != 0)) {
-          action_ = java.util.Collections.unmodifiableList(action_);
-          bitField0_ = (bitField0_ & ~0x00000020);
-        }
-        result.action_ = action_;
-        if (orderBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) != 0)) {
-            order_ = java.util.Collections.unmodifiableList(order_);
-            bitField0_ = (bitField0_ & ~0x00000100);
-          }
-          result.order_ = order_;
-        } else {
-          result.order_ = orderBuilder_.build();
-        }
-      }
-
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq result) {
+      @Override
+      public GetTransactionRecordsReq buildPartial() {
+        GetTransactionRecordsReq result = new GetTransactionRecordsReq(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -15248,10 +15167,21 @@ public final class WalletGrpc {
           result.rollbackerID_ = rollbackerID_;
           to_bitField0_ |= 0x00000004;
         }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          currency_.makeImmutable();
-          result.currency_ = currency_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          currency_ = currency_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
+        result.currency_ = currency_;
+        if (((bitField0_ & 0x00000010) != 0)) {
+          status_ = java.util.Collections.unmodifiableList(status_);
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.status_ = status_;
+        if (((bitField0_ & 0x00000020) != 0)) {
+          action_ = java.util.Collections.unmodifiableList(action_);
+          bitField0_ = (bitField0_ & ~0x00000020);
+        }
+        result.action_ = action_;
         if (((from_bitField0_ & 0x00000040) != 0)) {
           result.createdFrom_ = createdFrom_;
           to_bitField0_ |= 0x00000008;
@@ -15260,58 +15190,69 @@ public final class WalletGrpc {
           result.createdTo_ = createdTo_;
           to_bitField0_ |= 0x00000010;
         }
-        if (((from_bitField0_ & 0x00000200) != 0)) {
-          result.pagination_ = paginationBuilder_ == null
-                  ? pagination_
-                  : paginationBuilder_.build();
+        if (orderBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            order_ = java.util.Collections.unmodifiableList(order_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.order_ = order_;
+        } else {
+          result.order_ = orderBuilder_.build();
         }
-        result.bitField0_ |= to_bitField0_;
+        if (paginationBuilder_ == null) {
+          result.pagination_ = pagination_;
+        } else {
+          result.pagination_ = paginationBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq)other);
+        if (other instanceof GetTransactionRecordsReq) {
+          return mergeFrom((GetTransactionRecordsReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetTransactionRecordsReq other) {
+        if (other == GetTransactionRecordsReq.getDefaultInstance()) return this;
         if (other.hasUserID()) {
           setUserID(other.getUserID());
         }
@@ -15324,7 +15265,7 @@ public final class WalletGrpc {
         if (!other.currency_.isEmpty()) {
           if (currency_.isEmpty()) {
             currency_ = other.currency_;
-            bitField0_ |= 0x00000008;
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensureCurrencyIsMutable();
             currency_.addAll(other.currency_);
@@ -15375,9 +15316,9 @@ public final class WalletGrpc {
               orderBuilder_ = null;
               order_ = other.order_;
               bitField0_ = (bitField0_ & ~0x00000100);
-              orderBuilder_ =
-                      com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                              getOrderFieldBuilder() : null;
+              orderBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getOrderFieldBuilder() : null;
             } else {
               orderBuilder_.addAllMessages(other.order_);
             }
@@ -15391,18 +15332,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -15428,7 +15369,7 @@ public final class WalletGrpc {
                 break;
               } // case 24
               case 34: {
-                java.lang.String s = input.readStringRequireUtf8();
+                String s = input.readStringRequireUtf8();
                 ensureCurrencyIsMutable();
                 currency_.add(s);
                 break;
@@ -15478,10 +15419,10 @@ public final class WalletGrpc {
                 break;
               } // case 64
               case 74: {
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order m =
-                        input.readMessage(
-                                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.parser(),
-                                extensionRegistry);
+                Order m =
+                    input.readMessage(
+                        Order.parser(),
+                        extensionRegistry);
                 if (orderBuilder_ == null) {
                   ensureOrderIsMutable();
                   order_.add(m);
@@ -15492,9 +15433,9 @@ public final class WalletGrpc {
               } // case 74
               case 82: {
                 input.readMessage(
-                        getPaginationFieldBuilder().getBuilder(),
-                        extensionRegistry);
-                bitField0_ |= 0x00000200;
+                    getPaginationFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
                 break;
               } // case 82
               default: {
@@ -15519,7 +15460,7 @@ public final class WalletGrpc {
        * <code>optional uint64 userID = 1;</code>
        * @return Whether the userID field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasUserID() {
         return ((bitField0_ & 0x00000001) != 0);
       }
@@ -15527,7 +15468,7 @@ public final class WalletGrpc {
        * <code>optional uint64 userID = 1;</code>
        * @return The userID.
        */
-      @java.lang.Override
+      @Override
       public long getUserID() {
         return userID_;
       }
@@ -15537,9 +15478,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setUserID(long value) {
-
-        userID_ = value;
         bitField0_ |= 0x00000001;
+        userID_ = value;
         onChanged();
         return this;
       }
@@ -15559,7 +15499,7 @@ public final class WalletGrpc {
        * <code>optional uint64 committerID = 2;</code>
        * @return Whether the committerID field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasCommitterID() {
         return ((bitField0_ & 0x00000002) != 0);
       }
@@ -15567,7 +15507,7 @@ public final class WalletGrpc {
        * <code>optional uint64 committerID = 2;</code>
        * @return The committerID.
        */
-      @java.lang.Override
+      @Override
       public long getCommitterID() {
         return committerID_;
       }
@@ -15577,9 +15517,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCommitterID(long value) {
-
-        committerID_ = value;
         bitField0_ |= 0x00000002;
+        committerID_ = value;
         onChanged();
         return this;
       }
@@ -15599,7 +15538,7 @@ public final class WalletGrpc {
        * <code>optional uint64 rollbackerID = 3;</code>
        * @return Whether the rollbackerID field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasRollbackerID() {
         return ((bitField0_ & 0x00000004) != 0);
       }
@@ -15607,7 +15546,7 @@ public final class WalletGrpc {
        * <code>optional uint64 rollbackerID = 3;</code>
        * @return The rollbackerID.
        */
-      @java.lang.Override
+      @Override
       public long getRollbackerID() {
         return rollbackerID_;
       }
@@ -15617,9 +15556,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setRollbackerID(long value) {
-
-        rollbackerID_ = value;
         bitField0_ |= 0x00000004;
+        rollbackerID_ = value;
         onChanged();
         return this;
       }
@@ -15634,22 +15572,20 @@ public final class WalletGrpc {
         return this;
       }
 
-      private com.google.protobuf.LazyStringArrayList currency_ =
-              com.google.protobuf.LazyStringArrayList.emptyList();
+      private com.google.protobuf.LazyStringList currency_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureCurrencyIsMutable() {
-        if (!currency_.isModifiable()) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           currency_ = new com.google.protobuf.LazyStringArrayList(currency_);
-        }
-        bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000008;
+         }
       }
       /**
        * <code>repeated string currency = 4;</code>
        * @return A list containing the currency.
        */
       public com.google.protobuf.ProtocolStringList
-      getCurrencyList() {
-        currency_.makeImmutable();
-        return currency_;
+          getCurrencyList() {
+        return currency_.getUnmodifiableView();
       }
       /**
        * <code>repeated string currency = 4;</code>
@@ -15663,7 +15599,7 @@ public final class WalletGrpc {
        * @param index The index of the element to return.
        * @return The currency at the given index.
        */
-      public java.lang.String getCurrency(int index) {
+      public String getCurrency(int index) {
         return currency_.get(index);
       }
       /**
@@ -15672,7 +15608,7 @@ public final class WalletGrpc {
        * @return The bytes of the currency at the given index.
        */
       public com.google.protobuf.ByteString
-      getCurrencyBytes(int index) {
+          getCurrencyBytes(int index) {
         return currency_.getByteString(index);
       }
       /**
@@ -15682,11 +15618,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCurrency(
-              int index, java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        ensureCurrencyIsMutable();
+          int index, String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureCurrencyIsMutable();
         currency_.set(index, value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -15696,11 +15633,12 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addCurrency(
-              java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        ensureCurrencyIsMutable();
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureCurrencyIsMutable();
         currency_.add(value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -15710,11 +15648,10 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addAllCurrency(
-              java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureCurrencyIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, currency_);
-        bitField0_ |= 0x00000008;
+            values, currency_);
         onChanged();
         return this;
       }
@@ -15723,9 +15660,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder clearCurrency() {
-        currency_ =
-                com.google.protobuf.LazyStringArrayList.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);;
+        currency_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -15735,21 +15671,22 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addCurrencyBytes(
-              com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         ensureCurrencyIsMutable();
         currency_.add(value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
 
-      private java.util.List<java.lang.Integer> status_ =
-              java.util.Collections.emptyList();
+      private java.util.List<Integer> status_ =
+        java.util.Collections.emptyList();
       private void ensureStatusIsMutable() {
         if (!((bitField0_ & 0x00000010) != 0)) {
-          status_ = new java.util.ArrayList<java.lang.Integer>(status_);
+          status_ = new java.util.ArrayList<Integer>(status_);
           bitField0_ |= 0x00000010;
         }
       }
@@ -15757,9 +15694,9 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Status status = 5;</code>
        * @return A list containing the status.
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status> getStatusList() {
+      public java.util.List<Status> getStatusList() {
         return new com.google.protobuf.Internal.ListAdapter<
-                java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status>(status_, status_converter_);
+            Integer, Status>(status_, status_converter_);
       }
       /**
        * <code>repeated .wallet.Status status = 5;</code>
@@ -15773,7 +15710,7 @@ public final class WalletGrpc {
        * @param index The index of the element to return.
        * @return The status at the given index.
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status getStatus(int index) {
+      public Status getStatus(int index) {
         return status_converter_.convert(status_.get(index));
       }
       /**
@@ -15783,7 +15720,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setStatus(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status value) {
+          int index, Status value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -15797,7 +15734,7 @@ public final class WalletGrpc {
        * @param value The status to add.
        * @return This builder for chaining.
        */
-      public Builder addStatus(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status value) {
+      public Builder addStatus(Status value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -15812,9 +15749,9 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addAllStatus(
-              java.lang.Iterable<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status> values) {
+          Iterable<? extends Status> values) {
         ensureStatusIsMutable();
-        for (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Status value : values) {
+        for (Status value : values) {
           status_.add(value.getNumber());
         }
         onChanged();
@@ -15834,7 +15771,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Status status = 5;</code>
        * @return A list containing the enum numeric values on the wire for status.
        */
-      public java.util.List<java.lang.Integer>
+      public java.util.List<Integer>
       getStatusValueList() {
         return java.util.Collections.unmodifiableList(status_);
       }
@@ -15853,7 +15790,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setStatusValue(
-              int index, int value) {
+          int index, int value) {
         ensureStatusIsMutable();
         status_.set(index, value);
         onChanged();
@@ -15876,7 +15813,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addAllStatusValue(
-              java.lang.Iterable<java.lang.Integer> values) {
+          Iterable<Integer> values) {
         ensureStatusIsMutable();
         for (int value : values) {
           status_.add(value);
@@ -15885,11 +15822,11 @@ public final class WalletGrpc {
         return this;
       }
 
-      private java.util.List<java.lang.Integer> action_ =
-              java.util.Collections.emptyList();
+      private java.util.List<Integer> action_ =
+        java.util.Collections.emptyList();
       private void ensureActionIsMutable() {
         if (!((bitField0_ & 0x00000020) != 0)) {
-          action_ = new java.util.ArrayList<java.lang.Integer>(action_);
+          action_ = new java.util.ArrayList<Integer>(action_);
           bitField0_ |= 0x00000020;
         }
       }
@@ -15897,9 +15834,9 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Action action = 6;</code>
        * @return A list containing the action.
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action> getActionList() {
+      public java.util.List<Action> getActionList() {
         return new com.google.protobuf.Internal.ListAdapter<
-                java.lang.Integer, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action>(action_, action_converter_);
+            Integer, Action>(action_, action_converter_);
       }
       /**
        * <code>repeated .wallet.Action action = 6;</code>
@@ -15913,7 +15850,7 @@ public final class WalletGrpc {
        * @param index The index of the element to return.
        * @return The action at the given index.
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action getAction(int index) {
+      public Action getAction(int index) {
         return action_converter_.convert(action_.get(index));
       }
       /**
@@ -15923,7 +15860,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setAction(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action value) {
+          int index, Action value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -15937,7 +15874,7 @@ public final class WalletGrpc {
        * @param value The action to add.
        * @return This builder for chaining.
        */
-      public Builder addAction(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action value) {
+      public Builder addAction(Action value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -15952,9 +15889,9 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addAllAction(
-              java.lang.Iterable<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action> values) {
+          Iterable<? extends Action> values) {
         ensureActionIsMutable();
-        for (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Action value : values) {
+        for (Action value : values) {
           action_.add(value.getNumber());
         }
         onChanged();
@@ -15974,7 +15911,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.Action action = 6;</code>
        * @return A list containing the enum numeric values on the wire for action.
        */
-      public java.util.List<java.lang.Integer>
+      public java.util.List<Integer>
       getActionValueList() {
         return java.util.Collections.unmodifiableList(action_);
       }
@@ -15993,7 +15930,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setActionValue(
-              int index, int value) {
+          int index, int value) {
         ensureActionIsMutable();
         action_.set(index, value);
         onChanged();
@@ -16016,7 +15953,7 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder addAllActionValue(
-              java.lang.Iterable<java.lang.Integer> values) {
+          Iterable<Integer> values) {
         ensureActionIsMutable();
         for (int value : values) {
           action_.add(value);
@@ -16030,7 +15967,7 @@ public final class WalletGrpc {
        * <code>optional int64 createdFrom = 7;</code>
        * @return Whether the createdFrom field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasCreatedFrom() {
         return ((bitField0_ & 0x00000040) != 0);
       }
@@ -16038,7 +15975,7 @@ public final class WalletGrpc {
        * <code>optional int64 createdFrom = 7;</code>
        * @return The createdFrom.
        */
-      @java.lang.Override
+      @Override
       public long getCreatedFrom() {
         return createdFrom_;
       }
@@ -16048,9 +15985,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCreatedFrom(long value) {
-
-        createdFrom_ = value;
         bitField0_ |= 0x00000040;
+        createdFrom_ = value;
         onChanged();
         return this;
       }
@@ -16070,7 +16006,7 @@ public final class WalletGrpc {
        * <code>optional int64 createdTo = 8;</code>
        * @return Whether the createdTo field is set.
        */
-      @java.lang.Override
+      @Override
       public boolean hasCreatedTo() {
         return ((bitField0_ & 0x00000080) != 0);
       }
@@ -16078,7 +16014,7 @@ public final class WalletGrpc {
        * <code>optional int64 createdTo = 8;</code>
        * @return The createdTo.
        */
-      @java.lang.Override
+      @Override
       public long getCreatedTo() {
         return createdTo_;
       }
@@ -16088,9 +16024,8 @@ public final class WalletGrpc {
        * @return This builder for chaining.
        */
       public Builder setCreatedTo(long value) {
-
-        createdTo_ = value;
         bitField0_ |= 0x00000080;
+        createdTo_ = value;
         onChanged();
         return this;
       }
@@ -16105,22 +16040,22 @@ public final class WalletGrpc {
         return this;
       }
 
-      private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order> order_ =
-              java.util.Collections.emptyList();
+      private java.util.List<Order> order_ =
+        java.util.Collections.emptyList();
       private void ensureOrderIsMutable() {
         if (!((bitField0_ & 0x00000100) != 0)) {
-          order_ = new java.util.ArrayList<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order>(order_);
+          order_ = new java.util.ArrayList<Order>(order_);
           bitField0_ |= 0x00000100;
-        }
+         }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder> orderBuilder_;
+          Order, Order.Builder, OrderOrBuilder> orderBuilder_;
 
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order> getOrderList() {
+      public java.util.List<Order> getOrderList() {
         if (orderBuilder_ == null) {
           return java.util.Collections.unmodifiableList(order_);
         } else {
@@ -16140,7 +16075,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order getOrder(int index) {
+      public Order getOrder(int index) {
         if (orderBuilder_ == null) {
           return order_.get(index);
         } else {
@@ -16151,7 +16086,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder setOrder(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order value) {
+          int index, Order value) {
         if (orderBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16168,7 +16103,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder setOrder(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder builderForValue) {
+          int index, Order.Builder builderForValue) {
         if (orderBuilder_ == null) {
           ensureOrderIsMutable();
           order_.set(index, builderForValue.build());
@@ -16181,7 +16116,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public Builder addOrder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order value) {
+      public Builder addOrder(Order value) {
         if (orderBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16198,7 +16133,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder addOrder(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order value) {
+          int index, Order value) {
         if (orderBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16215,7 +16150,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder addOrder(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder builderForValue) {
+          Order.Builder builderForValue) {
         if (orderBuilder_ == null) {
           ensureOrderIsMutable();
           order_.add(builderForValue.build());
@@ -16229,7 +16164,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder addOrder(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder builderForValue) {
+          int index, Order.Builder builderForValue) {
         if (orderBuilder_ == null) {
           ensureOrderIsMutable();
           order_.add(index, builderForValue.build());
@@ -16243,11 +16178,11 @@ public final class WalletGrpc {
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
       public Builder addAllOrder(
-              java.lang.Iterable<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order> values) {
+          Iterable<? extends Order> values) {
         if (orderBuilder_ == null) {
           ensureOrderIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                  values, order_);
+              values, order_);
           onChanged();
         } else {
           orderBuilder_.addAllMessages(values);
@@ -16283,15 +16218,15 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder getOrderBuilder(
-              int index) {
+      public Order.Builder getOrderBuilder(
+          int index) {
         return getOrderFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder getOrderOrBuilder(
-              int index) {
+      public OrderOrBuilder getOrderOrBuilder(
+          int index) {
         if (orderBuilder_ == null) {
           return order_.get(index);  } else {
           return orderBuilder_.getMessageOrBuilder(index);
@@ -16300,8 +16235,8 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder>
-      getOrderOrBuilderList() {
+      public java.util.List<? extends OrderOrBuilder>
+           getOrderOrBuilderList() {
         if (orderBuilder_ != null) {
           return orderBuilder_.getMessageOrBuilderList();
         } else {
@@ -16311,31 +16246,31 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder addOrderBuilder() {
+      public Order.Builder addOrderBuilder() {
         return getOrderFieldBuilder().addBuilder(
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.getDefaultInstance());
+            Order.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder addOrderBuilder(
-              int index) {
+      public Order.Builder addOrderBuilder(
+          int index) {
         return getOrderFieldBuilder().addBuilder(
-                index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.getDefaultInstance());
+            index, Order.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.GetTransactionRecordsReq.Order order = 9;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder>
-      getOrderBuilderList() {
+      public java.util.List<Order.Builder>
+           getOrderBuilderList() {
         return getOrderFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder>
-      getOrderFieldBuilder() {
+          Order, Order.Builder, OrderOrBuilder>
+          getOrderFieldBuilder() {
         if (orderBuilder_ == null) {
           orderBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.Order.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq.OrderOrBuilder>(
+              Order, Order.Builder, OrderOrBuilder>(
                   order_,
                   ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
@@ -16345,23 +16280,23 @@ public final class WalletGrpc {
         return orderBuilder_;
       }
 
-      private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination pagination_;
+      private Pagination pagination_;
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder> paginationBuilder_;
+          Pagination, Pagination.Builder, PaginationOrBuilder> paginationBuilder_;
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
-        return ((bitField0_ & 0x00000200) != 0);
+        return paginationBuilder_ != null || pagination_ != null;
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        * @return The pagination.
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination getPagination() {
+      public Pagination getPagination() {
         if (paginationBuilder_ == null) {
-          return pagination_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance() : pagination_;
+          return pagination_ == null ? Pagination.getDefaultInstance() : pagination_;
         } else {
           return paginationBuilder_.getMessage();
         }
@@ -16369,93 +16304,93 @@ public final class WalletGrpc {
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
-      public Builder setPagination(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination value) {
+      public Builder setPagination(Pagination value) {
         if (paginationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           pagination_ = value;
+          onChanged();
         } else {
           paginationBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000200;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
       public Builder setPagination(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder builderForValue) {
+          Pagination.Builder builderForValue) {
         if (paginationBuilder_ == null) {
           pagination_ = builderForValue.build();
+          onChanged();
         } else {
           paginationBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000200;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
-      public Builder mergePagination(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination value) {
+      public Builder mergePagination(Pagination value) {
         if (paginationBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) != 0) &&
-                  pagination_ != null &&
-                  pagination_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance()) {
-            getPaginationBuilder().mergeFrom(value);
+          if (pagination_ != null) {
+            pagination_ =
+              Pagination.newBuilder(pagination_).mergeFrom(value).buildPartial();
           } else {
             pagination_ = value;
           }
+          onChanged();
         } else {
           paginationBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000200;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
       public Builder clearPagination() {
-        bitField0_ = (bitField0_ & ~0x00000200);
-        pagination_ = null;
-        if (paginationBuilder_ != null) {
-          paginationBuilder_.dispose();
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+          onChanged();
+        } else {
+          pagination_ = null;
           paginationBuilder_ = null;
         }
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder getPaginationBuilder() {
-        bitField0_ |= 0x00000200;
+      public Pagination.Builder getPaginationBuilder() {
+        
         onChanged();
         return getPaginationFieldBuilder().getBuilder();
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder getPaginationOrBuilder() {
+      public PaginationOrBuilder getPaginationOrBuilder() {
         if (paginationBuilder_ != null) {
           return paginationBuilder_.getMessageOrBuilder();
         } else {
           return pagination_ == null ?
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.getDefaultInstance() : pagination_;
+              Pagination.getDefaultInstance() : pagination_;
         }
       }
       /**
        * <code>.wallet.Pagination pagination = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder>
-      getPaginationFieldBuilder() {
+          Pagination, Pagination.Builder, PaginationOrBuilder>
+          getPaginationFieldBuilder() {
         if (paginationBuilder_ == null) {
           paginationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.Pagination.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationOrBuilder>(
+              Pagination, Pagination.Builder, PaginationOrBuilder>(
                   getPagination(),
                   getParentForChildren(),
                   isClean());
@@ -16463,15 +16398,15 @@ public final class WalletGrpc {
         }
         return paginationBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -16480,22 +16415,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetTransactionRecordsReq)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq DEFAULT_INSTANCE;
+    private static final GetTransactionRecordsReq DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq();
+      DEFAULT_INSTANCE = new GetTransactionRecordsReq();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq getDefaultInstance() {
+    public static GetTransactionRecordsReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetTransactionRecordsReq>
-            PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordsReq>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordsReq>() {
+      @Override
       public GetTransactionRecordsReq parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -16505,7 +16440,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -16515,31 +16450,31 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetTransactionRecordsReq> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsReq getDefaultInstanceForType() {
+    @Override
+    public GetTransactionRecordsReq getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetTransactionRecordsResOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsRes)
-          com.google.protobuf.MessageOrBuilder {
+      // @@protoc_insertion_point(interface_extends:wallet.GetTransactionRecordsRes)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord>
-    getRecordsList();
+    java.util.List<TransactionRecord>
+        getRecordsList();
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecords(int index);
+    TransactionRecord getRecords(int index);
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
@@ -16547,13 +16482,13 @@ public final class WalletGrpc {
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>
-    getRecordsOrBuilderList();
+    java.util.List<? extends TransactionRecordOrBuilder>
+        getRecordsOrBuilderList();
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordsOrBuilder(
-            int index);
+    TransactionRecordOrBuilder getRecordsOrBuilder(
+        int index);
 
     /**
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
@@ -16564,20 +16499,20 @@ public final class WalletGrpc {
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
      * @return The paginationInfo.
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getPaginationInfo();
+    PaginationInfo getPaginationInfo();
     /**
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
      */
-    team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder getPaginationInfoOrBuilder();
+    PaginationInfoOrBuilder getPaginationInfoOrBuilder();
   }
   /**
    * Protobuf type {@code wallet.GetTransactionRecordsRes}
    */
   public static final class GetTransactionRecordsRes extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsRes)
-          GetTransactionRecordsResOrBuilder {
-    private static final long serialVersionUID = 0L;
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:wallet.GetTransactionRecordsRes)
+      GetTransactionRecordsResOrBuilder {
+  private static final long serialVersionUID = 0L;
     // Use GetTransactionRecordsRes.newBuilder() to construct.
     private GetTransactionRecordsRes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -16586,74 +16521,78 @@ public final class WalletGrpc {
       records_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-            UnusedPrivateParameter unused) {
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetTransactionRecordsRes();
     }
 
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
+        getDescriptor() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetTransactionRecordsRes.class, Builder.class);
     }
 
     public static final int RECORDS_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord> records_;
+    private java.util.List<TransactionRecord> records_;
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    @java.lang.Override
-    public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord> getRecordsList() {
+    @Override
+    public java.util.List<TransactionRecord> getRecordsList() {
       return records_;
     }
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    @java.lang.Override
-    public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>
-    getRecordsOrBuilderList() {
+    @Override
+    public java.util.List<? extends TransactionRecordOrBuilder>
+        getRecordsOrBuilderList() {
       return records_;
     }
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    @java.lang.Override
+    @Override
     public int getRecordsCount() {
       return records_.size();
     }
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecords(int index) {
+    @Override
+    public TransactionRecord getRecords(int index) {
       return records_.get(index);
     }
     /**
      * <code>repeated .wallet.TransactionRecord records = 1;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordsOrBuilder(
-            int index) {
+    @Override
+    public TransactionRecordOrBuilder getRecordsOrBuilder(
+        int index) {
       return records_.get(index);
     }
 
     public static final int PAGINATIONINFO_FIELD_NUMBER = 2;
-    private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo paginationInfo_;
+    private PaginationInfo paginationInfo_;
     /**
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
      * @return Whether the paginationInfo field is set.
      */
-    @java.lang.Override
+    @Override
     public boolean hasPaginationInfo() {
       return paginationInfo_ != null;
     }
@@ -16661,20 +16600,20 @@ public final class WalletGrpc {
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
      * @return The paginationInfo.
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getPaginationInfo() {
-      return paginationInfo_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance() : paginationInfo_;
+    @Override
+    public PaginationInfo getPaginationInfo() {
+      return paginationInfo_ == null ? PaginationInfo.getDefaultInstance() : paginationInfo_;
     }
     /**
      * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
      */
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder getPaginationInfoOrBuilder() {
-      return paginationInfo_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance() : paginationInfo_;
+    @Override
+    public PaginationInfoOrBuilder getPaginationInfoOrBuilder() {
+      return getPaginationInfo();
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -16684,9 +16623,9 @@ public final class WalletGrpc {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       for (int i = 0; i < records_.size(); i++) {
         output.writeMessage(1, records_.get(i));
       }
@@ -16696,7 +16635,7 @@ public final class WalletGrpc {
       getUnknownFields().writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -16704,39 +16643,39 @@ public final class WalletGrpc {
       size = 0;
       for (int i = 0; i < records_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(1, records_.get(i));
+          .computeMessageSize(1, records_.get(i));
       }
       if (paginationInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-                .computeMessageSize(2, getPaginationInfo());
+          .computeMessageSize(2, getPaginationInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
-      if (!(obj instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes)) {
+      if (!(obj instanceof GetTransactionRecordsRes)) {
         return super.equals(obj);
       }
-      team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes other = (team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes) obj;
+      GetTransactionRecordsRes other = (GetTransactionRecordsRes) obj;
 
       if (!getRecordsList()
-              .equals(other.getRecordsList())) return false;
+          .equals(other.getRecordsList())) return false;
       if (hasPaginationInfo() != other.hasPaginationInfo()) return false;
       if (hasPaginationInfo()) {
         if (!getPaginationInfo()
-                .equals(other.getPaginationInfo())) return false;
+            .equals(other.getPaginationInfo())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -16756,95 +16695,93 @@ public final class WalletGrpc {
       return hash;
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+    public static GetTransactionRecordsRes parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+    public static GetTransactionRecordsRes parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes prototype) {
+    public static Builder newBuilder(GetTransactionRecordsRes prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -16852,20 +16789,20 @@ public final class WalletGrpc {
      * Protobuf type {@code wallet.GetTransactionRecordsRes}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsRes)
-            team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsResOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:wallet.GetTransactionRecordsRes)
+        GetTransactionRecordsResOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
+          getDescriptor() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.class, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.Builder.class);
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetTransactionRecordsRes.class, Builder.class);
       }
 
       // Construct using team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.newBuilder()
@@ -16874,14 +16811,13 @@ public final class WalletGrpc {
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
 
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
-        bitField0_ = 0;
         if (recordsBuilder_ == null) {
           records_ = java.util.Collections.emptyList();
         } else {
@@ -16889,44 +16825,39 @@ public final class WalletGrpc {
           recordsBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
-        paginationInfo_ = null;
-        if (paginationInfoBuilder_ != null) {
-          paginationInfoBuilder_.dispose();
+        if (paginationInfoBuilder_ == null) {
+          paginationInfo_ = null;
+        } else {
+          paginationInfo_ = null;
           paginationInfoBuilder_ = null;
         }
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
-      getDescriptorForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
+          getDescriptorForType() {
+        return WalletGrpc.internal_static_wallet_GetTransactionRecordsRes_descriptor;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes getDefaultInstanceForType() {
-        return team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.getDefaultInstance();
+      @Override
+      public GetTransactionRecordsRes getDefaultInstanceForType() {
+        return GetTransactionRecordsRes.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes build() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes result = buildPartial();
+      @Override
+      public GetTransactionRecordsRes build() {
+        GetTransactionRecordsRes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes buildPartial() {
-        team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes result = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes(this);
-        buildPartialRepeatedFields(result);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartialRepeatedFields(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes result) {
+      @Override
+      public GetTransactionRecordsRes buildPartial() {
+        GetTransactionRecordsRes result = new GetTransactionRecordsRes(this);
+        int from_bitField0_ = bitField0_;
         if (recordsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             records_ = java.util.Collections.unmodifiableList(records_);
@@ -16936,61 +16867,59 @@ public final class WalletGrpc {
         } else {
           result.records_ = recordsBuilder_.build();
         }
-      }
-
-      private void buildPartial0(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.paginationInfo_ = paginationInfoBuilder_ == null
-                  ? paginationInfo_
-                  : paginationInfoBuilder_.build();
+        if (paginationInfoBuilder_ == null) {
+          result.paginationInfo_ = paginationInfo_;
+        } else {
+          result.paginationInfo_ = paginationInfoBuilder_.build();
         }
+        onBuilt();
+        return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes) {
-          return mergeFrom((team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes)other);
+        if (other instanceof GetTransactionRecordsRes) {
+          return mergeFrom((GetTransactionRecordsRes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes other) {
-        if (other == team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes.getDefaultInstance()) return this;
+      public Builder mergeFrom(GetTransactionRecordsRes other) {
+        if (other == GetTransactionRecordsRes.getDefaultInstance()) return this;
         if (recordsBuilder_ == null) {
           if (!other.records_.isEmpty()) {
             if (records_.isEmpty()) {
@@ -17009,9 +16938,9 @@ public final class WalletGrpc {
               recordsBuilder_ = null;
               records_ = other.records_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              recordsBuilder_ =
-                      com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                              getRecordsFieldBuilder() : null;
+              recordsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getRecordsFieldBuilder() : null;
             } else {
               recordsBuilder_.addAllMessages(other.records_);
             }
@@ -17025,18 +16954,18 @@ public final class WalletGrpc {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException();
         }
         try {
           boolean done = false;
@@ -17047,10 +16976,10 @@ public final class WalletGrpc {
                 done = true;
                 break;
               case 10: {
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord m =
-                        input.readMessage(
-                                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.parser(),
-                                extensionRegistry);
+                TransactionRecord m =
+                    input.readMessage(
+                        TransactionRecord.parser(),
+                        extensionRegistry);
                 if (recordsBuilder_ == null) {
                   ensureRecordsIsMutable();
                   records_.add(m);
@@ -17061,9 +16990,9 @@ public final class WalletGrpc {
               } // case 10
               case 18: {
                 input.readMessage(
-                        getPaginationInfoFieldBuilder().getBuilder(),
-                        extensionRegistry);
-                bitField0_ |= 0x00000002;
+                    getPaginationInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
                 break;
               } // case 18
               default: {
@@ -17083,22 +17012,22 @@ public final class WalletGrpc {
       }
       private int bitField0_;
 
-      private java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord> records_ =
-              java.util.Collections.emptyList();
+      private java.util.List<TransactionRecord> records_ =
+        java.util.Collections.emptyList();
       private void ensureRecordsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          records_ = new java.util.ArrayList<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord>(records_);
+          records_ = new java.util.ArrayList<TransactionRecord>(records_);
           bitField0_ |= 0x00000001;
-        }
+         }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder> recordsBuilder_;
+          TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder> recordsBuilder_;
 
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord> getRecordsList() {
+      public java.util.List<TransactionRecord> getRecordsList() {
         if (recordsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(records_);
         } else {
@@ -17118,7 +17047,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord getRecords(int index) {
+      public TransactionRecord getRecords(int index) {
         if (recordsBuilder_ == null) {
           return records_.get(index);
         } else {
@@ -17129,7 +17058,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder setRecords(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord value) {
+          int index, TransactionRecord value) {
         if (recordsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -17146,7 +17075,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder setRecords(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder builderForValue) {
+          int index, TransactionRecord.Builder builderForValue) {
         if (recordsBuilder_ == null) {
           ensureRecordsIsMutable();
           records_.set(index, builderForValue.build());
@@ -17159,7 +17088,7 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public Builder addRecords(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord value) {
+      public Builder addRecords(TransactionRecord value) {
         if (recordsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -17176,7 +17105,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder addRecords(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord value) {
+          int index, TransactionRecord value) {
         if (recordsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -17193,7 +17122,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder addRecords(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder builderForValue) {
+          TransactionRecord.Builder builderForValue) {
         if (recordsBuilder_ == null) {
           ensureRecordsIsMutable();
           records_.add(builderForValue.build());
@@ -17207,7 +17136,7 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder addRecords(
-              int index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder builderForValue) {
+          int index, TransactionRecord.Builder builderForValue) {
         if (recordsBuilder_ == null) {
           ensureRecordsIsMutable();
           records_.add(index, builderForValue.build());
@@ -17221,11 +17150,11 @@ public final class WalletGrpc {
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
       public Builder addAllRecords(
-              java.lang.Iterable<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord> values) {
+          Iterable<? extends TransactionRecord> values) {
         if (recordsBuilder_ == null) {
           ensureRecordsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                  values, records_);
+              values, records_);
           onChanged();
         } else {
           recordsBuilder_.addAllMessages(values);
@@ -17261,15 +17190,15 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder getRecordsBuilder(
-              int index) {
+      public TransactionRecord.Builder getRecordsBuilder(
+          int index) {
         return getRecordsFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder getRecordsOrBuilder(
-              int index) {
+      public TransactionRecordOrBuilder getRecordsOrBuilder(
+          int index) {
         if (recordsBuilder_ == null) {
           return records_.get(index);  } else {
           return recordsBuilder_.getMessageOrBuilder(index);
@@ -17278,8 +17207,8 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public java.util.List<? extends team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>
-      getRecordsOrBuilderList() {
+      public java.util.List<? extends TransactionRecordOrBuilder>
+           getRecordsOrBuilderList() {
         if (recordsBuilder_ != null) {
           return recordsBuilder_.getMessageOrBuilderList();
         } else {
@@ -17289,31 +17218,31 @@ public final class WalletGrpc {
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder addRecordsBuilder() {
+      public TransactionRecord.Builder addRecordsBuilder() {
         return getRecordsFieldBuilder().addBuilder(
-                team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance());
+            TransactionRecord.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder addRecordsBuilder(
-              int index) {
+      public TransactionRecord.Builder addRecordsBuilder(
+          int index) {
         return getRecordsFieldBuilder().addBuilder(
-                index, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.getDefaultInstance());
+            index, TransactionRecord.getDefaultInstance());
       }
       /**
        * <code>repeated .wallet.TransactionRecord records = 1;</code>
        */
-      public java.util.List<team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder>
-      getRecordsBuilderList() {
+      public java.util.List<TransactionRecord.Builder>
+           getRecordsBuilderList() {
         return getRecordsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>
-      getRecordsFieldBuilder() {
+          TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder>
+          getRecordsFieldBuilder() {
         if (recordsBuilder_ == null) {
           recordsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecord.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.TransactionRecordOrBuilder>(
+              TransactionRecord, TransactionRecord.Builder, TransactionRecordOrBuilder>(
                   records_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -17323,23 +17252,23 @@ public final class WalletGrpc {
         return recordsBuilder_;
       }
 
-      private team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo paginationInfo_;
+      private PaginationInfo paginationInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder> paginationInfoBuilder_;
+          PaginationInfo, PaginationInfo.Builder, PaginationInfoOrBuilder> paginationInfoBuilder_;
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        * @return Whether the paginationInfo field is set.
        */
       public boolean hasPaginationInfo() {
-        return ((bitField0_ & 0x00000002) != 0);
+        return paginationInfoBuilder_ != null || paginationInfo_ != null;
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        * @return The paginationInfo.
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo getPaginationInfo() {
+      public PaginationInfo getPaginationInfo() {
         if (paginationInfoBuilder_ == null) {
-          return paginationInfo_ == null ? team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance() : paginationInfo_;
+          return paginationInfo_ == null ? PaginationInfo.getDefaultInstance() : paginationInfo_;
         } else {
           return paginationInfoBuilder_.getMessage();
         }
@@ -17347,93 +17276,93 @@ public final class WalletGrpc {
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
-      public Builder setPaginationInfo(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo value) {
+      public Builder setPaginationInfo(PaginationInfo value) {
         if (paginationInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           paginationInfo_ = value;
+          onChanged();
         } else {
           paginationInfoBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000002;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
       public Builder setPaginationInfo(
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder builderForValue) {
+          PaginationInfo.Builder builderForValue) {
         if (paginationInfoBuilder_ == null) {
           paginationInfo_ = builderForValue.build();
+          onChanged();
         } else {
           paginationInfoBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000002;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
-      public Builder mergePaginationInfo(team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo value) {
+      public Builder mergePaginationInfo(PaginationInfo value) {
         if (paginationInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0) &&
-                  paginationInfo_ != null &&
-                  paginationInfo_ != team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance()) {
-            getPaginationInfoBuilder().mergeFrom(value);
+          if (paginationInfo_ != null) {
+            paginationInfo_ =
+              PaginationInfo.newBuilder(paginationInfo_).mergeFrom(value).buildPartial();
           } else {
             paginationInfo_ = value;
           }
+          onChanged();
         } else {
           paginationInfoBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000002;
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
       public Builder clearPaginationInfo() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        paginationInfo_ = null;
-        if (paginationInfoBuilder_ != null) {
-          paginationInfoBuilder_.dispose();
+        if (paginationInfoBuilder_ == null) {
+          paginationInfo_ = null;
+          onChanged();
+        } else {
+          paginationInfo_ = null;
           paginationInfoBuilder_ = null;
         }
-        onChanged();
+
         return this;
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder getPaginationInfoBuilder() {
-        bitField0_ |= 0x00000002;
+      public PaginationInfo.Builder getPaginationInfoBuilder() {
+        
         onChanged();
         return getPaginationInfoFieldBuilder().getBuilder();
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
-      public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder getPaginationInfoOrBuilder() {
+      public PaginationInfoOrBuilder getPaginationInfoOrBuilder() {
         if (paginationInfoBuilder_ != null) {
           return paginationInfoBuilder_.getMessageOrBuilder();
         } else {
           return paginationInfo_ == null ?
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.getDefaultInstance() : paginationInfo_;
+              PaginationInfo.getDefaultInstance() : paginationInfo_;
         }
       }
       /**
        * <code>.wallet.PaginationInfo paginationInfo = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-              team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder>
-      getPaginationInfoFieldBuilder() {
+          PaginationInfo, PaginationInfo.Builder, PaginationInfoOrBuilder>
+          getPaginationInfoFieldBuilder() {
         if (paginationInfoBuilder_ == null) {
           paginationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                  team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfo.Builder, team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.PaginationInfoOrBuilder>(
+              PaginationInfo, PaginationInfo.Builder, PaginationInfoOrBuilder>(
                   getPaginationInfo(),
                   getParentForChildren(),
                   isClean());
@@ -17441,15 +17370,15 @@ public final class WalletGrpc {
         }
         return paginationInfoBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -17458,22 +17387,22 @@ public final class WalletGrpc {
     }
 
     // @@protoc_insertion_point(class_scope:wallet.GetTransactionRecordsRes)
-    private static final team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes DEFAULT_INSTANCE;
+    private static final GetTransactionRecordsRes DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes();
+      DEFAULT_INSTANCE = new GetTransactionRecordsRes();
     }
 
-    public static team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes getDefaultInstance() {
+    public static GetTransactionRecordsRes getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<GetTransactionRecordsRes>
-            PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordsRes>() {
-      @java.lang.Override
+        PARSER = new com.google.protobuf.AbstractParser<GetTransactionRecordsRes>() {
+      @Override
       public GetTransactionRecordsRes parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
         Builder builder = newBuilder();
         try {
           builder.mergeFrom(input, extensionRegistry);
@@ -17483,7 +17412,7 @@ public final class WalletGrpc {
           throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
         } catch (java.io.IOException e) {
           throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                  .setUnfinishedMessage(builder.buildPartial());
+              .setUnfinishedMessage(builder.buildPartial());
         }
         return builder.buildPartial();
       }
@@ -17493,329 +17422,329 @@ public final class WalletGrpc {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<GetTransactionRecordsRes> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.WalletGrpc.GetTransactionRecordsRes getDefaultInstanceForType() {
+    @Override
+    public GetTransactionRecordsRes getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_Pagination_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_Pagination_fieldAccessorTable;
+    internal_static_wallet_Pagination_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_Pagination_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_PaginationInfo_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_PaginationInfo_fieldAccessorTable;
+    internal_static_wallet_PaginationInfo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_PaginationInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_CreateWalletReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_CreateWalletReq_fieldAccessorTable;
+    internal_static_wallet_CreateWalletReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_CreateWalletReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_CreateWalletRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_CreateWalletRes_fieldAccessorTable;
+    internal_static_wallet_CreateWalletRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_CreateWalletRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetWalletsReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetWalletsReq_fieldAccessorTable;
+    internal_static_wallet_GetWalletsReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetWalletsReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_Wallet_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_Wallet_fieldAccessorTable;
+    internal_static_wallet_Wallet_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_Wallet_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetWalletsRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetWalletsRes_fieldAccessorTable;
+    internal_static_wallet_GetWalletsRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetWalletsRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_DeleteWalletReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_DeleteWalletReq_fieldAccessorTable;
+    internal_static_wallet_DeleteWalletReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_DeleteWalletReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_DeleteWalletRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_DeleteWalletRes_fieldAccessorTable;
+    internal_static_wallet_DeleteWalletRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_DeleteWalletRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_TransactionReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_TransactionReq_fieldAccessorTable;
+    internal_static_wallet_TransactionReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_TransactionReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_TransactionRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_TransactionRes_fieldAccessorTable;
+    internal_static_wallet_TransactionRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_TransactionRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_RollbackTransactionReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_RollbackTransactionReq_fieldAccessorTable;
+    internal_static_wallet_RollbackTransactionReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_RollbackTransactionReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_RollbackTransactionRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_RollbackTransactionRes_fieldAccessorTable;
+    internal_static_wallet_RollbackTransactionRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_RollbackTransactionRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetTransactionRecordReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable;
+    internal_static_wallet_GetTransactionRecordReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_TransactionRecord_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_TransactionRecord_fieldAccessorTable;
+    internal_static_wallet_TransactionRecord_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_TransactionRecord_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetTransactionRecordRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable;
+    internal_static_wallet_GetTransactionRecordRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetTransactionRecordsReq_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable;
+    internal_static_wallet_GetTransactionRecordsReq_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable;
+    internal_static_wallet_GetTransactionRecordsReq_Order_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_wallet_GetTransactionRecordsRes_descriptor;
-  private static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable;
+    internal_static_wallet_GetTransactionRecordsRes_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
-  getDescriptor() {
+      getDescriptor() {
     return descriptor;
   }
   private static  com.google.protobuf.Descriptors.FileDescriptor
-          descriptor;
+      descriptor;
   static {
-    java.lang.String[] descriptorData = {
-            "\n\017be-wallet.proto\022\006wallet\",\n\nPagination\022" +
-                    "\014\n\004page\030\001 \001(\005\022\020\n\010pageSize\030\002 \001(\005\"\206\001\n\016Pagi" +
-                    "nationInfo\022\023\n\013currentPage\030\001 \001(\005\022\020\n\010nextP" +
-                    "age\030\002 \001(\005\022\024\n\014previousPage\030\003 \001(\005\022\020\n\010pageS" +
-                    "ize\030\004 \001(\005\022\022\n\ntotalPages\030\005 \001(\005\022\021\n\ttotalRo" +
-                    "ws\030\006 \001(\005\"3\n\017CreateWalletReq\022\016\n\006userID\030\001 " +
-                    "\001(\004\022\020\n\010currency\030\002 \001(\t\"#\n\017CreateWalletRes" +
-                    "\022\020\n\010walletID\030\001 \001(\004\"]\n\rGetWalletsReq\022\014\n\002i" +
-                    "d\030\001 \001(\004H\000\022\020\n\006userID\030\002 \001(\004H\000\022\025\n\010currency\030" +
-                    "\003 \001(\tH\001\210\001\001B\010\n\006walletB\013\n\t_currency\"l\n\006Wal" +
-                    "let\022\n\n\002id\030\001 \001(\004\022\016\n\006userID\030\002 \001(\004\022\016\n\006amoun" +
-                    "t\030\003 \001(\t\022\020\n\010currency\030\004 \001(\t\022\021\n\tcreatedAt\030\005" +
-                    " \001(\003\022\021\n\tupdatedAt\030\006 \001(\003\"0\n\rGetWalletsRes" +
-                    "\022\037\n\007wallets\030\001 \003(\0132\016.wallet.Wallet\"\035\n\017Del" +
-                    "eteWalletReq\022\n\n\002id\030\001 \001(\004\"\021\n\017DeleteWallet" +
-                    "Res\"\305\001\n\016TransactionReq\022\020\n\010walletID\030\001 \001(\004" +
-                    "\022\036\n\006action\030\002 \001(\0162\016.wallet.Action\022\016\n\006amou" +
-                    "nt\030\003 \001(\t\022\020\n\010currency\030\004 \001(\t\022\023\n\013committerI" +
-                    "D\030\005 \001(\004\022\023\n\006remark\030\006 \001(\tH\000\210\001\001\022\031\n\014beforeAm" +
-                    "ount\030\007 \001(\tH\001\210\001\001B\t\n\007_remarkB\017\n\r_beforeAmo" +
-                    "unt\"\237\001\n\016TransactionRes\022\n\n\002id\030\001 \001(\004\022\024\n\014be" +
-                    "foreAmount\030\002 \001(\t\022\023\n\013afterAmount\030\003 \001(\t\022\020\n" +
-                    "\010currency\030\004 \001(\t\022\036\n\006status\030\005 \001(\0162\016.wallet" +
-                    ".Status\022\021\n\tcreatedAt\030\006 \001(\003\022\021\n\tupdatedAt\030" +
-                    "\007 \001(\003\"Z\n\026RollbackTransactionReq\022\n\n\002id\030\001 " +
-                    "\001(\004\022\024\n\014rollbackerID\030\002 \001(\004\022\023\n\006remark\030\003 \001(" +
-                    "\tH\000\210\001\001B\t\n\007_remark\"\030\n\026RollbackTransaction" +
-                    "Res\"%\n\027GetTransactionRecordReq\022\n\n\002id\030\001 \001" +
-                    "(\004\"\366\003\n\021TransactionRecord\022\n\n\002id\030\001 \001(\004\022\016\n\006" +
-                    "userID\030\002 \001(\004\022\020\n\010walletID\030\003 \001(\004\022\036\n\006action" +
-                    "\030\004 \001(\0162\016.wallet.Action\022\016\n\006amount\030\005 \001(\t\022\031" +
-                    "\n\014beforeAmount\030\006 \001(\tH\000\210\001\001\022\030\n\013afterAmount" +
-                    "\030\007 \001(\tH\001\210\001\001\022\020\n\010currency\030\010 \001(\t\022\023\n\013committ" +
-                    "erID\030\t \001(\004\022\036\n\006status\030\n \001(\0162\016.wallet.Stat" +
-                    "us\022\023\n\006remark\030\013 \001(\tH\002\210\001\001\022\021\n\tcreatedAt\030\014 \001" +
-                    "(\003\022\021\n\tupdatedAt\030\r \001(\003\022!\n\024rollbackBeforeA" +
-                    "mount\030\016 \001(\tH\003\210\001\001\022 \n\023rollbackAfterAmount\030" +
-                    "\017 \001(\tH\004\210\001\001\022\031\n\014rollbackerID\030\020 \001(\004H\005\210\001\001B\017\n" +
-                    "\r_beforeAmountB\016\n\014_afterAmountB\t\n\007_remar" +
-                    "kB\027\n\025_rollbackBeforeAmountB\026\n\024_rollbackA" +
-                    "fterAmountB\017\n\r_rollbackerID\"D\n\027GetTransa" +
-                    "ctionRecordRes\022)\n\006record\030\001 \001(\0132\031.wallet." +
-                    "TransactionRecord\"\375\005\n\030GetTransactionReco" +
-                    "rdsReq\022\023\n\006userID\030\001 \001(\004H\000\210\001\001\022\030\n\013committer" +
-                    "ID\030\002 \001(\004H\001\210\001\001\022\031\n\014rollbackerID\030\003 \001(\004H\002\210\001\001" +
-                    "\022\020\n\010currency\030\004 \003(\t\022\036\n\006status\030\005 \003(\0162\016.wal" +
-                    "let.Status\022\036\n\006action\030\006 \003(\0162\016.wallet.Acti" +
-                    "on\022\030\n\013createdFrom\030\007 \001(\003H\003\210\001\001\022\026\n\tcreatedT" +
-                    "o\030\010 \001(\003H\004\210\001\001\0225\n\005order\030\t \003(\0132&.wallet.Get" +
-                    "TransactionRecordsReq.Order\022&\n\npaginatio" +
-                    "n\030\n \001(\0132\022.wallet.Pagination\032\213\001\n\005Order\0229\n" +
-                    "\007orderBy\030\001 \001(\0162(.wallet.GetTransactionRe" +
-                    "cordsReq.OrderBy\022G\n\016orderDirection\030\002 \001(\016" +
-                    "2/.wallet.GetTransactionRecordsReq.Order" +
-                    "Direction\"w\n\007OrderBy\022\020\n\014OrderBy_None\020\000\022\024" +
-                    "\n\020OrderBy_MemberID\020\001\022\027\n\023OrderBy_Committe" +
-                    "rID\020\002\022\024\n\020OrderBy_Currency\020\003\022\025\n\021OrderBy_C" +
-                    "reatedAt\020\004\"c\n\016OrderDirection\022\027\n\023OrderDir" +
-                    "ection_None\020\000\022\026\n\022OrderDirection_ASC\020\001\022 \n" +
-                    "\023OrderDirection_DESC\020\377\377\377\377\377\377\377\377\377\001B\t\n\007_user" +
-                    "IDB\016\n\014_committerIDB\017\n\r_rollbackerIDB\016\n\014_" +
-                    "createdFromB\014\n\n_createdTo\"v\n\030GetTransact" +
-                    "ionRecordsRes\022*\n\007records\030\001 \003(\0132\031.wallet." +
-                    "TransactionRecord\022.\n\016paginationInfo\030\002 \001(" +
-                    "\0132\026.wallet.PaginationInfo*\241\001\n\006Action\022\017\n\013" +
-                    "Action_NONE\020\000\022\022\n\016Action_DEPOSIT\020\001\022\023\n\017Act" +
-                    "ion_WITHDRAW\020\002\022\020\n\014Action_BONUS\020\003\022\023\n\017Acti" +
-                    "on_INTEREST\020\004\022\017\n\013Action_OPEN\020\005\022\020\n\014Action" +
-                    "_CLOSE\020\006\022\023\n\017Action_MANUALLY\020\007*i\n\006Status\022" +
-                    "\017\n\013Status_NONE\020\000\022\022\n\016Status_PENDING\020\001\022\022\n\016" +
-                    "Status_SUCCESS\020\002\022\021\n\rStatus_FAILED\020\003\022\023\n\017S" +
-                    "tatus_ROLLBACK\020\0042\252\004\n\rWalletService\022B\n\014Cr" +
-                    "eateWallet\022\027.wallet.CreateWalletReq\032\027.wa" +
-                    "llet.CreateWalletRes\"\000\022<\n\nGetWallets\022\025.w" +
-                    "allet.GetWalletsReq\032\025.wallet.GetWalletsR" +
-                    "es\"\000\022B\n\014DeleteWallet\022\027.wallet.DeleteWall" +
-                    "etReq\032\027.wallet.DeleteWalletRes\"\000\022?\n\013Tran" +
-                    "saction\022\026.wallet.TransactionReq\032\026.wallet" +
-                    ".TransactionRes\"\000\022W\n\023RollbackTransaction" +
-                    "\022\036.wallet.RollbackTransactionReq\032\036.walle" +
-                    "t.RollbackTransactionRes\"\000\022Z\n\024GetTransac" +
-                    "tionRecord\022\037.wallet.GetTransactionRecord" +
-                    "Req\032\037.wallet.GetTransactionRecordRes\"\000\022]" +
-                    "\n\025GetTransactionRecords\022 .wallet.GetTran" +
-                    "sactionRecordsReq\032 .wallet.GetTransactio" +
-                    "nRecordsRes\"\000BN\n>team.simpleVirtualWalle" +
-                    "t.beWallet.beWalletService.service.grpcB" +
-                    "\nWalletGrpcP\000b\006proto3"
+    String[] descriptorData = {
+      "\n\017be-wallet.proto\022\006wallet\",\n\nPagination\022" +
+      "\014\n\004page\030\001 \001(\005\022\020\n\010pageSize\030\002 \001(\005\"\206\001\n\016Pagi" +
+      "nationInfo\022\023\n\013currentPage\030\001 \001(\005\022\020\n\010nextP" +
+      "age\030\002 \001(\005\022\024\n\014previousPage\030\003 \001(\005\022\020\n\010pageS" +
+      "ize\030\004 \001(\005\022\022\n\ntotalPages\030\005 \001(\005\022\021\n\ttotalRo" +
+      "ws\030\006 \001(\005\"3\n\017CreateWalletReq\022\016\n\006userID\030\001 " +
+      "\001(\004\022\020\n\010currency\030\002 \001(\t\"#\n\017CreateWalletRes" +
+      "\022\020\n\010walletID\030\001 \001(\004\"]\n\rGetWalletsReq\022\014\n\002i" +
+      "d\030\001 \001(\004H\000\022\020\n\006userID\030\002 \001(\004H\000\022\025\n\010currency\030" +
+      "\003 \001(\tH\001\210\001\001B\010\n\006walletB\013\n\t_currency\"l\n\006Wal" +
+      "let\022\n\n\002id\030\001 \001(\004\022\016\n\006userID\030\002 \001(\004\022\016\n\006amoun" +
+      "t\030\003 \001(\t\022\020\n\010currency\030\004 \001(\t\022\021\n\tcreatedAt\030\005" +
+      " \001(\003\022\021\n\tupdatedAt\030\006 \001(\003\"0\n\rGetWalletsRes" +
+      "\022\037\n\007wallets\030\001 \003(\0132\016.wallet.Wallet\"\035\n\017Del" +
+      "eteWalletReq\022\n\n\002id\030\001 \001(\004\"\021\n\017DeleteWallet" +
+      "Res\"\305\001\n\016TransactionReq\022\020\n\010walletID\030\001 \001(\004" +
+      "\022\036\n\006action\030\002 \001(\0162\016.wallet.Action\022\016\n\006amou" +
+      "nt\030\003 \001(\t\022\020\n\010currency\030\004 \001(\t\022\023\n\013committerI" +
+      "D\030\005 \001(\004\022\023\n\006remark\030\006 \001(\tH\000\210\001\001\022\031\n\014beforeAm" +
+      "ount\030\007 \001(\tH\001\210\001\001B\t\n\007_remarkB\017\n\r_beforeAmo" +
+      "unt\"\237\001\n\016TransactionRes\022\n\n\002id\030\001 \001(\004\022\024\n\014be" +
+      "foreAmount\030\002 \001(\t\022\023\n\013afterAmount\030\003 \001(\t\022\020\n" +
+      "\010currency\030\004 \001(\t\022\036\n\006status\030\005 \001(\0162\016.wallet" +
+      ".Status\022\021\n\tcreatedAt\030\006 \001(\003\022\021\n\tupdatedAt\030" +
+      "\007 \001(\003\"Z\n\026RollbackTransactionReq\022\n\n\002id\030\001 " +
+      "\001(\004\022\024\n\014rollbackerID\030\002 \001(\004\022\023\n\006remark\030\003 \001(" +
+      "\tH\000\210\001\001B\t\n\007_remark\"\030\n\026RollbackTransaction" +
+      "Res\"%\n\027GetTransactionRecordReq\022\n\n\002id\030\001 \001" +
+      "(\004\"\366\003\n\021TransactionRecord\022\n\n\002id\030\001 \001(\004\022\016\n\006" +
+      "userID\030\002 \001(\004\022\020\n\010walletID\030\003 \001(\004\022\036\n\006action" +
+      "\030\004 \001(\0162\016.wallet.Action\022\016\n\006amount\030\005 \001(\t\022\031" +
+      "\n\014beforeAmount\030\006 \001(\tH\000\210\001\001\022\030\n\013afterAmount" +
+      "\030\007 \001(\tH\001\210\001\001\022\020\n\010currency\030\010 \001(\t\022\023\n\013committ" +
+      "erID\030\t \001(\004\022\036\n\006status\030\n \001(\0162\016.wallet.Stat" +
+      "us\022\023\n\006remark\030\013 \001(\tH\002\210\001\001\022\021\n\tcreatedAt\030\014 \001" +
+      "(\003\022\021\n\tupdatedAt\030\r \001(\003\022!\n\024rollbackBeforeA" +
+      "mount\030\016 \001(\tH\003\210\001\001\022 \n\023rollbackAfterAmount\030" +
+      "\017 \001(\tH\004\210\001\001\022\031\n\014rollbackerID\030\020 \001(\004H\005\210\001\001B\017\n" +
+      "\r_beforeAmountB\016\n\014_afterAmountB\t\n\007_remar" +
+      "kB\027\n\025_rollbackBeforeAmountB\026\n\024_rollbackA" +
+      "fterAmountB\017\n\r_rollbackerID\"D\n\027GetTransa" +
+      "ctionRecordRes\022)\n\006record\030\001 \001(\0132\031.wallet." +
+      "TransactionRecord\"\375\005\n\030GetTransactionReco" +
+      "rdsReq\022\023\n\006userID\030\001 \001(\004H\000\210\001\001\022\030\n\013committer" +
+      "ID\030\002 \001(\004H\001\210\001\001\022\031\n\014rollbackerID\030\003 \001(\004H\002\210\001\001" +
+      "\022\020\n\010currency\030\004 \003(\t\022\036\n\006status\030\005 \003(\0162\016.wal" +
+      "let.Status\022\036\n\006action\030\006 \003(\0162\016.wallet.Acti" +
+      "on\022\030\n\013createdFrom\030\007 \001(\003H\003\210\001\001\022\026\n\tcreatedT" +
+      "o\030\010 \001(\003H\004\210\001\001\0225\n\005order\030\t \003(\0132&.wallet.Get" +
+      "TransactionRecordsReq.Order\022&\n\npaginatio" +
+      "n\030\n \001(\0132\022.wallet.Pagination\032\213\001\n\005Order\0229\n" +
+      "\007orderBy\030\001 \001(\0162(.wallet.GetTransactionRe" +
+      "cordsReq.OrderBy\022G\n\016orderDirection\030\002 \001(\016" +
+      "2/.wallet.GetTransactionRecordsReq.Order" +
+      "Direction\"w\n\007OrderBy\022\020\n\014OrderBy_None\020\000\022\024" +
+      "\n\020OrderBy_MemberID\020\001\022\027\n\023OrderBy_Committe" +
+      "rID\020\002\022\024\n\020OrderBy_Currency\020\003\022\025\n\021OrderBy_C" +
+      "reatedAt\020\004\"c\n\016OrderDirection\022\027\n\023OrderDir" +
+      "ection_None\020\000\022\026\n\022OrderDirection_ASC\020\001\022 \n" +
+      "\023OrderDirection_DESC\020\377\377\377\377\377\377\377\377\377\001B\t\n\007_user" +
+      "IDB\016\n\014_committerIDB\017\n\r_rollbackerIDB\016\n\014_" +
+      "createdFromB\014\n\n_createdTo\"v\n\030GetTransact" +
+      "ionRecordsRes\022*\n\007records\030\001 \003(\0132\031.wallet." +
+      "TransactionRecord\022.\n\016paginationInfo\030\002 \001(" +
+      "\0132\026.wallet.PaginationInfo*\241\001\n\006Action\022\017\n\013" +
+      "Action_NONE\020\000\022\022\n\016Action_DEPOSIT\020\001\022\023\n\017Act" +
+      "ion_WITHDRAW\020\002\022\020\n\014Action_BONUS\020\003\022\023\n\017Acti" +
+      "on_INTEREST\020\004\022\017\n\013Action_OPEN\020\005\022\020\n\014Action" +
+      "_CLOSE\020\006\022\023\n\017Action_MANUALLY\020\007*i\n\006Status\022" +
+      "\017\n\013Status_NONE\020\000\022\022\n\016Status_PENDING\020\001\022\022\n\016" +
+      "Status_SUCCESS\020\002\022\021\n\rStatus_FAILED\020\003\022\023\n\017S" +
+      "tatus_ROLLBACK\020\0042\252\004\n\rWalletService\022B\n\014Cr" +
+      "eateWallet\022\027.wallet.CreateWalletReq\032\027.wa" +
+      "llet.CreateWalletRes\"\000\022<\n\nGetWallets\022\025.w" +
+      "allet.GetWalletsReq\032\025.wallet.GetWalletsR" +
+      "es\"\000\022B\n\014DeleteWallet\022\027.wallet.DeleteWall" +
+      "etReq\032\027.wallet.DeleteWalletRes\"\000\022?\n\013Tran" +
+      "saction\022\026.wallet.TransactionReq\032\026.wallet" +
+      ".TransactionRes\"\000\022W\n\023RollbackTransaction" +
+      "\022\036.wallet.RollbackTransactionReq\032\036.walle" +
+      "t.RollbackTransactionRes\"\000\022Z\n\024GetTransac" +
+      "tionRecord\022\037.wallet.GetTransactionRecord" +
+      "Req\032\037.wallet.GetTransactionRecordRes\"\000\022]" +
+      "\n\025GetTransactionRecords\022 .wallet.GetTran" +
+      "sactionRecordsReq\032 .wallet.GetTransactio" +
+      "nRecordsRes\"\000BN\n>team.simpleVirtualWalle" +
+      "t.beWallet.beWalletService.service.grpcB" +
+      "\nWalletGrpcP\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
-            .internalBuildGeneratedFileFrom(descriptorData,
-                    new com.google.protobuf.Descriptors.FileDescriptor[] {
-                    });
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
     internal_static_wallet_Pagination_descriptor =
-            getDescriptor().getMessageTypes().get(0);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_wallet_Pagination_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_Pagination_descriptor,
-            new java.lang.String[] { "Page", "PageSize", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_Pagination_descriptor,
+        new String[] { "Page", "PageSize", });
     internal_static_wallet_PaginationInfo_descriptor =
-            getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_wallet_PaginationInfo_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_PaginationInfo_descriptor,
-            new java.lang.String[] { "CurrentPage", "NextPage", "PreviousPage", "PageSize", "TotalPages", "TotalRows", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_PaginationInfo_descriptor,
+        new String[] { "CurrentPage", "NextPage", "PreviousPage", "PageSize", "TotalPages", "TotalRows", });
     internal_static_wallet_CreateWalletReq_descriptor =
-            getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_wallet_CreateWalletReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_CreateWalletReq_descriptor,
-            new java.lang.String[] { "UserID", "Currency", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_CreateWalletReq_descriptor,
+        new String[] { "UserID", "Currency", });
     internal_static_wallet_CreateWalletRes_descriptor =
-            getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_wallet_CreateWalletRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_CreateWalletRes_descriptor,
-            new java.lang.String[] { "WalletID", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_CreateWalletRes_descriptor,
+        new String[] { "WalletID", });
     internal_static_wallet_GetWalletsReq_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_wallet_GetWalletsReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetWalletsReq_descriptor,
-            new java.lang.String[] { "Id", "UserID", "Currency", "Wallet", "Currency", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetWalletsReq_descriptor,
+        new String[] { "Id", "UserID", "Currency", "Wallet", "Currency", });
     internal_static_wallet_Wallet_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_wallet_Wallet_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_Wallet_descriptor,
-            new java.lang.String[] { "Id", "UserID", "Amount", "Currency", "CreatedAt", "UpdatedAt", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_Wallet_descriptor,
+        new String[] { "Id", "UserID", "Amount", "Currency", "CreatedAt", "UpdatedAt", });
     internal_static_wallet_GetWalletsRes_descriptor =
-            getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_wallet_GetWalletsRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetWalletsRes_descriptor,
-            new java.lang.String[] { "Wallets", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetWalletsRes_descriptor,
+        new String[] { "Wallets", });
     internal_static_wallet_DeleteWalletReq_descriptor =
-            getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_wallet_DeleteWalletReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_DeleteWalletReq_descriptor,
-            new java.lang.String[] { "Id", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_DeleteWalletReq_descriptor,
+        new String[] { "Id", });
     internal_static_wallet_DeleteWalletRes_descriptor =
-            getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_wallet_DeleteWalletRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_DeleteWalletRes_descriptor,
-            new java.lang.String[] { });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_DeleteWalletRes_descriptor,
+        new String[] { });
     internal_static_wallet_TransactionReq_descriptor =
-            getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_wallet_TransactionReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_TransactionReq_descriptor,
-            new java.lang.String[] { "WalletID", "Action", "Amount", "Currency", "CommitterID", "Remark", "BeforeAmount", "Remark", "BeforeAmount", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_TransactionReq_descriptor,
+        new String[] { "WalletID", "Action", "Amount", "Currency", "CommitterID", "Remark", "BeforeAmount", "Remark", "BeforeAmount", });
     internal_static_wallet_TransactionRes_descriptor =
-            getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_wallet_TransactionRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_TransactionRes_descriptor,
-            new java.lang.String[] { "Id", "BeforeAmount", "AfterAmount", "Currency", "Status", "CreatedAt", "UpdatedAt", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_TransactionRes_descriptor,
+        new String[] { "Id", "BeforeAmount", "AfterAmount", "Currency", "Status", "CreatedAt", "UpdatedAt", });
     internal_static_wallet_RollbackTransactionReq_descriptor =
-            getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_wallet_RollbackTransactionReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_RollbackTransactionReq_descriptor,
-            new java.lang.String[] { "Id", "RollbackerID", "Remark", "Remark", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_RollbackTransactionReq_descriptor,
+        new String[] { "Id", "RollbackerID", "Remark", "Remark", });
     internal_static_wallet_RollbackTransactionRes_descriptor =
-            getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_wallet_RollbackTransactionRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_RollbackTransactionRes_descriptor,
-            new java.lang.String[] { });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_RollbackTransactionRes_descriptor,
+        new String[] { });
     internal_static_wallet_GetTransactionRecordReq_descriptor =
-            getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_wallet_GetTransactionRecordReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetTransactionRecordReq_descriptor,
-            new java.lang.String[] { "Id", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetTransactionRecordReq_descriptor,
+        new String[] { "Id", });
     internal_static_wallet_TransactionRecord_descriptor =
-            getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_wallet_TransactionRecord_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_TransactionRecord_descriptor,
-            new java.lang.String[] { "Id", "UserID", "WalletID", "Action", "Amount", "BeforeAmount", "AfterAmount", "Currency", "CommitterID", "Status", "Remark", "CreatedAt", "UpdatedAt", "RollbackBeforeAmount", "RollbackAfterAmount", "RollbackerID", "BeforeAmount", "AfterAmount", "Remark", "RollbackBeforeAmount", "RollbackAfterAmount", "RollbackerID", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_TransactionRecord_descriptor,
+        new String[] { "Id", "UserID", "WalletID", "Action", "Amount", "BeforeAmount", "AfterAmount", "Currency", "CommitterID", "Status", "Remark", "CreatedAt", "UpdatedAt", "RollbackBeforeAmount", "RollbackAfterAmount", "RollbackerID", "BeforeAmount", "AfterAmount", "Remark", "RollbackBeforeAmount", "RollbackAfterAmount", "RollbackerID", });
     internal_static_wallet_GetTransactionRecordRes_descriptor =
-            getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_wallet_GetTransactionRecordRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetTransactionRecordRes_descriptor,
-            new java.lang.String[] { "Record", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetTransactionRecordRes_descriptor,
+        new String[] { "Record", });
     internal_static_wallet_GetTransactionRecordsReq_descriptor =
-            getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_wallet_GetTransactionRecordsReq_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetTransactionRecordsReq_descriptor,
-            new java.lang.String[] { "UserID", "CommitterID", "RollbackerID", "Currency", "Status", "Action", "CreatedFrom", "CreatedTo", "Order", "Pagination", "UserID", "CommitterID", "RollbackerID", "CreatedFrom", "CreatedTo", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetTransactionRecordsReq_descriptor,
+        new String[] { "UserID", "CommitterID", "RollbackerID", "Currency", "Status", "Action", "CreatedFrom", "CreatedTo", "Order", "Pagination", "UserID", "CommitterID", "RollbackerID", "CreatedFrom", "CreatedTo", });
     internal_static_wallet_GetTransactionRecordsReq_Order_descriptor =
-            internal_static_wallet_GetTransactionRecordsReq_descriptor.getNestedTypes().get(0);
+      internal_static_wallet_GetTransactionRecordsReq_descriptor.getNestedTypes().get(0);
     internal_static_wallet_GetTransactionRecordsReq_Order_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetTransactionRecordsReq_Order_descriptor,
-            new java.lang.String[] { "OrderBy", "OrderDirection", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetTransactionRecordsReq_Order_descriptor,
+        new String[] { "OrderBy", "OrderDirection", });
     internal_static_wallet_GetTransactionRecordsRes_descriptor =
-            getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_wallet_GetTransactionRecordsRes_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_wallet_GetTransactionRecordsRes_descriptor,
-            new java.lang.String[] { "Records", "PaginationInfo", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_wallet_GetTransactionRecordsRes_descriptor,
+        new String[] { "Records", "PaginationInfo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -1,29 +1,28 @@
 package team.simpleVirtualWallet.beWallet.beWalletService.exception;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Timestamp;
 
-@Getter
-public class WalletException extends RuntimeException {
 
-    public enum WalletExceptionType {
+@Getter
+public class TransactionException extends RuntimeException {
+
+    public enum TransactionExceptionType {
         None,
         Unknown,
-        NoSuchUser,
-        NoSuchWallet,
-        WrongCurrencyFromWallet
+        TransactionFailed,
+        Unimplemented
     }
 
-    private WalletExceptionType type;
+    private TransactionExceptionType type;
 
     @Setter
-    private String domain = "";
+    private String domain;
 
     private Timestamp timestamp;
-    public WalletException(WalletExceptionType type, String message) {
+    public TransactionException(TransactionExceptionType type, String message) {
         super(message);
         this.type = type;
         timestamp = new Timestamp(System.currentTimeMillis());

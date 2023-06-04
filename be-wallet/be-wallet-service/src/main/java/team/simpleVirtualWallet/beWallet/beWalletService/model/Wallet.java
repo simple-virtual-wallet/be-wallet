@@ -7,12 +7,15 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.Set;
 
 import static javax.persistence.TemporalType.TIMESTAMP;
@@ -33,6 +36,8 @@ public class Wallet {
     @Min(value = 1, message = "userId cannot lower than 1")
     private int userId;
 
+    @NotNull(message = "amount is null.")
+    @Digits(integer=19, fraction=4)
     private BigDecimal amount = new BigDecimal("0.0");
 
     @NotNull(message = "currency is null.")
@@ -41,15 +46,17 @@ public class Wallet {
     private String currency;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+//    @DateTimeFormat
+    @Column(nullable = false, updatable = false)
     @CreationTimestamp
-    private LocalDateTime createdAt;
+    private Timestamp createdAt;
 
     @LastModifiedDate
+//    @DateTimeFormat
     @UpdateTimestamp
-    private LocalDateTime updatedAt;
+    private Timestamp updatedAt;
 
-    private Date deletedAt;
+    private Timestamp deletedAt;
 
     @JsonManagedReference
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "wallet")

@@ -6,10 +6,7 @@ import lombok.NoArgsConstructor;
 import team.simpleVirtualWallet.beWallet.beWalletService.model.Wallet;
 
 import javax.validation.Valid;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 
 @Data
@@ -30,6 +27,7 @@ public class AddTransactionRequestDto {
     Integer action;
 
     @NotNull(message = "amount is null.")
+    @Digits(integer=19, fraction=4)
     BigDecimal amount;
 
     @NotNull(message = "currency is null.")

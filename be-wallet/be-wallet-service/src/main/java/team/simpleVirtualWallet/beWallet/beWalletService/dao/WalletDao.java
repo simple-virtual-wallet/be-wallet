@@ -14,18 +14,25 @@ import java.util.Optional;
 @Repository
 public interface WalletDao extends JpaRepository<Wallet, Integer> {
 
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
+
     Optional<Wallet> findById(Integer id);
 
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
-    Optional<Wallet> findByIdAndUserId(Integer id, Integer userId);
-
-    @Lock(LockModeType.PESSIMISTIC_READ)
-    @Query("""
+//    @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Query(value = """
         SELECT *
-        FROM wallet
+        FROM wallet w
         WHERE id = :id
-        """)
+        FOR UPDATE
+        """, nativeQuery = true)
+    Optional<Wallet> findByIdForUpdate(@Param("id") Integer id);
+
+//    @Lock(LockModeType.PESSIMISTIC_READ)
+    @Query(value = """
+        SELECT *
+        FROM wallet w
+        WHERE id = :id
+        FOR SHARE
+        """, nativeQuery = true)
     Optional<Wallet> findByIdForShare(@Param("id") Integer id);
 
     Optional<Wallet> findByUserIdAndCurrency(Integer userId, String currency);

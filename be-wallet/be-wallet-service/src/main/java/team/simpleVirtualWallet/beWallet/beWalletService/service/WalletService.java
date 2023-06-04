@@ -15,8 +15,6 @@ public interface WalletService {
 
     Optional<Wallet> getWallet(Integer id, LockModeType mode);
 
-    Optional<Wallet> getWallet(Integer id, Integer userId);
-
     Optional<Wallet> getWallet(Integer userId, String currency);
 
     List<Wallet> getWallets(Integer userId);

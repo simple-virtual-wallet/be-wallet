@@ -12,7 +12,7 @@ public enum TransactionStatus implements EnumBase<Integer> {
     Failed(3),                     // 失敗
     Rollback(4);                   // 回滾
 
-    private final int value;
+    private final Integer value;
     private TransactionStatus(int i) {
         value = i;
     }

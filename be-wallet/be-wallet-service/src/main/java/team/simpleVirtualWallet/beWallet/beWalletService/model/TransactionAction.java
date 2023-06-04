@@ -18,7 +18,8 @@ public enum TransactionAction implements EnumBase<Integer> {
     Close(6),                       // 平倉
     Manually(7);                    // 人工更改
 
-    private final int value;
+    private final Integer value;
+
     private TransactionAction(int i) {
         value = i;
     }

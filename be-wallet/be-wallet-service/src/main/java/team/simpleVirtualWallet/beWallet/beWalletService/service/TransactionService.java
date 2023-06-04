@@ -10,7 +10,6 @@ import java.util.Optional;
 public interface TransactionService {
 
     Optional<TransactionRecord> processTransaction(
-            int userId,
             int walletId,
             int action,
             BigDecimal amount,

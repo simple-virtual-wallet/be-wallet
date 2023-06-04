@@ -9,8 +9,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>team.simple-virtual-wallet.be-wallet</groupId>
-    <artifactId>be-wallet-grpc</artifactId>
+    <groupId>team.simple-virtual-wallet.be-user</groupId>
+    <artifactId>be-user-grpc</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -85,5 +85,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

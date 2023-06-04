@@ -4,13 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import team.simpleVirtualWallet.beWallet.beWalletService.dto.AddTransactionRequestDto;
-import team.simpleVirtualWallet.beWallet.beWalletService.dto.AddTransactionResponseDto;
-import team.simpleVirtualWallet.beWallet.beWalletService.dto.AddWalletRequestDto;
-import team.simpleVirtualWallet.beWallet.beWalletService.dto.AddWalletResponseDto;
+import team.simpleVirtualWallet.beWallet.beWalletService.dto.*;
 import team.simpleVirtualWallet.beWallet.beWalletService.exception.WalletException;
 import team.simpleVirtualWallet.beWallet.beWalletService.service.TransactionService;
 
@@ -28,7 +26,6 @@ public class TransactionController {
     public ResponseEntity<AddTransactionResponseDto> addTransaction(@Valid @RequestBody AddTransactionRequestDto req) throws WalletException {
 
         var record = transactionService.processTransaction(
-                req.getUserId(),
                 req.getWalletId(),
                 req.getAction(),
                 req.getAmount(),
@@ -43,6 +40,17 @@ public class TransactionController {
         }
 
         return new ResponseEntity<AddTransactionResponseDto>(new AddTransactionResponseDto(record.get()), HttpStatus.CREATED);
+    }
+
+    @GetMapping("/transactions")
+    public ResponseEntity<GetTransactionsResponseDto> GetTransactions(@Valid @RequestBody GetTransactionsRequestDto req) throws WalletException {
+
+        var records = transactionService.getTransactionRecords(
+                req.getUserId(),
+                req.getCurrency()
+        );
+
+        return new ResponseEntity<GetTransactionsResponseDto>(new GetTransactionsResponseDto(records), HttpStatus.OK);
     }
 
 }

@@ -3,8 +3,11 @@ package team.simpleVirtualWallet.beWallet.beWalletService.service;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import team.simpleVirtualWallet.beUser.service.grpc.UserGrpc;
 import team.simpleVirtualWallet.beWallet.beWalletService.dao.WalletDao;
+import team.simpleVirtualWallet.beWallet.beWalletService.exception.WalletException;
 import team.simpleVirtualWallet.beWallet.beWalletService.model.Wallet;
+import team.simpleVirtualWallet.beWallet.beWalletService.service.grpc.UserService;
 
 import javax.persistence.LockModeType;
 import java.util.List;
@@ -18,9 +21,21 @@ public class WalletServiceImpl implements WalletService {
     @Autowired
     private WalletDao walletDao;
 
+    @Autowired
+    private UserService userService;
+
     @Override
     public int addWallet(Wallet wallet)  {
         log.info("addWallet: {}", wallet);
+
+        var getUserRes = userService.getUser(UserGrpc.GetUserReq.newBuilder()
+                .setId(wallet.getUserId())
+                .build());
+
+        if(!getUserRes.hasUser()) {
+            throw new WalletException(WalletException.WalletExceptionType.NoSuchUser, "addWallet: no such user");
+        }
+
         return walletDao.save(wallet).getId();
     }
 
@@ -41,23 +56,12 @@ public class WalletServiceImpl implements WalletService {
 
         if(id != null) {
             if(mode.equals(LockModeType.PESSIMISTIC_WRITE)) {
-                return walletDao.findById(id);
+                return walletDao.findByIdForUpdate(id);
             }
             if(mode.equals(LockModeType.PESSIMISTIC_READ)) {
                 return walletDao.findByIdForShare(id);
             }
             return walletDao.findById(id);
-        }
-
-        return Optional.empty();
-    }
-
-    @Override
-    public Optional<Wallet> getWallet(Integer id, Integer userId) {
-        log.info("getWallet: {} {}", id, userId);
-
-        if(id != null && userId != null) {
-            return walletDao.findByIdAndUserId(id, userId);
         }
 
         return Optional.empty();

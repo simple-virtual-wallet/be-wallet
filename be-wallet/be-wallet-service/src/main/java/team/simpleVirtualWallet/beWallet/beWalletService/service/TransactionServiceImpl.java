@@ -2,6 +2,7 @@ package team.simpleVirtualWallet.beWallet.beWalletService.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import team.simpleVirtualWallet.beWallet.beWalletService.dao.TransactionRecordDao;
 import team.simpleVirtualWallet.beWallet.beWalletService.dao.WalletDao;
 import team.simpleVirtualWallet.beWallet.beWalletService.exception.WalletException;
@@ -14,11 +15,13 @@ import javax.persistence.LockModeType;
 import javax.transaction.Transaction;
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
 @Slf4j
+@Service
 public class TransactionServiceImpl implements TransactionService{
 
     @Autowired
@@ -32,7 +35,6 @@ public class TransactionServiceImpl implements TransactionService{
 
     @Override
     public Optional<TransactionRecord> processTransaction(
-            int userId,
             int walletId,
             int action,
             BigDecimal amount,
@@ -40,7 +42,7 @@ public class TransactionServiceImpl implements TransactionService{
             int committerId,
             String remark) throws WalletException {
 
-        var wallet = walletService.getWallet(walletId, userId);
+        var wallet = walletService.getWallet(walletId);
         if(wallet.isEmpty()) {
             log.error("processTransaction: no such wallet");
             throw new WalletException(WalletException.WalletExceptionType.NoSuchWallet, "processTransaction: no such wallet");
@@ -52,8 +54,9 @@ public class TransactionServiceImpl implements TransactionService{
         }
 
         var record = TransactionRecord.builder().
-                userId(userId).
+                userId(wallet.get().getUserId()).
                 wallet(wallet.get()).
+                walletId(walletId).
                 action(TransactionAction.fromInteger(action)).
                 amount(amount).
                 currency(currency).
@@ -84,7 +87,7 @@ public class TransactionServiceImpl implements TransactionService{
         var walletForUpdate = walletService.getWallet(record.getWalletId(), LockModeType.PESSIMISTIC_WRITE);
 
         if(record.getBeforeAmount() != walletForUpdate.get().getAmount()) {
-            record.setCreatedAt(LocalDateTime.now());
+            record.setCreatedAt(new Timestamp(System.currentTimeMillis()));
             record.setBeforeAmount(walletForUpdate.get().getAmount());
             record.setAfterAmount(walletForUpdate.get().getAmount().add(record.getAmount()));
         }

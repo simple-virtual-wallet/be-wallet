@@ -3,8 +3,11 @@ package team.simpleVirtualWallet.beWallet.beWalletService.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -13,7 +16,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 @Data
@@ -36,7 +41,7 @@ public class TransactionRecord {
     @EqualsAndHashCode.Exclude
     private Wallet wallet;
 
-    @Column(insertable = false, updatable = false)
+    @Column(name="wallet_id", insertable = false, updatable = false)
     private int walletId;
 
     @Convert(converter = TransactionAction.Converter.class)
@@ -60,12 +65,16 @@ public class TransactionRecord {
 
     private String remark;
 
+    @CreationTimestamp
+//    @DateTimeFormat
     @CreatedDate
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt;
+    private Timestamp createdAt;
 
+    @UpdateTimestamp
+//    @DateTimeFormat
     @LastModifiedDate
-    private LocalDateTime updatedAt;
+    private Timestamp updatedAt;
 
     private BigDecimal rollbackBeforeAmount;
 

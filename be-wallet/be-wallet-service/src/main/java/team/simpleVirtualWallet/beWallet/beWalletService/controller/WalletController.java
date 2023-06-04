@@ -47,7 +47,6 @@ public class WalletController {
 
     @GetMapping("/wallets")
     public ResponseEntity<GetWalletsResponseDto> getWallets(@Valid @RequestBody GetWalletsRequestDto req) {
-
         var wallets = walletService.getWallets(req.getUserId());
         return new ResponseEntity<>(new GetWalletsResponseDto(wallets), HttpStatus.OK);
     }
